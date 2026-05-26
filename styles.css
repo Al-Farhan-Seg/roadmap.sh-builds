@@ -69,15 +69,12 @@ header {
   width: auto;
   object-fit: contain;
   display: block;
+  filter: brightness(0) invert(1);
+  /* CSS filters for changing <img> colros which cannot be done randomly --
+  
+  filter: brightness(0) saturate(100%) invert(72%) sepia(20%) saturate(1200%) hue-rotate(130deg) brightness(90%) contrast(90%);
+  */
 }
-/*
-header > img,
-#header-end img {
-  height: calc(10vh - 10px);
-  width: auto;
-  object-fit: contain;
-}
-*/
 #navbar {
     display: flex;
     flex-direction: row;
