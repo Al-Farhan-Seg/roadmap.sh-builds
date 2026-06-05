@@ -111,18 +111,14 @@ header {
 }
 #projects {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 10px;
+    flex-direction: column;
+    /*justify-content: space-around;*/
 }
-.project-img {
-    height: 200px;
-    width: 355px;
-    border-radius: 15px;
+.rows {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     margin: 15px;
-    border: 2px solid transparent;
-    border-image: linear-gradient(var(--color3), var(--color1));
 }
 .project-container {
     background: radial-gradient(
@@ -134,10 +130,17 @@ header {
     border: 2px solid var(--words-color2);
     border-radius: 15px;
     flex-shrink: 1;
-    margin: 10px;
 }
 .project-container a{
     text-decoration: none;
+}
+.project-img {
+    height: 200px;
+    width: 355px;
+    border-radius: 15px;
+    margin: 15px;
+    border: 2px solid transparent;
+    border-image: linear-gradient(var(--color3), var(--color1));
 }
 .project-container p {
     font-weight: bold;
