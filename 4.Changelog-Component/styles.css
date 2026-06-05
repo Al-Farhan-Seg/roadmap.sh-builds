@@ -10,6 +10,9 @@
 
 /* Desktop Styles  */
 @media screen and (min-width: 1027px) {
+    :root {
+        --border-rad: 15px;
+    }
     * {
         box-sizing: border-box;
         margin: 0 ;
@@ -78,17 +81,15 @@
         display: inline-block;
         width: 40%;
     }
-    #cta {
-        background-color: hsla(0, 0%, 12%, 1);
-        color: whitesmoke;
-        padding: 5px 10px;
-        margin: 35px auto;
-        width: 150px;
-        height: 2rem;
-        border: none;
-        text-align: center;
-        border-radius: 10px;
-        display: block;
+    .ref-cta {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: hsl(0, 0%, 12%);
+    border-radius: var(--border-rad);
+    width: 230px;
+    padding: 15px;
+    margin: 35px auto;
     }
     
 }

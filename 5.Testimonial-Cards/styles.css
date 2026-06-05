@@ -7,18 +7,7 @@ html {
 }
 *, *::before, *::after {
     box-sizing: inherit;
-}
-.device-error {
-    display: none;
-}
-
-.bubble-testimony, 
-.box-testimony,
-.single-image,
-.text-only-testimony,
-.full-width-testimony {
-    border: 1px solid magenta;
-    border-radius: var(--border-rad);
+    font-family: Arial, sans-serif;
 }
 
 .container {
@@ -29,9 +18,9 @@ html {
     align-items: center;
     gap: 10px;
 
-    border: 2px solid crimson;
+    border: 2px solid hsl(0, 0%, 12%);
     width: 45vw;
-    margin: auto;
+    margin: 30px auto;
     padding: 15px;
     border-radius: var(--border-rad);
 }
@@ -68,18 +57,24 @@ html {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    padding: 10px;
 
 }
 .bubble {
-    border: 2px solid tomato;
     border-radius: var(--border-rad);
     flex: 0.6;
     position: relative;
+    background-color: hsl(0, 0%, 12%);
+    color: hsl(0, 0%, 95%);
+    
+}
+.bubble > p {
+    margin: 10px;
 }
 .bubble::before {
     content: '';
     position: absolute;
-    border-top: 15px solid tomato;
+    border-top: 15px solid hsl(0, 0%, 12%);
     border-bottom: 15px solid transparent;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
@@ -87,11 +82,38 @@ html {
     left: 10%;
 }
 .bubble-person {
-    border: 2px solid tomato;
     border-radius: var(--border-rad);
     flex: 0.4;
-}
 
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    overflow: hidden;
+}
+.bubble-person > img,
+.box-person > img {
+    width: 90px;
+    height: 90px;
+    flex: 0 0 90px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.bubble-person > div,
+.box-person > div {
+    flex: 1;
+    min-width: 0;
+}
+.bubble-person-name, .box-person-name {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-family: "Ink Free";
+    font-weight: bold;
+}
+.bubble-person-role, .box-person-role {
+    margin-top: 5px;
+    padding-top: 0;
+    font-style: italic;
+}
 /*-------------------------------------*/
 .box-testimony {
     height: 100%;
@@ -101,17 +123,26 @@ html {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    padding: 10px;
+    border: 2px solid hsl(0, 0%, 46%);
+    border-radius: var(--border-rad);
 }
 .box {
-    border: 2px solid tomato;
     border-radius: var(--border-rad);
     flex: 0.5;
     position: relative;
 }
+.box p {
+    margin: 10px;
+}
 .box-person {
-    border: 2px solid tomato;
     border-radius: var(--border-rad);
     flex: 0.5;
+
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    overflow: hidden;
 }
 
 /*-------------------------------------*/
@@ -131,13 +162,68 @@ html {
     height: 100%;
     flex: 2;
     padding: 20px;
+    background-color: hsl(0, 0%, 12%);
+    border-radius: var(--border-rad);
+}
+/*
+.stars {
+
+}
+*/
+.txt-person-name {
+    color: hsl(0, 0%, 95%);
+}
+.txt-person-role {
+    color: hsl(0, 0%, 46%);
+    font-style: italic;
+}
+.txt-comment {
+    color: hsl(0, 0%, 95%);
 }
 
 .full-width-testimony {
     height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid hsl(0, 0%, 12%);
+    border-radius: var(--border-rad);
+}
+.full-width-testimony > p {
+    text-align: center;
+    padding: 1.5rem;
+    font-weight: 600;
+}
+.image-fade {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+}
+.image-fade img{
+    height: 75px;
+    width: 75px;
+    border-radius: 50px;
+}
+.image-fade img:nth-of-type(1),
+.image-fade img:nth-of-type(3) {
+    filter: brightness(90%) contrast(40%);
+    height: 65px;
+    width: 65px;
 }
 
-
+.ref-cta {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: hsl(0, 0%, 12%);
+    border-radius: var(--border-rad);
+    text-align: center;
+    width: 230px;
+    padding: 15px;
+    margin: 15px auto;
+}
 
 /* -------------------------------------------*/
 /* Mobile View Styles */
