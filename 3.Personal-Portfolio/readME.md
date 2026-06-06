@@ -2,7 +2,7 @@
 
 <a href="https://roadmap.sh/projects/portfolio-website">Click Here for More</a>
 
-<p>The goal of this project is to teach you how to style a website using CSS. You will take the structure from the <a href="https://roadmap.sh/projects/basic-html-website" target="_blank">previous HTML-only project</a> and apply various CSS techniques to enhance its appearance and responsiveness</p>
+<p>The goal of this project is to teach us how to style a website using CSS. We will take the structure from the <a href="https://roadmap.sh/projects/basic-html-website" target="_blank">previous HTML-only project</a> and apply various CSS techniques to enhance its appearance and responsiveness</p>
 
 ## Instructions:
 <ul>
