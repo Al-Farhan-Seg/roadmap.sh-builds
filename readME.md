@@ -12,6 +12,7 @@
   <li><a href = "https://roadmap.sh/projects/basic-html-website">Basic HTML Website</a></li>
   <li><a href = "https://roadmap.sh/projects/portfolio-website">Personal Portfolio Website</a></li>
   <li><a href = "https://roadmap.sh/projects/changelog-component">Changelog Component</a></li>
+  <li><a href = "https://roadmap.sh/projects/testimonial-cards">Testimonial Cards</a></li>
   
 </ul>
 
