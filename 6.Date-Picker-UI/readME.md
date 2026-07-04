@@ -8,7 +8,7 @@
 
 ## Instructions:
 <ul>
-    <li>EITHER: Visit <a href="https://al-farhan-seg.github.io/roadmap.sh-Projects/" target="_blank">Main Web Page</a>
+    <li>EITHER: Visit <a href="https://roadmapsh.farhansegujja.com/" target="_blank">Main Web Page</a>
     <li>OR: Be a MAN
     <ul>
         <li> Clone parent repo 
