@@ -1,13 +1,19 @@
 :root{
     /* */
-    --color1: hsl(180, 25%, 65%);
-    --color2: hsla(180, 35%, 45%, 1);
-    --color3: hsla(180, 45%, 25%, 1);
+    --primary-color: #FFCB2E;
+    --primary-color-bold: #A37A00;
+    --primary-color-soft: #FFEDB8;
 
-    --words-color1: whitesmoke;
+    --secondary-colour: #C3CC70;
+    --secondary-colour-bold: #70782B;
+    --secondary-colour-soft: #DAE0A9;
 
-    --words-color2: whitesmoke;
-    --heading-font: "Chewy", cursive;
+    --accent-color: #DE3121;
+    --accent-color-bold: #66160F;
+    --accent-color-soft: #F0A099;
+
+    
+    --heading-font: "DM Serif Display", cursive;
     --text-font: "Quicksand", sans-serif;
     
 }
@@ -22,12 +28,7 @@ html {
     font-size: 75%;
 }
 body {
-    background: repeating-linear-gradient(
-        to bottom right, 
-        hsl(180, 100%, 30%) 0 20px, 
-        hsl(180, 80%, 50%) 20px 40px, 
-        hsl(180, 60%, 70%) 40px 60px
-    ) ;
+    background-color: var(--primary-color);
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 100vh;
@@ -47,14 +48,9 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    border: 2px solid var(--words-color2);
+    border: 2px solid var(--accent-color-bold);
     border-radius: 0 0 10px 10px;
-    background: radial-gradient(
-        circle at bottom right, 
-        var(--color1), 
-        var(--color2), 
-        var(--color3)
-    );
+    background-color: var(--primary-color-bold);
     /* border: 2px solid; */
 }
 .logo-link,
@@ -70,7 +66,7 @@ header {
   width: auto;
   object-fit: contain;
   display: block;
-  filter: brightness(0) invert(1);
+  border-radius: 50%;
   /* CSS filters for changing <img> colros which cannot be done randomly --
   
   filter: brightness(0) saturate(100%) invert(72%) sepia(20%) saturate(1200%) hue-rotate(130deg) brightness(90%) contrast(90%);
@@ -86,7 +82,7 @@ header {
 #navbar a {
     text-decoration: none;
     color: var(--words-color1);
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 5px;
     font-style: italic;
     font-weight: 600;
@@ -99,14 +95,13 @@ header {
     max-height: 60vh;
     font-size: 2rem;
     background: radial-gradient(
-        circle at bottom right, 
-        var(--color1), 
-        var(--color2), 
-        var(--color3)
+        circle at bottom right,  
+        var(--secondary-colour), 
+        var(--secondary-colour-bold)
     );
     border-radius: 20px;
     color: var(--words-color1);
-    border: 2px solid var(--words-color2);
+    border: 2px solid var(--accent-color-bold);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -122,16 +117,16 @@ header {
 }
 #bio a {
     text-decoration: none;
-    color: var(--color1);
-    background-color: var(--color3);
-    padding: 2px;
+    color: var(--accent-color-bold);
+    background-color: wheat;
+    padding: 3px;
     border-radius: 10px;
-    border: 2px solid black;
+    border: 2px solid var(--accent-color-bold);
 }
 #bio a:hover {
     transform: translateX(5px);
-    background-color: var(--color1);
-    color: var(--color3);
+    background-color: var(--accent-color);
+    color: white;
 }
 #cta {
     text-align: center;
@@ -183,11 +178,11 @@ header {
 .project-container {
     background: radial-gradient(
         circle at bottom right, 
-        var(--color1), 
-        var(--color2), 
-        var(--color3)
+        var(--secondary-colour-soft), 
+        var(--secondary-colour) 10%, 
+        var(--secondary-colour-bold)
     );
-    border: 2px solid var(--words-color2);
+    border: 2px solid var(--accent-color-bold);
     border-radius: 15px;
     padding: 15px;
 }
@@ -198,14 +193,13 @@ header {
 .project-container:hover{ 
     transform: translate(-5px, -5px);
     box-shadow: 5px 5px 5px black;
-    background-color: aqua;
 }
 .project-img {
     height: auto;
     width: 100%;
     border-radius: 15px;
-    border: 2px solid transparent;
-    border-image: linear-gradient(var(--color3), var(--color1));
+    border: 2px solid var(--accent-color-bold);
+   /* border-image: linear-gradient(var(--secondary-colour-soft), var(--secondary-colour));*/
 }
 .project-container p {
     font-weight: bold;
@@ -213,6 +207,7 @@ header {
 .project-name {
     text-align: center;
     margin: 10px auto;
+    font-size: 1.5rem;
 }
 
 /* -------------------------------------------*/
@@ -227,5 +222,9 @@ header {
         max-width: 100%;
         overflow: scroll;
         scrollbar-width: 20px;
+    }
+    .project-name {
+    margin: 10px auto;
+    font-size: 1.9rem;
     }
 }
