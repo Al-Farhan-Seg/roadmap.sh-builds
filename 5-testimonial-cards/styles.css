@@ -20,6 +20,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Play";
 }
 body {
     background-color: var(--primary-color-soft);
@@ -101,7 +102,7 @@ h1 {
 .bubble-person-name,
 .txt-person-name,
 .box-person-name{
-    font-family: "Ink Free";
+    font-family: "Sour GUMMY";
     font-weight: 600;
 }
 
