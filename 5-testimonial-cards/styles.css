@@ -53,7 +53,7 @@ h1 {
     /*border: 2px solid tomato;*/
     border-radius: var(--border-rad);
     gap: 10px;
-    background-color: var(--secondary-colour);
+    background-color: var(--primary-color);
 
 }
 .bubble {
@@ -175,7 +175,7 @@ h1 {
 .bottom-row {
     border: 2px solid hsl(11, 28%, 15%);
     border-radius: var(--border-rad);
-    background-color: var(--secondary-colour-soft);
+    background-color: var(--primary-color);
 }
 .bottom-row img {
     width: 25%;
