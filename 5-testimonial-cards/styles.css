@@ -33,6 +33,7 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    width: 95vw;
     max-width: 95vw;
     height: auto;
     border: 2px solid var(--accent-color-bold);
@@ -46,8 +47,8 @@ h1 {
     flex-direction: column;
     justify-content: space-around;
     gap: 15px;
+    margin: 5px;
 }
-/*----To remove-----*/
 
 .bubble-testimony {
     flex: 1;
@@ -102,13 +103,13 @@ h1 {
 .bubble-person-name,
 .txt-person-name,
 .box-person-name{
-    font-family: "Sour GUMMY";
+    font-family: "Sour Gummy";
     font-weight: 600;
 }
 
 .box-testimony {
     flex: 1;
-    border: 2px solid hsl(11, 28%, 15%);;
+    border: 2px solid var(--accent-color-bold);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -199,6 +200,10 @@ h1 {
     margin: 15px 15px 30px 15px;
     padding: 10px;
 }
+.image-fade span {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
 .image-fade img:nth-of-type(1),
 .image-fade img:nth-of-type(3) {
     filter: contrast(50%);
@@ -221,8 +226,3 @@ h1 {
                 0 0 25px hsl(0, 0%, 12%);
 }
 
-/* -------------------------------------------*/
-/* Bigger Screen Styles */
-@media screen and (min-width: 768px) {
-    
-}
