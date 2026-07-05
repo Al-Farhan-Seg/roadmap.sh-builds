@@ -159,13 +159,13 @@ h1 {
 }
 .text-only-testimony {
     font-size: 0.8rem;
-    padding: 15px;
+    padding: 10px;
     background-color: var(--primary-color-soft);
     color: hsl(11, 28%, 15%);
     border-radius: var(--border-rad);
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     justify-content: center;
     align-items: baseline;
     flex: 1;
