@@ -1,3 +1,96 @@
+:root {
+    --border-rad: 15px;
+    --primary-color: #887C77;
+    --primary-color-bold: #262321;
+    --primary-color-soft: #C8C3C0;
+
+    --secondary-colour: #7686B7;
+    --secondary-colour-bold: #28324D;
+    --secondary-colour-soft: #D0D6E6;
+
+    --accent-color: #00EAFF;
+    --accent-color-bold: #006C75;
+    --accent-color-soft: #B8F9FF;
+}
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--accent-color-soft);
+    background: linear-gradient(
+        45deg,
+        var(--accent-color-soft),
+        var(--primary-color-soft)
+    );
+    background-attachment: fixed;
+}
+#container {
+    background-color: var(--secondary-colour-bold);
+    min-width: 0;
+    width: 95vw;
+    max-width: 100vw;
+    height: auto;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: var(--border-rad);
+}
+#top-text,
+#top-brief {
+    text-align: center;
+    color: var(--secondary-colour-soft);
+    margin: 0.7rem;
+    font-family: "Play";
+}
+.cg {
+    font-family: "Consolas";
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 25px;
+    position: relative;
+    margin: 15px;
+}
+.cg::before {
+    content: "";
+    position: absolute;
+    background-color: var(--secondary-colour-soft);
+    width: 3px;
+    height: calc(100% - 10%);
+    top: 9px;
+    bottom: 0;
+    left :0;
+}
+.changelog {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    position: relative;
+}
+.changelog::before {
+    content: "";
+    background-color: var(--secondary-colour-soft);
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    bottom: 0;
+    top: 5px;
+    left: -3.5px
+}
+.changelog-date {
+    font-style: italic;
+    position: relative;
+    font-size: 1.1rem;
+    color: var(--primary-color-soft);
+}
+.changelog-content {
+    margin-left: 15px;
+    color: var(--accent-color-soft);
+}
 
 
 
@@ -5,94 +98,24 @@
 
 
 
-
-
-
-/* Desktop Styles  */
-@media screen and (min-width: 1027px) {
-    :root {
-        --border-rad: 15px;
-    }
-    * {
-        box-sizing: border-box;
-        margin: 0 ;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    body {
-        background-color: hsl(225, 11%, 15%);
-    }
-    #container {
-        border: 2px solid hsla(0, 0%, 33%, 1);
-        padding: 2rem;
-        margin: 10px auto;
-        width: min(90vw, 600px);
-        min-height: 95vh;
-        border-radius: 10px;
-        background-color: white;
-    }
-    #top-text, #top-brief{
-        text-align: center;
-        padding: 5px;
-    }
-    #top-brief {
-        color: hsla(95, 87%, 13%, 1);
-    }
-    .cg {
-        position: relative;
-  margin: 20px 0;
-  padding: 0;
-    }
-    .cg::before {
-        position: absolute;
-        content: " ";
-        width: 2px;
-        background-color: black;
-        top: 0;
-        bottom: 0;
-        left: 50%;
-        margin-left: -1px;
-    }
-    .changelog {
-        padding: 10px;
-        margin: 10px;
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-    }
-    .changelog::before {
-        content: " ";
-        position: absolute;
-        border-radius: 50%;
-        background-color: black;
-        width: 10px;
-        height: 10px;
-        left: 50%;
-        margin-left: -5px;
-    }
-    .changelog .changelog-date {
-        color: hsla(95, 87%, 13%, 1);
-        text-align: left;
-        /*border: 2px solid;*/
-        display: inline-block;
-    }
-    .changelog .changelog-content {
-        color: hsla(0, 0%, 12%, 1);
-        /*border: 2px solid;*/
-        display: inline-block;
-        width: 40%;
-    }
-    .ref-cta {
+.ref-cta {
     display: block;
+    text-align: center;
     text-decoration: none;
     color: white;
-    background-color: hsl(0, 0%, 12%);
+    /*background-color: hsl(0, 0%, 12%);*/
+    background-color: var(--accent-color-bold);
     border-radius: var(--border-rad);
     width: 230px;
     padding: 15px;
     margin: 35px auto;
+    border: 2px solid var(--accent-color);
 
-    box-shadow: 0 0 10px hsl(0, 0%, 12%),
-                0 0 25px hsl(0, 0%, 12%);
-    }
+    box-shadow: 5px 5px 10px var(--primary-color-bold),
+                5px 5px 25px var(--primary-color-bold);
+}
+
+/* Desktop Styles  */
+@media screen and (min-width: 786px) {
     
 }
