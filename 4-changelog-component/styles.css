@@ -1,3 +1,6 @@
+@import url('https://fonts.cdnfonts.com/css/consola-mono');
+@import url('https://fonts.cdnfonts.com/css/dynapuff');
+
 :root {
     --border-rad: 15px;
     --primary-color: #887C77;
@@ -27,6 +30,7 @@ body {
         var(--primary-color-soft)
     );
     background-attachment: fixed;
+    min-height: 100vh;
 }
 #container {
     background-color: var(--secondary-colour-bold);
@@ -46,7 +50,7 @@ body {
     font-family: "Play";
 }
 .cg {
-    font-family: "Consolas";
+    font-family: 'Consola Mono', Consolas, monospace;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -94,18 +98,15 @@ body {
 
 
 
-
-
-
-
 .ref-cta {
     display: block;
     text-align: center;
     text-decoration: none;
     color: white;
-    /*background-color: hsl(0, 0%, 12%);*/
+    font-family: 'DynaPuff', sans-serif;
     background-color: var(--accent-color-bold);
     border-radius: var(--border-rad);
+    font-size: 0.9rem;
     width: 230px;
     padding: 15px;
     margin: 35px auto;
@@ -114,8 +115,53 @@ body {
     box-shadow: 5px 5px 10px var(--primary-color-bold),
                 5px 5px 25px var(--primary-color-bold);
 }
+.ref-cta:active {
+    transform: translate(5px, 5px);
+}
 
-/* Desktop Styles  */
+/* Tablet ---> Desktop Styles  */
 @media screen and (min-width: 786px) {
-    
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #container {
+        min-width: 50vw;
+        width: 65vw;
+        max-width: 65vw;
+        margin: auto;
+        padding-top: 50px;
+    }
+    .cg::before {
+        left: 50%;
+    }
+    .changelog {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .changelog::before {
+        left: calc(50% - 4px);
+    }
+    .changelog-date {
+        flex: 1;
+        font-size: 0.9rem;
+        right: -30px;
+    }
+    .changelog-content {
+        flex: 1;
+        font-size: 0.9rem;
+        margin-left: 30px;
+    }
+}
+
+/* Desktop only styles */
+@media screen and (min-width: 1024px) {
+    #container {
+        min-width: 40vw;
+        width: 40vw;
+        max-width: 65vw;
+        height: auto;
+        margin: 15px;
+    }
 }

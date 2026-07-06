@@ -214,15 +214,89 @@ h1 {
 .ref-cta {
     display: block;
     text-decoration: none;
-    color: white;
-    background-color: hsl(0, 0%, 12%);
+    color: black;
+    background-color: var(--primary-color-bold);
     border-radius: var(--border-rad);
     text-align: center;
     width: 230px;
     padding: 15px;
     margin: 15px auto;
+    border: 2px solid var(--secondary-colour-soft);
 
-    box-shadow: 0 0 10px hsl(0, 0%, 12%),
-                0 0 25px hsl(0, 0%, 12%);
+    box-shadow: 5px 5px 10px hsl(0, 0%, 12%),
+                5px 5px 25px hsl(0, 0%, 12%);
+}
+.ref-cta:active {
+    transform: translate(5px, 5px);
 }
 
+/* Bigger Screen Styles */
+@media screen and (min-width: 768px) {
+    .container {
+        min-width: 0;
+        width: 70vw;
+        max-width: 80vw;
+    }
+    .top-row {
+        display: flex;
+        flex-direction: row;
+    }
+    .bubble::before {
+        top: 100%;
+        left: 7%;
+    }
+    .bubble-person,
+    .box-person {
+        justify-content: flex-start;
+        align-items: center;
+        gap: 15px;
+        padding: 10px;
+    }
+    .mid-row {
+        height: 25vw;
+    }
+    .single-image {
+        flex: 1;
+    }
+    .text-only-testimony {
+        flex: 2;
+        padding: 25px;
+        gap: 15px;
+    }
+    .image-fade span {
+        font-weight: bolder;
+        font-size: 2rem;
+    }
+    #f-w-t-p {
+        font-size: 1.5rem;
+    }
+    
+    
+}
+@media screen and (min-width: 1024px){
+    .text-only-testimony {
+        flex: 2;
+        font-size: 1.5rem;
+        padding: 55px;
+        gap: 25px;
+    }
+    .bottom-row img {
+        width: 15%
+    }
+    .full-width-testimony {
+        gap: 20px
+    }
+    #f-w-t-p {
+        margin: 10px;
+        text-align: center;
+        padding: 40px;
+    }
+    .image-fade {
+        margin: 30px 30px 70px 30px;
+        padding: 30px;
+    }
+    .image-fade img:nth-of-type(1),
+    .image-fade img:nth-of-type(3) {
+        width: 10%;
+    }
+}
