@@ -12,27 +12,60 @@
         <form action="" method="get">
             <fieldset>
                 <label for="full-name">Full Name</label>
-                <input type="text" name="full-name" required id="full-name" placeholder="What should we call you?">
+                <input 
+                    type="text" 
+                    name="full-name" 
+                    aria-required
+                    required 
+                    id="full-name"
+                    placeholder="What should we call you?"
+                >
             </fieldset>
 
             <fieldset>
                 <label for="email">Email</label>
-                <input type="email" name="email" required id="email" placeholder="firstname@gmail.com">
+                <input 
+                    type="email" 
+                    name="email" 
+                    aria-required
+                    required 
+                    id="email"
+                    placeholder="firstname@gmail.com"
+                >
             </fieldset>
 
             <fieldset>
                 <label for="password">Password</label>
-                <input type="password" name="password" required id="password" placeholder="********" minlength="8">
+                <input 
+                    type="password"
+                    name="password" 
+                    required 
+                    aria-required
+                    id="password"
+                    placeholder="********" 
+                    aria-describedby="password-error"
+                    minlength="8"
+                >
+                <p id="password-error">Password must contain at least 8 characters.</p>
             </fieldset>
 
             <fieldset>
                 <label for="confirm-password">Confirm Password</label>
-                <input type="password" name="confirm-password" required id="confirm-password"
-                placeholder="********"
-                minlength="8">
+                <input 
+                    type="password" 
+                    name="confirm-password" 
+                    required aria-required 
+                    id="confirm-password" 
+                    placeholder="********" 
+                    minlength="8"
+                >
             </fieldset>
 
-            <input type="submit" value="Update Profile">
+            <input 
+                type="submit"
+                value="Update Profile"
+                id="submit"
+            >
         </form>
         <article>
             <span id="percentage">65%</span>
@@ -47,5 +80,7 @@
             </div>
         </article>
     </section>
+
+    <a href="https://roadmap.sh/projects/accessible-form-ui" class="ref-cta" target="_blank">Go to Project of Reference</a>
 </body>
 </html>
