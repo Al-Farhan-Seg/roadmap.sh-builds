@@ -48,6 +48,7 @@ h1 {
     justify-content: center;
     align-items: center;
     min-height: 50px;
+    color: var(--secondary-color-bold);
 }
 #placeholder-text {
     flex: 3;
@@ -77,6 +78,7 @@ h1 {
     justify-content: space-evenly;
 }
 #month-selector {
+    color: var(--secondary-color-bold);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -95,7 +97,6 @@ h1 {
     
 }
 .weekday {
-    border: 1px solid black;
     border-radius: 5px;;
     padding: 10px;
     background-color: var(--secondary-color-bold);

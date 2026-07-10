@@ -7,6 +7,45 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    
+    <h1>Accessible Form UI</h1>
+    <section class="palette">
+        <form action="" method="get">
+            <fieldset>
+                <label for="full-name">Full Name</label>
+                <input type="text" name="full-name" required id="full-name" placeholder="What should we call you?">
+            </fieldset>
+
+            <fieldset>
+                <label for="email">Email</label>
+                <input type="email" name="email" required id="email" placeholder="firstname@gmail.com">
+            </fieldset>
+
+            <fieldset>
+                <label for="password">Password</label>
+                <input type="password" name="password" required id="password" placeholder="********" minlength="8">
+            </fieldset>
+
+            <fieldset>
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" name="confirm-password" required id="confirm-password"
+                placeholder="********"
+                minlength="8">
+            </fieldset>
+
+            <input type="submit" value="Update Profile">
+        </form>
+        <article>
+            <span id="percentage">65%</span>
+            <h2>Profile Completeness</h2>
+
+            <div class="checklist">
+                <p class="done">Create Account</p>
+                <p class="done">Update Roadmap Progress</p>
+                <p class="done">Setup Public Profile</p>
+                <p>Complete your first project</p>
+                <p>Invite your friends</p>
+            </div>
+        </article>
+    </section>
 </body>
 </html>
