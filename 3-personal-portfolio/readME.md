@@ -1,18 +1,21 @@
-# Personal Portfolio website
+# Personal Portfolio Website
 
-<a href="https://roadmap.sh/projects/portfolio-website">Click Here for More</a>
+[View the project requirements](https://roadmap.sh/projects/portfolio-website)
 
-<p>The goal of this project is to teach us how to style a website using CSS. We will take the structure from the <a href="https://roadmap.sh/projects/basic-html-website" target="_blank">previous HTML-only project</a> and apply various CSS techniques to enhance its appearance and responsiveness</p>
+In this project, we will create and style a personal portfolio website using HTML and CSS.
 
-## Instructions:
-<ul>
-    <li>EITHER: Visit <a href="https://roadmapsh.farhansegujja.com/" target="_blank">Main Web Page</a>
-    <li>OR: Be a MAN
-    <ul>
-        <li> Clone parent repo 
-        <li> Run HTML file in browser
-        <li> Make analysis to the work done (criticism and praise) {<a href="mailto:farhan.segujja@gmail.com">farhan.segujja@gmail.com</a>}
-    </ul>
-</ul>
+We will use the structure from the [previous HTML-only project](https://roadmap.sh/projects/basic-html-website) and apply various CSS techniques to improve its appearance, layout, and responsiveness.
 
+The goal of this project is to help us practise styling webpages, organising layouts, and creating responsive designs that work well across different screen sizes.
 
+## Instructions
+
+Choose one of the following options:
+
+1. Visit the [main webpage](https://roadmapsh.farhansegujja.com/).
+
+2. Run the project locally:
+   - Clone the parent repository.
+   - Open the HTML file in a browser.
+   - Review the completed work.
+   - Send constructive feedback, including both criticism and praise, to [farhan.segujja@gmail.com](mailto:farhan.segujja@gmail.com).

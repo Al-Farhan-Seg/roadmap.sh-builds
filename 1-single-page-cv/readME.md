@@ -1,16 +1,21 @@
-# A Single-Page CV html file
+# Single-Page CV
 
-<a href="https://roadmap.sh/projects/single-page-cv">Click Here for More</a>
+[View the project requirements](https://roadmap.sh/projects/single-page-cv)
 
-<p>The goal of this project is to teach us how to create a structured, single-page CV using only HTML. We will focus on laying out your education, skills, and career history in a clean, semantic manner. Styling will be addressed in a later project.</p>
+In this project, we will create a structured, single-page CV using only HTML.
 
-## Instructions:
-<ul>
-    <li>EITHER: Visit <a href="https://roadmapsh.farhansegujja.com/" target="_blank">Main Web Page</a>
-    <li>OR: Be a MAN
-    <ul>
-        <li> Clone parent repo 
-        <li> Run HTML file in browser
-        <li> Make analysis to the work done (criticism and praise) {<a href="mailto:farhan.segujja@gmail.com">farhan.segujja@gmail.com</a>}
-    </ul>
-</ul>
+We will organise sections such as personal details, education, skills, and career history using clean and semantic HTML elements.
+
+The goal of this project is to help us practise creating well-structured webpages while focusing on accessibility and meaningful content organisation. Styling will be added in a later project.
+
+## Instructions
+
+Choose one of the following options:
+
+1. Visit the [main webpage](https://roadmapsh.farhansegujja.com/).
+
+2. Run the project locally:
+   - Clone the parent repository.
+   - Open the HTML file in a browser.
+   - Review the completed work.
+   - Send constructive feedback, including both criticism and praise, to [farhan.segujja@gmail.com](mailto:farhan.segujja@gmail.com).

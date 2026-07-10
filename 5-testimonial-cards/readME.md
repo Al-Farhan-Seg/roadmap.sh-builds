@@ -1,18 +1,21 @@
 # Testimonial Cards
 
-<a href="https://roadmap.sh/projects/testimonial-cards">Click Here for More</a>
+[View the project requirements](https://roadmap.sh/projects/testimonial-cards)
 
-<p>In this project, we are required to create a bunch of testimonial cards. Testimonials are quotes or statements from satisfied customers or users, often used on websites to build credibility and trust.</p>
+In this project, we will create a collection of testimonial cards using HTML and CSS.
 
-<p>The goal of this project is to teach us about positioning and layout in CSS. Each card is designed to help us understand different layout and positioning techniques.</p>
+Testimonials are quotes or statements from satisfied customers or users. They are often used on websites to build credibility, trust, and confidence in a product or service.
 
-## Instructions:
-<ul>
-    <li>EITHER: Visit <a href="https://roadmapsh.farhansegujja.com/" target="_blank">Main Web Page</a>
-    <li>OR: Be a MAN
-    <ul>
-        <li> Clone parent repo 
-        <li> Run HTML file in browser
-        <li> Make analysis to the work done (criticism and praise) {<a href="mailto:farhan.segujja@gmail.com">farhan.segujja@gmail.com</a>}
-    </ul>
-</ul>
+The goal of this project is to help us practise CSS positioning and layout techniques. Each testimonial card will use a different design to improve our understanding of spacing, alignment, positioning, and responsive layouts.
+
+## Instructions
+
+Choose one of the following options:
+
+1. Visit the [main webpage](https://roadmapsh.farhansegujja.com/).
+
+2. Run the project locally:
+   - Clone the parent repository.
+   - Open the HTML file in a browser.
+   - Review the completed work.
+   - Send constructive feedback, including both criticism and praise, to [farhan.segujja@gmail.com](mailto:farhan.segujja@gmail.com).

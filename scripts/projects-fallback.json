@@ -1,0 +1,272 @@
+[
+  {
+    "slug": "single-page-cv",
+    "title": "Single-Page CV",
+    "folderSlug": "single-page-cv",
+    "difficulty": "Beginner",
+    "category": "HTML",
+    "description": "Create a single-page HTML CV to showcase your career history.",
+    "needsJavaScript": false
+  },
+  {
+    "slug": "basic-html-website",
+    "title": "Basic HTML Website",
+    "folderSlug": "basic-html-website",
+    "difficulty": "Beginner",
+    "category": "HTML",
+    "description": "Create a simple HTML-only website with multiple pages.",
+    "needsJavaScript": false
+  },
+  {
+    "slug": "portfolio-website",
+    "title": "Personal Portfolio",
+    "folderSlug": "personal-portfolio",
+    "difficulty": "Beginner",
+    "category": "CSS",
+    "description": "Convert the previous simple HTML website into a personal portfolio.",
+    "needsJavaScript": false
+  },
+  {
+    "slug": "changelog-component",
+    "title": "Changelog Component",
+    "folderSlug": "changelog-component",
+    "difficulty": "Beginner",
+    "category": "CSS",
+    "description": "Create a changelog component for a website using HTML and CSS.",
+    "needsJavaScript": false
+  },
+  {
+    "slug": "testimonial-cards",
+    "title": "Testimonial Cards",
+    "folderSlug": "testimonial-cards",
+    "difficulty": "Beginner",
+    "category": "CSS",
+    "description": "Create testimonial cards for a website using HTML and CSS.",
+    "needsJavaScript": false
+  },
+  {
+    "slug": "datepicker-ui",
+    "title": "Datepicker UI",
+    "folderSlug": "date-picker-ui",
+    "difficulty": "Beginner",
+    "category": "CSS",
+    "description": "Create a simple datepicker UI using HTML and CSS.",
+    "needsJavaScript": false
+  },
+  {
+    "slug": "accessible-form-ui",
+    "title": "Accessible Form UI",
+    "folderSlug": "accessible-form-ui",
+    "difficulty": "Beginner",
+    "category": "Accessibility",
+    "description": "Create an accessible form UI using HTML and CSS.",
+    "needsJavaScript": false
+  },
+  {
+    "slug": "image-grid",
+    "title": "Image Grid Layout",
+    "folderSlug": "image-grid-layout",
+    "difficulty": "Beginner",
+    "category": "CSS",
+    "description": "Create a grid layout of images using HTML and CSS.",
+    "needsJavaScript": false
+  },
+  {
+    "slug": "tooltip-ui",
+    "title": "Tooltip UI",
+    "folderSlug": "tooltip-ui",
+    "difficulty": "Beginner",
+    "category": "CSS",
+    "description": "Create a tooltip for navigation items using only HTML and CSS.",
+    "needsJavaScript": false
+  },
+  {
+    "slug": "simple-tabs",
+    "title": "Tabs",
+    "folderSlug": "tabs",
+    "difficulty": "Beginner",
+    "category": "JavaScript",
+    "description": "Create a simple tabs component using HTML, CSS, and JavaScript.",
+    "needsJavaScript": true
+  },
+  {
+    "slug": "cookie-consent",
+    "title": "Cookie Consent",
+    "folderSlug": "cookie-consent",
+    "difficulty": "Beginner",
+    "category": "JavaScript",
+    "description": "Create a simple cookie consent banner using JavaScript.",
+    "needsJavaScript": true
+  },
+  {
+    "slug": "restricted-textarea",
+    "title": "Restricted Textarea",
+    "folderSlug": "restricted-textarea",
+    "difficulty": "Beginner",
+    "category": "JavaScript",
+    "description": "Create a textarea with a live character count and a maximum character limit.",
+    "needsJavaScript": true
+  },
+  {
+    "slug": "accordion",
+    "title": "Accordion",
+    "folderSlug": "accordion",
+    "difficulty": "Beginner",
+    "category": "JavaScript",
+    "description": "Create an accordion component using HTML, CSS, and JavaScript.",
+    "needsJavaScript": true
+  },
+  {
+    "slug": "age-calculator",
+    "title": "Age Calculator",
+    "folderSlug": "age-calculator",
+    "difficulty": "Beginner",
+    "category": "Frontend",
+    "description": "Create an age calculator using HTML, CSS, and JavaScript.",
+    "needsJavaScript": true
+  },
+  {
+    "slug": "flash-cards",
+    "title": "Flash Cards",
+    "folderSlug": "flash-cards",
+    "difficulty": "Beginner",
+    "category": "Frontend",
+    "description": "Create a flash card application using JavaScript frameworks.",
+    "needsJavaScript": true
+  },
+  {
+    "slug": "pricing-comparison-table",
+    "title": "Pricing Comparison Table",
+    "folderSlug": "pricing-comparison-table",
+    "difficulty": "Beginner",
+    "category": "HTML",
+    "description": "Build a single-page pricing comparison using a real, accessible HTML table.",
+    "needsJavaScript": false
+  },
+  {
+    "slug": "blog-post-page",
+    "title": "Blog Post Page",
+    "folderSlug": "blog-post-page",
+    "difficulty": "Beginner",
+    "category": "HTML",
+    "description": "Build a semantic HTML blog post with appropriate text elements, links, and a figure.",
+    "needsJavaScript": false
+  },
+  {
+    "slug": "contact-form",
+    "title": "Contact Form",
+    "folderSlug": "contact-form",
+    "difficulty": "Beginner",
+    "category": "HTML",
+    "description": "Build an accessible HTML contact form with labels, grouped controls, and browser validation.",
+    "needsJavaScript": false
+  },
+  {
+    "slug": "photo-showcase",
+    "title": "Photo Showcase",
+    "folderSlug": "photo-showcase",
+    "difficulty": "Beginner",
+    "category": "HTML",
+    "description": "Build an HTML photo showcase with alt text, captioned figures, and an embedded video.",
+    "needsJavaScript": false
+  },
+  {
+    "slug": "pricing-cards",
+    "title": "Pricing Cards",
+    "folderSlug": "pricing-cards",
+    "difficulty": "Beginner",
+    "category": "CSS",
+    "description": "Create a row of three pricing cards using HTML and CSS.",
+    "needsJavaScript": false
+  },
+  {
+    "slug": "quiz-app",
+    "title": "Quiz App",
+    "folderSlug": "quiz-app",
+    "difficulty": "Intermediate",
+    "category": "Frameworks",
+    "description": "Build a browser-based quiz application that can test any subject.",
+    "needsJavaScript": true
+  },
+  {
+    "slug": "weather-app",
+    "title": "Weather Web App",
+    "folderSlug": "weather-web-app",
+    "difficulty": "Intermediate",
+    "category": "API",
+    "description": "Build a weather application that fetches and displays weather for a chosen location.",
+    "needsJavaScript": true
+  },
+  {
+    "slug": "github-random-repo",
+    "title": "GitHub Random Repository",
+    "folderSlug": "github-random-repository",
+    "difficulty": "Intermediate",
+    "category": "API Integration",
+    "description": "Create a random GitHub repository finder using the GitHub API.",
+    "needsJavaScript": true
+  },
+  {
+    "slug": "custom-dropdown",
+    "title": "Custom Dropdown",
+    "folderSlug": "custom-dropdown",
+    "difficulty": "Intermediate",
+    "category": "JavaScript",
+    "description": "Create a custom dropdown using HTML, CSS, and JavaScript.",
+    "needsJavaScript": true
+  },
+  {
+    "slug": "task-tracker-js",
+    "title": "Task Tracker",
+    "folderSlug": "task-tracker",
+    "difficulty": "Intermediate",
+    "category": "JavaScript",
+    "description": "Create a task tracker with a to-do list using JavaScript.",
+    "needsJavaScript": true
+  },
+  {
+    "slug": "reddit-client",
+    "title": "Reddit Client",
+    "folderSlug": "reddit-client",
+    "difficulty": "Intermediate",
+    "category": "API Integration",
+    "description": "Create a Reddit client with customisable subreddit lanes.",
+    "needsJavaScript": true
+  },
+  {
+    "slug": "temperature-converter",
+    "title": "Temperature Converter",
+    "folderSlug": "temperature-converter",
+    "difficulty": "Intermediate",
+    "category": "JavaScript",
+    "description": "Build a temperature converter that converts between different units.",
+    "needsJavaScript": true
+  },
+  {
+    "slug": "pomodoro-timer",
+    "title": "Pomodoro Timer",
+    "folderSlug": "pomodoro-timer",
+    "difficulty": "Intermediate",
+    "category": "Frameworks",
+    "description": "Create a Pomodoro timer application for productivity.",
+    "needsJavaScript": true
+  },
+  {
+    "slug": "theme-switcher",
+    "title": "Theme Switcher with CSS Variables",
+    "folderSlug": "theme-switcher-with-css-variables",
+    "difficulty": "Intermediate",
+    "category": "CSS",
+    "description": "Build a theme switcher that changes a card using CSS variables.",
+    "needsJavaScript": false
+  },
+  {
+    "slug": "stories-feature",
+    "title": "24hr Story Feature",
+    "folderSlug": "24hr-story-feature",
+    "difficulty": "Advanced",
+    "category": "Frameworks",
+    "description": "Create a client-side social-media stories feature clone.",
+    "needsJavaScript": true
+  }
+]

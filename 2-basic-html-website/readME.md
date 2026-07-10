@@ -1,18 +1,21 @@
-# A Basic HTML website
+# Basic HTML Website
 
-<a href="https://roadmap.sh/projects/basic-html-website">Click Here for More</a>
+[View the project requirements](https://roadmap.sh/projects/basic-html-website)
 
-<p>The goal of this project is to teach us how to structure a website using HTML i.e. different sections of a website like header, footer, navigation, main content, sidebars etc. We do not style the website, only focus on the structure. Styling will be done in separate projects.</p>
+In this project, we will create a basic website using only HTML.
 
-## Instructions:
-<ul>
-    <li>EITHER: Visit <a href="https://roadmapsh.farhansegujja.com/" target="_blank">Main Web Page</a>
-    <li>OR: Be a MAN
-    <ul>
-        <li> Clone parent repo 
-        <li> Run HTML file in browser
-        <li> Make analysis to the work done (criticism and praise) {<a href="mailto:farhan.segujja@gmail.com">farhan.segujja@gmail.com</a>}
-    </ul>
-</ul>
+The goal is to help us understand how to structure a webpage using semantic elements for sections such as the header, navigation, main content, sidebars, and footer.
 
+We will focus only on the website’s structure and content. Styling will be added later in separate CSS projects.
 
+## Instructions
+
+Choose one of the following options:
+
+1. Visit the [main webpage](https://roadmapsh.farhansegujja.com/).
+
+2. Run the project locally:
+   - Clone the parent repository.
+   - Open the HTML file in a browser.
+   - Review the completed work.
+   - Send constructive feedback, including both criticism and praise, to [farhan.segujja@gmail.com](mailto:farhan.segujja@gmail.com).

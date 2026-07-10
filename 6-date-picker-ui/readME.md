@@ -1,18 +1,21 @@
 # Date Picker UI
 
-<a href="https://roadmap.sh/projects/datepicker-ui">Click Here for More</a>
+[View the project requirements](https://roadmap.sh/projects/datepicker-ui)
 
-<p>In this project, we are required to create a simple datepicker UI using only HTML and CSS. It will not be a functional datepicker, but a static UI component that we can later enhance with JavaScript.</p>
+In this project, we will create a simple date picker interface using only HTML and CSS.
 
-<p>The goal of this project is to help us practice positioning, layout, and styling techniques in CSS.</p>
+The date picker will be a static UI component rather than a fully functional application. JavaScript can be added later to support date selection and other interactive features.
 
-## Instructions:
-<ul>
-    <li>EITHER: Visit <a href="https://roadmapsh.farhansegujja.com/" target="_blank">Main Web Page</a>
-    <li>OR: Be a MAN
-    <ul>
-        <li> Clone parent repo 
-        <li> Run HTML file in browser
-        <li> Make analysis to the work done (criticism and praise) {<a href="mailto:farhan.segujja@gmail.com">farhan.segujja@gmail.com</a>}
-    </ul>
-</ul>
+The goal of this project is to practise CSS positioning, layout, spacing, and styling techniques.
+
+## Instructions
+
+Choose one of the following options:
+
+1. Visit the [main webpage](https://roadmapsh.farhansegujja.com/).
+
+2. Run the project locally:
+   - Clone the parent repository.
+   - Open the HTML file in your browser.
+   - Review the completed work.
+   - Send constructive feedback, including both criticism and praise, to [farhan.segujja@gmail.com](mailto:farhan.segujja@gmail.com).
