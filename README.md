@@ -42,7 +42,7 @@ A folder by itself is **not** treated as a completed project. Completion is coun
 
 <!-- PROJECTS:START -->
 
-![Progress](https://img.shields.io/badge/Progress-7%2F20-0ea5e9?style=flat-square) **7/20 complete (35%)** · **13 in progress** · **0 not started**
+![Progress](https://img.shields.io/badge/Progress-7%2F30-0ea5e9?style=flat-square) **7/30 complete (23%)** · **23 in progress** · **0 not started**
 
 | # | Status | Level | Focus | Official Project | Local Solution |
 |---:|:------:|---|---|---|---|
@@ -66,6 +66,16 @@ A folder by itself is **not** treated as a completed project. Completion is coun
 | 18 | 🚧 | Beginner | HTML | [Contact Form](https://roadmap.sh/projects/contact-form) | [Open folder](./18-contact-form/) |
 | 19 | 🚧 | Beginner | HTML | [Photo Showcase](https://roadmap.sh/projects/photo-showcase) | [Open folder](./19-photo-showcase/) |
 | 20 | 🚧 | Beginner | CSS | [Pricing Cards](https://roadmap.sh/projects/pricing-cards) | [Open folder](./20-pricing-cards/) |
+| 21 | 🚧 | Intermediate | Frameworks | [Quiz App](https://roadmap.sh/projects/quiz-app) | [Open folder](./21-quiz-app/) |
+| 22 | 🚧 | Intermediate | API | [Weather Web App](https://roadmap.sh/projects/weather-app) | [Open folder](./22-weather-web-app/) |
+| 23 | 🚧 | Intermediate | API Integration | [GitHub Random Repository](https://roadmap.sh/projects/github-random-repo) | [Open folder](./23-github-random-repository/) |
+| 24 | 🚧 | Intermediate | JavaScript | [Custom Dropdown](https://roadmap.sh/projects/custom-dropdown) | [Open folder](./24-custom-dropdown/) |
+| 25 | 🚧 | Intermediate | JavaScript | [Task Tracker](https://roadmap.sh/projects/task-tracker-js) | [Open folder](./25-task-tracker/) |
+| 26 | 🚧 | Intermediate | API Integration | [Reddit Client](https://roadmap.sh/projects/reddit-client) | [Open folder](./26-reddit-client/) |
+| 27 | 🚧 | Intermediate | JavaScript | [Temperature Converter](https://roadmap.sh/projects/temperature-converter) | [Open folder](./27-temperature-converter/) |
+| 28 | 🚧 | Intermediate | Frameworks | [Pomodoro Timer](https://roadmap.sh/projects/pomodoro-timer) | [Open folder](./28-pomodoro-timer/) |
+| 29 | 🚧 | Intermediate | CSS | [Theme Switcher with CSS Variables](https://roadmap.sh/projects/theme-switcher) | [Open folder](./29-theme-switcher-with-css-variables/) |
+| 30 | 🚧 | Advanced | Frameworks | [24hr Story Feature](https://roadmap.sh/projects/stories-feature) | [Open folder](./30-24hr-story-feature/) |
 
 _Legend: ✅ complete (`.project-complete` present) · 🚧 scaffolded/in progress · ⬜ not added_
 

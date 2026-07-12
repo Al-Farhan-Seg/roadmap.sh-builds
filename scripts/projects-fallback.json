@@ -178,5 +178,95 @@
     "category": "CSS",
     "description": "Create a row of three pricing cards using HTML and CSS.",
     "needsJavaScript": false
+  },
+  {
+    "slug": "quiz-app",
+    "title": "Quiz App",
+    "folderSlug": "quiz-app",
+    "difficulty": "Intermediate",
+    "category": "Frameworks",
+    "description": "Build a browser-based quiz application that can test any subject.",
+    "needsJavaScript": true
+  },
+  {
+    "slug": "weather-app",
+    "title": "Weather Web App",
+    "folderSlug": "weather-web-app",
+    "difficulty": "Intermediate",
+    "category": "API",
+    "description": "Build a weather application that fetches and displays weather for a chosen location.",
+    "needsJavaScript": true
+  },
+  {
+    "slug": "github-random-repo",
+    "title": "GitHub Random Repository",
+    "folderSlug": "github-random-repository",
+    "difficulty": "Intermediate",
+    "category": "API Integration",
+    "description": "Create a random GitHub repository finder using the GitHub API.",
+    "needsJavaScript": true
+  },
+  {
+    "slug": "custom-dropdown",
+    "title": "Custom Dropdown",
+    "folderSlug": "custom-dropdown",
+    "difficulty": "Intermediate",
+    "category": "JavaScript",
+    "description": "Create a custom dropdown using HTML, CSS, and JavaScript.",
+    "needsJavaScript": true
+  },
+  {
+    "slug": "task-tracker-js",
+    "title": "Task Tracker",
+    "folderSlug": "task-tracker",
+    "difficulty": "Intermediate",
+    "category": "JavaScript",
+    "description": "Create a task tracker with a to-do list using JavaScript.",
+    "needsJavaScript": true
+  },
+  {
+    "slug": "reddit-client",
+    "title": "Reddit Client",
+    "folderSlug": "reddit-client",
+    "difficulty": "Intermediate",
+    "category": "API Integration",
+    "description": "Create a Reddit client with customisable subreddit lanes.",
+    "needsJavaScript": true
+  },
+  {
+    "slug": "temperature-converter",
+    "title": "Temperature Converter",
+    "folderSlug": "temperature-converter",
+    "difficulty": "Intermediate",
+    "category": "JavaScript",
+    "description": "Build a temperature converter that converts between different units.",
+    "needsJavaScript": true
+  },
+  {
+    "slug": "pomodoro-timer",
+    "title": "Pomodoro Timer",
+    "folderSlug": "pomodoro-timer",
+    "difficulty": "Intermediate",
+    "category": "Frameworks",
+    "description": "Create a Pomodoro timer application for productivity.",
+    "needsJavaScript": true
+  },
+  {
+    "slug": "theme-switcher",
+    "title": "Theme Switcher with CSS Variables",
+    "folderSlug": "theme-switcher-with-css-variables",
+    "difficulty": "Intermediate",
+    "category": "CSS",
+    "description": "Build a theme switcher that changes a card using CSS variables.",
+    "needsJavaScript": false
+  },
+  {
+    "slug": "stories-feature",
+    "title": "24hr Story Feature",
+    "folderSlug": "24hr-story-feature",
+    "difficulty": "Advanced",
+    "category": "Frameworks",
+    "description": "Create a client-side social-media stories feature clone.",
+    "needsJavaScript": true
   }
 ]
