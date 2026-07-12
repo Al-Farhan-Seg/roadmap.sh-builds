@@ -7,7 +7,7 @@ A growing collection of practical frontend projects based on the official
 
 [![Roadmap](https://img.shields.io/badge/Learning_Path-roadmap.sh-111827?style=for-the-badge)](https://roadmap.sh/frontend/projects)
 [![Live Site](https://img.shields.io/badge/Live_Site-View_Projects-0ea5e9?style=for-the-badge)](https://roadmapsh.farhansegujja.com/)
-[![Project Index](https://img.shields.io/badge/Project_Index-Automatically_Updated-22c55e?style=for-the-badge)](#project-tracker)
+[![Project Index](https://img.shields.io/badge/Project_Index-Locally_Generated-22c55e?style=for-the-badge)](#project-tracker)
 
 </div>
 
@@ -23,7 +23,7 @@ This repository documents our progress through the roadmap.sh frontend project c
 └── .project-complete   # Added only when the project is genuinely finished
 ```
 
-Projects that require JavaScript also include `script.js`.
+Vanilla JavaScript projects include `script.js` where interactive behaviour is required. Framework-based projects may later use their framework's recommended structure instead.
 
 Through these projects, we will practise:
 
@@ -36,7 +36,7 @@ Through these projects, we will practise:
 
 ## Project Tracker
 
-This section is generated automatically by `scripts/update-readme.mjs`.
+This section is generated locally by `scripts/update-readme.mjs` using the trusted catalogue in `scripts/projects-fallback.json`.
 
 A folder by itself is **not** treated as a completed project. Completion is counted only when the project folder contains a `.project-complete` marker file.
 
@@ -96,9 +96,6 @@ This prevents generated starter files from being mistaken for finished projects.
 The repository includes the following automation files:
 
 ```text
-.github/
-└── workflows/
-    └── update-readme.yml
 scripts/
 ├── project-status.mjs
 ├── projects-fallback.json
@@ -114,15 +111,15 @@ Creates missing numbered project folders and their starter files without overwri
 node scripts/scaffold-projects.mjs
 ```
 
-To create only projects 8 through the final project:
+To scaffold projects starting from a specific project number:
 
 ```bash
 node scripts/scaffold-projects.mjs --from=8
 ```
 
-To preview the operation without creating anything:
+To preview the operation without creating files:
 
-```bash
+```shell
 node scripts/scaffold-projects.mjs --from=8 --dry-run
 ```
 
@@ -130,34 +127,34 @@ node scripts/scaffold-projects.mjs --from=8 --dry-run
 
 Adds or removes the `.project-complete` marker.
 
-```bash
-# Mark projects 1 through 7 as complete
+```shell
+# Mark project 8 as complete
+node scripts/project-status.mjs complete 8
+
+# Mark several projects complete
 node scripts/project-status.mjs complete 1-7
 
 # Return project 8 to in-progress status
 node scripts/project-status.mjs in-progress 8
 
-# Inspect statuses
+# Inspect all project statuses
 node scripts/project-status.mjs status 1-30
 ```
 
+### `projects-fallback.json`
+
+Stores the trusted local roadmap.sh project catalogue used by the repository scripts.
+
+The catalogue is updated manually after reviewing changes to the official roadmap.sh frontend project list. This prevents incomplete external responses from unexpectedly removing projects from the tracker.
 ### `update-readme.mjs`
 
-Reads the roadmap project catalogue, scans local folders, calculates progress, and regenerates the project tracker.
+Reads the trusted local project catalogue, scans numbered project folders, calculates progress, and regenerates only the project tracker between the README markers.
 
 ```bash
 node scripts/update-readme.mjs
 ```
 
-Running this locally is optional after the initial setup because the GitHub Actions workflow runs it after pushes to `main`. Local execution is still useful for previewing the generated README before pushing.
-
-### `update-readme.yml`
-
-Runs the README updater:
-
-- after relevant pushes to `main`;
-- once per week to discover roadmap changes;
-- manually from the repository's **Actions** tab.
+Run this script locally after changing a project's status. Review the generated changes with `git diff` before committing and pushing.
 
 ## Running a Project Locally
 
