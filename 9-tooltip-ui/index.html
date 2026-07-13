@@ -5,12 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Create a tooltip for navigation items using only HTML and CSS.">
     <title>Tooltip UI</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="assets/tooltip-favicon.png" type="image/x-icon">
 </head>
 <body>
-    <main>
-        <h1>Tooltip UI</h1>
-        <p>Project scaffold ready. Replace this content with the finished interface.</p>
+    <h1>Tooltip UI</h1>
+    <h2 id="error">View this project on Tablet or PC</h2>
+    <h2 id="instruction">Hover over the items below</h2>
+    <main id="container">
+        <div class="tooltip" aria-describedby="home-tip">
+            Home
+            <span class="tooltip-text" id="home-tip">This leads to the homepage</span>
+        </div>
+        
+        <i class="bi bi-dot"></i>
+
+        <div class="tooltip" aria-describedby="projects-tip">
+            Projects
+            <span class="tooltip-text" id="projects-tip">Here is everything I have built</span>
+        </div>
+
+        <i class="bi bi-dot"></i>
+
+        <div class="tooltip" aria-describedby="blog-tip">
+            Blog
+            <span class="tooltip-text" id="blog-tip">Here is every story about my life</span>
+        </div>
     </main>
+
+    <a href="https://roadmap.sh/projects/tooltip-ui" class="ref-cta" target="_blank">Go to Project of Reference</a>
 </body>
 </html>

@@ -1,19 +1,148 @@
 /* Tooltip UI */
+@import url('https://fonts.cdnfonts.com/css/varuna');
+
+
+:root {
+    --border-rad: 15px;
+
+    --font-1: 'VARUNA', sans-serif;
+}
 
 *,
 *::before,
 *::after {
     box-sizing: border-box;
-}
-
-html {
-    color-scheme: light dark;
+    padding: 0;
+    margin: 0;
 }
 
 body {
     min-height: 100vh;
-    margin: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background-color: wheat;
+}
+h1 {
+    text-align: center;
+    margin: 10px auto;
+    font-family: cursive;
+    border: 2px solid;
+    border-radius: var(--border-rad);
+    width: fit-content;
+    padding: 10px;
+
+}
+#container,
+#instruction {
+    display: none;
+}
+#error {
+    display: block;
+    font-family: cursive;
+    font-style: italic;
+    text-align: center;
+    padding: 10px;
+    color: red;
+}
+.ref-cta {
+    display: none;
 }
 
-/* Add project styles below. */
+@media only screen and (min-width: 768px) {
+    #error {
+        display: none;
+    }
+    #instruction {
+        display: block;
+        text-align: center;
+        font-family: cursive;
+    }
+    #container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    font-size: 1.4rem;
+    top: 50%;
+    margin: 20px auto;
+    /*border: 2px solid;
+    border-radius: var(--border-rad);*/
+    }
+
+    .tooltip {
+        position: relative;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: var(--border-rad);
+        background-color: black;
+        color: wheat;
+    }
+    .tooltip-text {
+        position: absolute;
+        top: calc(100% + 30px);
+        left: 50%;
+        transform: translateX(-50%) translateY(-5px);
+
+        width: max-content;
+        max-width: 220px;
+        padding: 7px 10px;
+        border-radius: 6px;
+
+        background: linear-gradient(
+            45deg,
+            rgb(36, 24, 1),
+            rgb(23, 11, 11)
+        );
+        color: #fff;
+        font-size: 13px;
+        text-align: center;
+
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        font-family: var(--font-1);
+
+        transition:
+            opacity 0.2s,
+            transform 0.2s;
+
+        z-index: 1000;
+        font-size: 1.5rem;
+    }
+    .tooltip-text::before {
+        position: absolute;
+        content: "";;
+        left: 50%;
+        bottom: 100%;
+
+        border: 6px solid transparent;
+        border-bottom-color: #222;
+    }
+
+    .tooltip:hover .tooltip-text,
+    .tooltip:focus-visible .tooltip-text {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+    }
+
+    .ref-cta {
+    display: block;
+    text-decoration: none;
+    color: wheat;
+    background: linear-gradient(
+        45deg,
+        rgb(36, 24, 1),
+        rgb(23, 11, 11)
+    );
+    border-radius: var(--border-rad); text-align: center;
+    width: 230px;
+    padding: 15px;
+    margin: 200px auto;
+
+    box-shadow: 5px 5px 10px hsl(0, 0%, 12%),
+                5px 5px 25px hsl(0, 0%, 12%);
+    }
+    .ref-cta:active {
+        transform: translate(5px, 5px);
+    }
+    
+}
