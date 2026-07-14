@@ -1,26 +1,26 @@
 @import url('https://fonts.cdnfonts.com/css/friendly-robot');
-@import url('https://fonts.cdnfonts.com/css/redgat');
+@import url('https://fonts.cdnfonts.com/css/br-segma');
 @import url('https://fonts.cdnfonts.com/css/iowanoldst-bt');
 
 
 :root {
-    --color-1-soft: ;
+    --color-1-soft: #F0A198;
     --color-1: #D0311E;
     --color-1-bold: #67170F;
 
-    --color-2-soft: ;
-    --color-2: ;
-    --color-2-bold: ;
+    --color-2-soft: #BACFCA;
+    --color-2: #659287;
+    --color-2-bold: #304540;
 
-    --color-3-soft: ;
-    --color-3: ;
-    --color-3-bold: ;
+    --color-3-soft: #CABACF;
+    --color-3: #876592;
+    --color-3-bold: #403045;
 
     --font-1: 'FRIENDLY ROBOT', sans-serif;
     --font-1-hollow: 'FRIENDLY ROBOT-Hollow', sans-serif;
     --font-1-light: 'FRIENDLY ROBOT-Light', sans-serif;
 
-    --font-2: 'Redgat', sans-serif;
+    --font-2: 'BR Segma', sans-serif;
     --font-3: 'IowanOldSt BT', sans-serif;
 
     --border-rad: 15px;
@@ -34,9 +34,117 @@
 }
 body {
     min-height: 100vh;
+    background-color: var(--color-2-soft);
 }
 h1 {
     font-family: var(--font-1-hollow);
+    background-color: var(--color-2);
+    padding: 10px;
+    width: max-content;
+    margin: 5px auto;
+    color: var(--color-3-bold);
+    text-align: center;
+    border-radius: var(--border-rad);
+}
+.container {
+    border: 2px solid var(--color-3-bold);
+    padding: 5px;
+    margin: 10px auto;
+    background-color: var(--color-3);
+    border-radius: var(--border-rad);
+    width: 95vw;
+}
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    margin: 3px;
+    border: 2px solid var(--color-2-bold);
+    padding: 3px;
+    border-radius: var(--border-rad);
+    background-color: var(--color-2-soft);
+}
+.tabs {
+    font-size: 1.2rem;
+    font-family: var(--font-1-light);
+    padding: 5px;
+    border-radius: 10px;
+    color: var(--color-3-bold);
+    cursor: pointer;
+    
+}
+.active-t {
+    background-color: var(--color-3-bold);
+    color: wheat;
+}
+#content-box {
+    border-radius: var(--border-rad);
+    padding: 5px;
+    margin: 10px 0 10px 0;
+    text-align: center;
+}
+#content-box p {
+    margin: 9px 0;
+    font-size: 1.3rem;
+    font-family: var(--font-2);
+    font-weight: 400;
+}
+.title {
+    font-style: italic;
+    font-size: 1.5rem;
+}
+.active-c {
+    display: block;
+    border: 2px solid;
+    padding: 5px;
+    background-color: var(--color-3-bold);
+    border-radius: var(--border-rad);
+    color: var(--color-2-soft);
+}
+.inactive-c {
+    display: none;
 }
 
+.ref-cta {
+    display: block;
+    text-decoration: none;
+    color: black;
+    background: linear-gradient(
+        45deg,
+        var(--color-2-bold),
+        var(--color-2)
+    );
+    border-radius: var(--border-rad); 
+    text-align: center;
+    width: 230px;
+    padding: 15px;
+    margin: 50px auto;
+
+    box-shadow: 5px 5px 10px hsl(0, 0%, 12%),
+                5px 5px 25px hsl(0, 0%, 12%);
+}
+.ref-cta:active {
+    transform: translate(5px, 5px);
+}
+    
+
+@media only screen and (min-width: 768px){
+    .container {
+        min-width: 0;
+        width: 55vw;
+    }
+    #content-box p {
+        padding: 12px 0;
+    }
+}
+@media only screen and (min-width: 1050px){
+    h1 {
+        padding: 20px;  
+    }
+    .container {
+        width: 40vw;
+    }
+}
+@media only screen and (min-width: 1450px){
+
+}
 

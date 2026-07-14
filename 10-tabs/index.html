@@ -6,25 +6,42 @@
     <meta name="description" content="Create a simple tabs component using HTML, CSS, and JavaScript.">
     <title>Tabs</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
     <h1>Simple Tabs</h1>
     <main class="container">
         <nav id="navbar">
-            <div class="tabs" id="tab1">First Tab</div>
-            <div class="tabs" id="tab2">Second Tab</div>
-            <div class="tabs" id="tab3">Third Tab</div>
-            <div class="tabs" id="tab4">Fourth Tab</div>
+            <span class="tabs active-t" id="bio-tab">BIO</span>
+            <span class="tabs inactive-t" id="chem-tab">CHEM</span>
+            <span class="tabs inactive-t" id="phy-tab">PHY</span>
+            <span class="tabs inactive-t" id="math-tab">MATH</span>
         </nav>
         
         <div id="content-box">
-            <div id="content1"></div>
-            <div id="content2"></div>
-            <div id="content3"></div>
-            <div id="content4"></div>
+            <div class="bio-content active-c">
+                <h3 class="title">Biology</h3>
+                <p class="defn">Biology is the branch of science that studies living organisms and their vital processes, encompassing their structure, function, growth, origin, evolution, distribution, and taxonomy.</p>
+                <p class="mental">It answers questions such as; How do living things survive? How does DNA pass on traits? How do ecosystems balance?</p>
+            </div>
+            <div class="chem-content inactive-c">
+                <h3 class="title">Chemistry</h3>
+                <p class="defn">Chemistry is the branch of science that deals with the identification of the substances of which matter is composed; the investigation of their properties and the ways in which they interact, combine, and change; and the use of these processes to form new substances.</p>
+                <p class="mental">It answers questions such as; How do elements combine? What happens when substances react?</p>
+            </div>
+            <div class="phy-content inactive-c">
+                <h3 class="title">Physics</h3>
+                <p class="defn">Physics is the branch of science concerned with the nature and properties of matter and energy. The subject matter of physics includes mechanics, heat, light and other radiation, sound, electricity, magnetism, and the structure of atoms.</p>
+                <p class="mental">It answers questions such as; Why do objects fall? How does electricity flow? How does light travel?</p>
+            </div>
+            <div class="math-content inactive-c">
+                <h3 class="title">Mathematics</h3>
+                <p class="defn">Mathematics is the abstract science of number, quantity, and space, studied either as abstract concepts (pure mathematics) or as applied to other disciplines such as physics and engineering (applied mathematics).</p>
+                <p class="mental">It answers questions such as; How do we measure this? What is the pattern? How can we model this event?</p>
+            </div>
         </div>
     </main>
-    
+    <a href="https://roadmap.sh/projects/simple-tabs" class="ref-cta" target="_blank">Go to Project of Reference</a>
+
+    <script src="script.js"></script>
 </body>
 </html>
