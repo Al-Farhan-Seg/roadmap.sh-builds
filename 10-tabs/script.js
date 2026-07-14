@@ -9,24 +9,37 @@ const tabContentPairs = {
 tabButtons.forEach((button) => {
     button.addEventListener("click", (event) => {
         const clickedTabId = event.target.id
-        const relativeContentClass = tabContentPairs[clickedTabId]
-        const contentToDeactivate = []
+        const relativeContentId = tabContentPairs[clickedTabId]
+        const contentIdsToDeactivate = []
+        const tabIdsToDeactivate = []
 
         Object.values(tabContentPairs).forEach((value) => {
-            if(value !== relativeContentClass){
-                contentToDeactivate.push(value)
+            if(value !== relativeContentId){
+                contentIdsToDeactivate.push(value)
             }
         })
-        /*for(let i = 0; i < contentToDeactivate.length; i++){
-
-        }*/
-        contentToDeactivate.forEach((value) => {
-            const testElement = document.getElementsByClassName(value)
-            console.log(testElement.classList.value)
+        contentIdsToDeactivate.forEach((value) => {
+            const contentToDeactivate = document.getElementById(value)
+            contentToDeactivate.classList.remove("active-c")
+            contentToDeactivate.classList.add("inactive-c")
         })
+        const contentToActivate = document.getElementById(relativeContentId)
+        contentToActivate.classList.remove("inactive-c")
+        contentToActivate.classList.add("active-c")
 
-        console.log(`The content of ${clickedTabId} is ${relativeContentClass}`)
-        console.log(`We are going to deactivate ${contentToDeactivate}`);
-        
+
+        Object.keys(tabContentPairs).forEach((value) => {
+            if(value !== clickedTabId){
+                tabIdsToDeactivate.push(value)
+            }
+        })
+        tabIdsToDeactivate.forEach((value) => {
+            const tabToDeactivate = document.getElementById(value)
+            tabToDeactivate.classList.remove("active-t")
+            tabToDeactivate.classList.add("inactive-t")
+        })
+        const tabToActivate = document.getElementById(clickedTabId)
+        tabToActivate.classList.remove("inactive-t")
+        tabToActivate.classList.add("active-t")    
     })
 })

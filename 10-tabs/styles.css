@@ -45,6 +45,12 @@ h1 {
     color: var(--color-3-bold);
     text-align: center;
     border-radius: var(--border-rad);
+    font-weight: bolder;
+}
+h2 {
+    color: var(--color-3-bold);
+    text-align: center;
+    font-family: var(--font-3);
 }
 .container {
     border: 2px solid var(--color-3-bold);
@@ -75,7 +81,12 @@ h1 {
 .active-t {
     background-color: var(--color-3-bold);
     color: wheat;
+    display: block;
 }
+.inactive-t {
+    display: block;
+}
+
 #content-box {
     border-radius: var(--border-rad);
     padding: 5px;
@@ -106,6 +117,7 @@ h1 {
 
 .ref-cta {
     display: block;
+    font-family: var(--font-3);
     text-decoration: none;
     color: black;
     background: linear-gradient(
