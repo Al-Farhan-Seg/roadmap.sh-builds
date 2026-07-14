@@ -1,23 +1,31 @@
 # Cookie Consent
 
-[View the official project requirements](https://roadmap.sh/projects/cookie-consent)
+[View the project requirements](https://roadmap.sh/projects/cookie-consent)
 
-In this project, we will create a simple cookie consent banner using JavaScript..
+In this project, we create a simple and interactive cookie consent banner using HTML, CSS, and JavaScript.
 
-## Status
+The banner will include:
 
-🚧 In progress
+* A short message explaining the use of cookies
+* A button for accepting the cookie notice
+* A close or dismiss control
+* A clear and accessible layout
+* Persistent consent using browser storage
+* Logic that prevents the banner from appearing again after consent is given
 
-This folder has been scaffolded but is **not counted as complete** until the project is finished and a `.project-complete` marker is added.
+JavaScript is used to handle user interaction, store the consent decision in `localStorage`, and determine whether the banner should be displayed when the page loads.
 
-## Project Information
+The goal of this project is to practise DOM manipulation, event handling, browser storage, and basic state persistence in a practical user-interface component.
 
-- **Project number:** 11
-- **Difficulty:** Beginner
-- **Focus:** JavaScript
+## Instructions
 
-## Files
+Choose one of the following options:
 
-- `index.html` — page structure
-- `styles.css` — project styling
-- `script.js` — project behaviour
+1. Visit the [main webpage](https://roadmapsh.farhansegujja.com/).
+
+2. Run the project locally:
+
+   * Clone the parent repository.
+   * Open the `index.html` file in your browser.
+   * Interact with the cookie consent banner and review the completed work.
+   * Send constructive feedback, including both criticism and praise, to [farhan.segujja@gmail.com](mailto:farhan.segujja@gmail.com).

@@ -1,23 +1,31 @@
 # Accordion
 
-[View the official project requirements](https://roadmap.sh/projects/accordion)
+[View the project requirements](https://roadmap.sh/projects/accordion)
 
-In this project, we will create an accordion component using HTML, CSS, and JavaScript..
+In this project, we create an interactive accordion component using HTML, CSS, and JavaScript.
 
-## Status
+The component includes:
 
-🚧 In progress
+* Multiple accordion sections
+* Clickable section headers
+* Expandable and collapsible content panels
+* Clear visual indicators for open and closed sections
+* Smooth transitions between states
+* A responsive and accessible layout
 
-This folder has been scaffolded but is **not counted as complete** until the project is finished and a `.project-complete` marker is added.
+JavaScript handles user interactions, identifies the selected accordion item, and controls whether its content panel is displayed or hidden.
 
-## Project Information
+The goal of this project is to practise DOM manipulation, click events, conditional logic, CSS state styling, and the development of reusable interactive interface components.
 
-- **Project number:** 13
-- **Difficulty:** Beginner
-- **Focus:** JavaScript
+## Instructions
 
-## Files
+Choose one of the following options:
 
-- `index.html` — page structure
-- `styles.css` — project styling
-- `script.js` — project behaviour
+1. Visit the [main webpage](https://roadmapsh.farhansegujja.com/).
+
+2. Run the project locally:
+
+   * Clone the parent repository.
+   * Open the `index.html` file in your browser.
+   * Interact with the accordion sections and review the completed work.
+   * Send constructive feedback, including both criticism and praise, to [farhan.segujja@gmail.com](mailto:farhan.segujja@gmail.com).

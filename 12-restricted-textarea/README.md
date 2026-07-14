@@ -1,23 +1,32 @@
 # Restricted Textarea
 
-[View the official project requirements](https://roadmap.sh/projects/restricted-textarea)
+[View the project requirements](https://roadmap.sh/projects/restricted-textarea)
 
-In this project, we will create a textarea with a live character count and a maximum character limit..
+In this project, we create a textarea with a live character counter and a maximum character limit using HTML, CSS, and JavaScript.
 
-## Status
+The component includes:
 
-🚧 In progress
+* A textarea for entering text
+* A live character counter
+* A clearly defined maximum character limit
+* Visual feedback as the user approaches the limit
+* Prevention of input beyond the allowed number of characters
+* Accessible labels and status information
 
-This folder has been scaffolded but is **not counted as complete** until the project is finished and a `.project-complete` marker is added.
+JavaScript is used to monitor user input, calculate the current number of characters, update the counter in real time, and enforce the maximum character limit.
 
-## Project Information
+The goal of this project is to practise DOM manipulation, input events, string length validation, dynamic content updates, and user-friendly form feedback.
 
-- **Project number:** 12
-- **Difficulty:** Beginner
-- **Focus:** JavaScript
+## Instructions
 
-## Files
+Choose one of the following options:
 
-- `index.html` — page structure
-- `styles.css` — project styling
-- `script.js` — project behaviour
+1. Visit the [main webpage](https://roadmapsh.farhansegujja.com/).
+
+2. Run the project locally:
+
+   * Clone the parent repository.
+   * Open the `index.html` file in your browser.
+   * Enter text into the textarea and observe the live character counter.
+   * Review the completed work.
+   * Send constructive feedback, including both criticism and praise, to [farhan.segujja@gmail.com](mailto:farhan.segujja@gmail.com).

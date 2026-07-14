@@ -1,22 +1,34 @@
 # Pricing Cards
 
-[View the official project requirements](https://roadmap.sh/projects/pricing-cards)
+[View the project requirements](https://roadmap.sh/projects/pricing-cards)
 
-In this project, we will create a row of three pricing cards using HTML and CSS..
+In this project, we create a row of three pricing cards using HTML and CSS.
 
-## Status
+The page includes:
 
-🚧 In progress
+* Three distinct pricing plans
+* Plan names and pricing details
+* Feature lists for each option
+* Clearly styled call-to-action buttons
+* A highlighted or recommended plan
+* Consistent spacing and visual hierarchy
+* Responsive behaviour across different screen sizes
+* Accessible and readable content
 
-This folder has been scaffolded but is **not counted as complete** until the project is finished and a `.project-complete` marker is added.
+The cards use reusable HTML structure and CSS styling to present the pricing options clearly and help users compare the available plans.
 
-## Project Information
+The goal of this project is to practise card-based layouts, Flexbox or CSS Grid, spacing, typography, responsive design, reusable styling, and visual emphasis.
 
-- **Project number:** 20
-- **Difficulty:** Beginner
-- **Focus:** CSS
+## Instructions
 
-## Files
+Choose one of the following options:
 
-- `index.html` — page structure
-- `styles.css` — project styling
+1. Visit the [main webpage](https://roadmapsh.farhansegujja.com/).
+
+2. Run the project locally:
+
+   * Clone the parent repository.
+   * Open the `index.html` file in your browser.
+   * Compare the three pricing plans and their features.
+   * Review the completed work.
+   * Send constructive feedback, including both criticism and praise, to [farhan.segujja@gmail.com](mailto:farhan.segujja@gmail.com).

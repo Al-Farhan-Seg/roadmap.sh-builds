@@ -1,22 +1,35 @@
 # Contact Form
 
-[View the official project requirements](https://roadmap.sh/projects/contact-form)
+[View the project requirements](https://roadmap.sh/projects/contact-form)
 
-In this project, we will build an accessible HTML contact form with labels, grouped controls, and browser validation..
+In this project, we build an accessible contact form using semantic HTML and CSS.
 
-## Status
+The form includes:
 
-🚧 In progress
+* Clearly associated labels for every input
+* Fields for personal and contact information
+* Grouped form controls using semantic elements
+* A message textarea
+* Required-field indicators
+* Native browser validation
+* Clear focus and error states
+* A responsive and accessible layout
+* A submit button for sending the form
 
-This folder has been scaffolded but is **not counted as complete** until the project is finished and a `.project-complete` marker is added.
+The form uses appropriate input types, labels, fieldsets, legends, and validation attributes to make it easier to complete with a keyboard, browser tools, and assistive technologies.
 
-## Project Information
+The goal of this project is to practise semantic form structure, accessibility, browser validation, input types, grouped controls, and user-friendly form design.
 
-- **Project number:** 18
-- **Difficulty:** Beginner
-- **Focus:** HTML
+## Instructions
 
-## Files
+Choose one of the following options:
 
-- `index.html` — page structure
-- `styles.css` — project styling
+1. Visit the [main webpage](https://roadmapsh.farhansegujja.com/).
+
+2. Run the project locally:
+
+   * Clone the parent repository.
+   * Open the `index.html` file in your browser.
+   * Complete the form and test the browser validation.
+   * Review the completed work.
+   * Send constructive feedback, including both criticism and praise, to [farhan.segujja@gmail.com](mailto:farhan.segujja@gmail.com).
