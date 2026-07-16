@@ -1,23 +1,34 @@
 # Temperature Converter
 
-[View the official project requirements](https://roadmap.sh/projects/temperature-converter)
+[View the project requirements](https://roadmap.sh/projects/temperature-converter)
 
-In this project, we will build a temperature converter that converts between different units..
+In this project, we build a temperature converter using HTML, CSS, and JavaScript.
 
-## Status
+The application includes:
 
-🚧 In progress
+* An input field for entering a temperature value
+* Select controls for choosing the source and target units
+* Support for Celsius, Fahrenheit, and Kelvin
+* A button for performing the conversion
+* Validation for missing or invalid input
+* A clear display of the converted result
+* A responsive and accessible interface
 
-This folder has been scaffolded but is **not counted as complete** until the project is finished and a `.project-complete` marker is added.
+JavaScript reads the entered value, applies the correct conversion formula, and dynamically displays the result based on the selected temperature units.
 
-## Project Information
+The goal of this project is to practise form handling, mathematical operations, conditional logic, input validation, event handling, and dynamic DOM updates.
 
-- **Project number:** 27
-- **Difficulty:** Intermediate
-- **Focus:** JavaScript
+## Instructions
 
-## Files
+Choose one of the following options:
 
-- `index.html` — page structure
-- `styles.css` — project styling
-- `script.js` — project behaviour
+1. Visit the [main webpage](https://roadmapsh.farhansegujja.com/).
+
+2. Run the project locally:
+
+   * Clone the parent repository.
+   * Open the `index.html` file in your browser.
+   * Enter a temperature value.
+   * Select the source and target units.
+   * Convert the value and review the result.
+   * Send constructive feedback, including both criticism and praise, to [farhan.segujja@gmail.com](mailto:farhan.segujja@gmail.com).

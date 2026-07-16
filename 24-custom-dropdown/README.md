@@ -1,23 +1,35 @@
 # Custom Dropdown
 
-[View the official project requirements](https://roadmap.sh/projects/custom-dropdown)
+[View the project requirements](https://roadmap.sh/projects/custom-dropdown)
 
-In this project, we will create a custom dropdown using HTML, CSS, and JavaScript..
+In this project, we create a custom dropdown component using HTML, CSS, and JavaScript.
 
-## Status
+The component includes:
 
-🚧 In progress
+* A clickable dropdown trigger
+* A list of selectable options
+* Visual feedback for the selected option
+* Open and closed dropdown states
+* Support for closing the dropdown when clicking outside it
+* Keyboard-friendly interaction
+* Clear hover and focus states
+* A responsive and accessible interface
 
-This folder has been scaffolded but is **not counted as complete** until the project is finished and a `.project-complete` marker is added.
+JavaScript manages the dropdown state, handles option selection, updates the displayed value, and controls how the component responds to user interaction.
 
-## Project Information
+The goal of this project is to practise DOM manipulation, event handling, state management, conditional styling, keyboard accessibility, and the development of reusable interactive interface components.
 
-- **Project number:** 24
-- **Difficulty:** Intermediate
-- **Focus:** JavaScript
+## Instructions
 
-## Files
+Choose one of the following options:
 
-- `index.html` — page structure
-- `styles.css` — project styling
-- `script.js` — project behaviour
+1. Visit the [main webpage](https://roadmapsh.farhansegujja.com/).
+
+2. Run the project locally:
+
+   * Clone the parent repository.
+   * Open the `index.html` file in your browser.
+   * Open the dropdown and select different options.
+   * Test the component using both a mouse and keyboard.
+   * Review the completed work.
+   * Send constructive feedback, including both criticism and praise, to [farhan.segujja@gmail.com](mailto:farhan.segujja@gmail.com).
