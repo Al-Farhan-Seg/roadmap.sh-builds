@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accordion</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
     <link rel="icon" type="image/png" href="../top_assets/favicon-F.png">
 
     <!-- Primary Meta Tags -->
@@ -29,9 +29,111 @@
     <meta name="twitter:image:alt" content="Al-Farhan favicon">
 </head>
 <body>
-    <main>
-        <h1>Accordion</h1>
-        <p>Project scaffold ready. Replace this content with the finished interface.</p>
+    <h1 id="proj-name">Accordion</h1>
+    <p id="intro">This project demonstrates the design of an accordion using HTML, CSS, and vanilla JavaScript.</p>      
+
+    <main id="container">
+        <h2 id="faq">Frequently Asked Questions</h2>
+        <p id="faq-intro">Here are some of the frequently asked questions</p>
+
+        <section id="accordions">
+            <section class="accordion">
+                <div class="qn-ans-container">
+                    <div class="qn-container" id="qc-1">
+                        <p class="qn">What is software engineering?</p>
+                        <i class="bi bi-caret-right" id="arrow-icon-1"></i>
+                    </div>
+                    <div class="ans-container" id="ac-1">
+                        <p class="ans">
+                            Software engineering is the systematic process of designing,
+                            developing, testing, deploying, and maintaining software systems.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="accordion">
+                <div class="qn-ans-container">
+                    <div class="qn-container" id="qc-2">
+                        <p class="qn">What does a software engineer do?</p>
+                        <i class="bi bi-caret-right" id="arrow-icon-2"></i>
+                    </div>
+                    <div class="ans-container" id="ac-2">
+                        <p class="ans">
+                            A software engineer analyzes problems, designs solutions, writes
+                            code, tests applications, fixes bugs, and maintains software.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="accordion">
+                <div class="qn-ans-container">
+                    <div class="qn-container" id="qc-3">
+                        <p class="qn">Which programming languages should a beginner learn?</p>
+                        <i class="bi bi-caret-right" id="arrow-icon-3"></i>
+                    </div>
+                    <div class="ans-container" id="ac-3">
+                        <p class="ans">
+                            Beginners can start with languages such as JavaScript, Python, or
+                            Java because they are widely used and have large learning communities.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="accordion">
+                <div class="qn-ans-container">
+                    <div class="qn-container" id="qc-4">
+                        <p class="qn">What is the software development life cycle?</p>
+                        <i class="bi bi-caret-right" id="arrow-icon-4"></i>
+                    </div>
+                    <div class="ans-container" id="ac-4">
+                        <p class="ans">
+                            The software development life cycle is a structured process that
+                            includes planning, analysis, design, development, testing,
+                            deployment, and maintenance.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="accordion">
+                <div class="qn-ans-container">
+                    <div class="qn-container" id="qc-5">
+                        <p class="qn">What is the difference between frontend and backend development?</p>
+                        <i class="bi bi-caret-right" id="arrow-icon-5"></i>
+                    </div>
+                    <div class="ans-container" id="ac-5">
+                        <p class="ans">
+                            Frontend development focuses on the parts of an application users
+                            see and interact with, while backend development manages servers,
+                            databases, authentication, and application logic.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="accordion">
+                <div class="qn-ans-container">
+                    <div class="qn-container" id="qc-6">
+                        <p class="qn">Why is software testing important?</p>
+                        <i class="bi bi-caret-right" id="arrow-icon-6"></i>
+                    </div>
+                    <div class="ans-container" id="ac-6">
+                        <p class="ans">
+                            Software testing helps identify errors, confirm that features work
+                            correctly, improve reliability, and provide users with a better
+                            experience.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </section>
     </main>
+
+    <a href="https://roadmap.sh/projects/accordion" class="ref-cta" target="_blank">Go to Project of Reference</a>
+
+    <script src="script.js"></script>
 </body>
 </html>
