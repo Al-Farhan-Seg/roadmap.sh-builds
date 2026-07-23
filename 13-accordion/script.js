@@ -22,30 +22,25 @@ qnContainers.forEach((qnContainer) => {
     qnContainer.addEventListener("click", () => {
         const activeQnContainerId = qnContainer.id
         toggleAnsContainer(activeQnContainerId)
+        rotateArrowIcon(activeQnContainerId)
     })
 })
 
-// Incomplete function
+
 function rotateArrowIcon(qnId) {
     const activeArrowIconId = qnIconIdPairs[qnId]
     const inactiveArrowIconIds = []
-
     Object.values(qnIconIdPairs).forEach((IconId) => {
         IconId !== activeArrowIconId ? inactiveArrowIconIds.push(IconId): ""
     })
-
-    const activeArrowIcon = document.getElementById(activeArrowIconId) // work is needed here below is fine
-
+    const activeArrowIcon = document.getElementById(activeArrowIconId)
+    activeArrowIcon.classList.toggle(bootStrapIconActiveClass)
+    activeArrowIcon.classList.toggle(bootStrapIconInactiveClass)
     inactiveArrowIconIds.forEach((inactiveArrowIconId) => {
         const inactiveArrowIcon = document.getElementById(inactiveArrowIconId)
         inactiveArrowIcon.classList.remove(bootStrapIconActiveClass)
         inactiveArrowIcon.classList.add(bootStrapIconInactiveClass)
     })
-
-}
-
-function checkCurrentArrowIconClassList(arrowIcon) {
-
 }
 
 function toggleAnsContainer(qnId) {
