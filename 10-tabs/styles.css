@@ -1,8 +1,3 @@
-@import url('https://fonts.cdnfonts.com/css/friendly-robot');
-@import url('https://fonts.cdnfonts.com/css/br-segma');
-@import url('https://fonts.cdnfonts.com/css/iowanoldst-bt');
-
-
 :root {
     --color-1-soft: #F0A198;
     --color-1: #D0311E;
@@ -159,4 +154,3 @@ h2 {
 @media only screen and (min-width: 1450px){
 
 }
-
