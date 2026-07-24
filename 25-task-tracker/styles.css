@@ -1,5 +1,5 @@
 :root {
-
+  --color-1: hsl(0, 10%, 34%);
 }
 *,
 *::before,
@@ -20,12 +20,12 @@ body {
 section {
   min-width: 0;
   max-width: 90vw;
-  border: 2px solid hsl(0, 10%, 34%);
+  border: 2px solid var(--color-1);
   margin: auto;
   border-radius: 15px;
 }
 form {
-  border: 2px solid hsl(0, 10%, 34%);
+  border: 2px solid var(--color-1);
   margin: 0.3rem;
   padding: 0.2rem;
   border-radius: 10px;
@@ -45,7 +45,7 @@ form {
   border-radius: 10px;
   padding: 0 0.5rem;
   margin: 5px 3px;
-  border: 2px solid hsl(0, 10%, 34%);
+  border: 2px solid var(--color-1);
   font-size: 1.2rem;
   color: hsl(0, 11%, 14%);
   background-color: bisque;
@@ -54,7 +54,7 @@ form {
     outline: none;
   }
   &::selection {
-    background-color: hsl(0, 10%, 34%);
+    background-color: var(--color-1);
     color: bisque;
   }
 }
@@ -69,15 +69,99 @@ form {
   padding: 0.3rem;
   border-radius: 10px;
   margin: 5px auto;
-  border: 1px solid black;
+  border: 1px solid var(--color-1);
+  background-color: rgb(224, 157, 74);
 
   &:active {
-    border: 1px solid black;
+    border: 1px solid var(--color-1);
     box-shadow: inset 1px 1px 1px;
     transform: translate(2px, 2px);
   }
 }
+#display-container {
+  border: 2px solid var(--color-1);
+  margin: 0.3rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+#pending-container,
+#completed-container {
+  border: 2px solid var(--color-1);
+  padding: 0.2rem;
+  margin: 0.3rem 0;
+  border-radius: 5px;
+  & h2 {
+    text-align: center;
+    padding: 0.2rem 0;
+  }
+}
+.entry {
+  border: 2px solid;
+  border-radius: 10px;
+  padding :0.3rem;
 
+  display: flex;
+  justify-content: space-between;
+  gap: -12rem;
+  align-items: center;
+  & .delete-btn {
+    padding: 0.3rem;
+    border-radius: 7px;
+    background-color: bisque;
+  }
+}
+.pending-cb,
+.completed-cb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  
+  border: 2px solid ;
+  width: 1.1rem;
+  height: 1.1rem;
+  margin: 0 0.9rem 0 1rem;
+  border-radius: 5px;
+
+  &:checked {
+    background-color: grey;
+  }
+  
+
+  & + label {
+    font-size: 1.1rem;
+  }
+  
+}
+.completed-cb {
+  & + label {
+    text-decoration: line-through;
+    color: var(--color-1);
+  }
+}
+
+
+.ref-cta {
+    display: block;
+    text-decoration: none;
+    color: wheat;
+    background: linear-gradient(
+        45deg,
+        rgb(36, 24, 1),
+        rgb(23, 11, 11)
+    );
+    border-radius: 15px; text-align: center;
+    width: 230px;
+    padding: 15px;
+    margin: 50px auto;
+
+    box-shadow: 5px 5px 10px hsl(0, 0%, 12%),
+                5px 5px 25px hsl(0, 0%, 12%);
+}
+.ref-cta:active {
+    transform: translate(5px, 5px);
+}
+
+/* Bigger styles to be added after adding JS functionality*/
 @media only screen and (min-width: 480px) {
   
 }

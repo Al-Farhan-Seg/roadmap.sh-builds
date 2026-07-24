@@ -31,9 +31,9 @@
 <body>
     <h1 id="project-name">Task Tracker</h1>
     <section>
-      <form action="" method="get" accept-charset="utf-8">
-        <input type="text" name="title" id="title-field" placeholder="My task to be done" required/>
-        <textarea name="description" id="description-field" rows="15"  placeholder="A description of the task I am supposed to do" required></textarea>
+      <form action="" method="get" accept-charset="utf-8" id="form">
+        <input type="text" name="title" id="title-field" placeholder="My task to be done"/>
+        <textarea name="description" id="description-field" rows="15"  placeholder="A description of the task I am supposed to do"></textarea>
         <button id="submit-btn" type="submit">
           Add New Task
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-plus-icon lucide-circle-plus"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
@@ -42,18 +42,32 @@
 
       <div id="display-container">
         <div id="pending-container">
-          <h2 id="pending-title">Pending</h2>
-          <input type="checkbox" id="pending-1" class="pending">
-          <label for="pending-1">Eating food</label>
+          <h2 id="pending-title">Pending Tasks</h2>
+          <div class="entry">
+            <input type="checkbox" id="pending-cb-1" class="pending-cb">
+            <label id="pending-lb-1" class="pending-lb">Eating food</label>
+            <button class="delete-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trash-icon lucide-trash"><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+            </button> 
+          </div>
+          
         </div>
 
         <div id="completed-container">
-          <h2 id="completed-title">Completed</h2>
-          <input type="checkbox" id="completed-1" class="completed">
-          <label for="completed-1">Cooking food</label>
+          <h2 id="completed-title">Completed Tasks</h2>
+          <div class="entry">
+            <input type="checkbox" id="completed-cb-1" class="completed-cb" checked onclick="return false;">
+            <label id="completed-lb-1" class="completed-lb">Cooking food</label>
+            <button class="delete-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trash-icon lucide-trash"><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+            </button> 
+          </div>
+          
         </div>
       </div>
     </section>
+
+    <a href="https://roadmap.sh/projects/task-tracker-js" class="ref-cta" target="_blank">Go to Project of Reference</a>
 
     <!--
       ----Deletion Icon ------
