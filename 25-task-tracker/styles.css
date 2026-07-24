@@ -1,19 +1,91 @@
-/* Task Tracker */
+:root {
 
+}
 *,
 *::before,
-*::after {
-    box-sizing: border-box;
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-html {
-    color-scheme: light dark;
-}
-
 body {
-    min-height: 100vh;
-    margin: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  min-height: 100vh;
+  background-color: rgb(231, 209, 184);
+}
+#project-name {
+  text-align: center;
+  padding: 0.3rem;
+  margin: 0.2rem;
+}
+section {
+  min-width: 0;
+  max-width: 90vw;
+  border: 2px solid hsl(0, 10%, 34%);
+  margin: auto;
+  border-radius: 15px;
+}
+form {
+  border: 2px solid hsl(0, 10%, 34%);
+  margin: 0.3rem;
+  padding: 0.2rem;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(213, 189, 159);
+}
+#title-field,
+#description-field {
+  min-width: 0;
+  width: 95%;
+  max-width: 100%;
+  margin: auto;
+  min-height: 10vw;
+  border-radius: 10px;
+  padding: 0 0.5rem;
+  margin: 5px 3px;
+  border: 2px solid hsl(0, 10%, 34%);
+  font-size: 1.2rem;
+  color: hsl(0, 11%, 14%);
+  background-color: bisque;
+
+  &:focus {
+    outline: none;
+  }
+  &::selection {
+    background-color: hsl(0, 10%, 34%);
+    color: bisque;
+  }
+}
+#description-field {
+  resize: vertical;
+}
+#submit-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem;
+  border-radius: 10px;
+  margin: 5px auto;
+  border: 1px solid black;
+
+  &:active {
+    border: 1px solid black;
+    box-shadow: inset 1px 1px 1px;
+    transform: translate(2px, 2px);
+  }
 }
 
-/* Add project styles below. */
+@media only screen and (min-width: 480px) {
+  
+}
+
+@media only screen and (min-width: 1050px) {
+  
+}
+
+@media only screen and (min-width: 1450px) {
+  
+}
