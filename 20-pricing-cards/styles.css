@@ -1,19 +1,16 @@
 /* Pricing Cards */
-
+:root {
+    --serif-font: 'Rangile', sans-serif;
+    --sans-serif-font: 'Source Sans 3', sans-serif;
+    --handwritten-font: 'Raqillas', sans-serif;
+}
 *,
 *::before,
 *::after {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-
-html {
-    color-scheme: light dark;
-}
-
 body {
     min-height: 100vh;
-    margin: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
-
-/* Add project styles below. */
