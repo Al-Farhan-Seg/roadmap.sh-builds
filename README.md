@@ -42,7 +42,7 @@ A folder by itself is **not** treated as a completed project. Completion is coun
 
 <!-- PROJECTS:START -->
 
-![Progress](https://img.shields.io/badge/Progress-11%2F30-0ea5e9?style=flat-square) **11/30 complete (37%)** · **19 in progress** · **0 not started**
+![Progress](https://img.shields.io/badge/Progress-12%2F30-0ea5e9?style=flat-square) **12/30 complete (40%)** · **18 in progress** · **0 not started**
 
 | # | Status | Level | Focus | Official Project | Local Solution |
 |---:|:------:|---|---|---|---|
@@ -70,7 +70,7 @@ A folder by itself is **not** treated as a completed project. Completion is coun
 | 22 | 🚧 | Intermediate | API | [Weather Web App](https://roadmap.sh/projects/weather-app) | [Open folder](./22-weather-web-app/) |
 | 23 | 🚧 | Intermediate | API Integration | [GitHub Random Repository](https://roadmap.sh/projects/github-random-repo) | [Open folder](./23-github-random-repository/) |
 | 24 | 🚧 | Intermediate | JavaScript | [Custom Dropdown](https://roadmap.sh/projects/custom-dropdown) | [Open folder](./24-custom-dropdown/) |
-| 25 | 🚧 | Intermediate | JavaScript | [Task Tracker](https://roadmap.sh/projects/task-tracker-js) | [Open folder](./25-task-tracker/) |
+| 25 | ✅ | Intermediate | JavaScript | [Task Tracker](https://roadmap.sh/projects/task-tracker-js) | [View project](./25-task-tracker/) |
 | 26 | 🚧 | Intermediate | API Integration | [Reddit Client](https://roadmap.sh/projects/reddit-client) | [Open folder](./26-reddit-client/) |
 | 27 | 🚧 | Intermediate | JavaScript | [Temperature Converter](https://roadmap.sh/projects/temperature-converter) | [Open folder](./27-temperature-converter/) |
 | 28 | 🚧 | Intermediate | Frameworks | [Pomodoro Timer](https://roadmap.sh/projects/pomodoro-timer) | [Open folder](./28-pomodoro-timer/) |

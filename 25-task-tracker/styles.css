@@ -1,5 +1,8 @@
 :root {
   --color-1: hsl(0, 10%, 34%);
+
+  --font-1: 'amoera', sans-serif;;
+  --font-2: 'Rogan', sans-serif;;
 }
 *,
 *::before,
@@ -11,11 +14,23 @@
 body {
   min-height: 100vh;
   background-color: rgb(231, 209, 184);
+  font-family: var(--font-2);
 }
-#project-name {
+#project-name,
+#intro {
   text-align: center;
   padding: 0.3rem;
   margin: 0.2rem;
+  font-family: var(--font-1);
+}
+#intro {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem ;
+
+  & span {
+    font-size: 0.8rem;
+    font-style: italic;
+  }
 }
 section {
   min-width: 0;
@@ -90,10 +105,11 @@ form {
   padding: 0.2rem;
   margin: 0.3rem 0;
   border-radius: 5px;
-  & h2 {
-    text-align: center;
-    padding: 0.2rem 0;
-  }
+}
+#completed-title,
+#pending-title {
+  text-align: center;
+  padding: 0.2rem 0;
 }
 .entry {
   border: 2px solid;
@@ -163,11 +179,28 @@ form {
 
 /* Bigger styles to be added after adding JS functionality*/
 @media only screen and (min-width: 480px) {
-  
+  #intro {
+    max-width: 70vw;
+    margin: auto;
+  }
+  section {
+    min-width: 20vw;
+    width: 50vw;
+    max-width: 60vw;
+  }
+  #title-field,
+  #description-field {
+    min-height: 5vh;
+  }
+  #description-field {
+    height: 20vh;
+  }
 }
 
 @media only screen and (min-width: 1050px) {
-  
+  section {
+    width: 40vw;
+  }
 }
 
 @media only screen and (min-width: 1450px) {
