@@ -14,3 +14,87 @@
 body {
     min-height: 100vh;
 }
+#project-name {
+    /*border: 2px solid;*/
+    text-align: center;
+    padding: 0.3rem;
+    border-radius: 15px;
+    font-family: var(--handwritten-font);
+}
+#container {
+    border: 2px solid;
+    min-width: 0;
+    width: 90vw;
+    max-width: 95vw;
+    margin: auto;
+    padding: 0.3rem;
+    border-radius: 10px;
+
+}
+.pricing-card {
+    border: 2px solid rgb(67, 38, 67);
+    border-radius: 5px;
+    margin: 0.4rem 1rem;
+    padding: 0.7rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+    
+
+}
+.top {
+    padding: 1rem;
+    position: relative;
+}
+.top::after {
+    content: "";
+    position: absolute;
+    width: 85%;
+    height: 2px;
+    background-color: black;
+    top: 100%;
+}
+.pricing-plan {
+    text-align: center;
+    font-size: 1.5rem;
+}
+.pricing-amount {
+    font-size: 1.5rem;
+    text-align: center;
+    & span {
+        font-size: 3.0rem;
+    }
+}
+.pricing-plan-brief {
+    text-align: center;
+}
+.middle {
+    border: 1px solid cyan;
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; */
+}
+.pricing-outline {
+    display: flex;
+    justify-content: ;
+}
+
+
+
+/* Tablet styles */
+@media only screen and (min-width: 480px) {
+    
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 1050px) {
+    
+}
+
+/* Large Desktop styles */
+@media only screen and (min-width: 1450px) {
+    
+}
