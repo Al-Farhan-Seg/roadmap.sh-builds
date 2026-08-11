@@ -91,14 +91,6 @@ body {
 .pricing-plan-brief {
     text-align: center;
 }
-.middle {
-    /*border: 1px solid cyan;*/
-
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-evenly; */
-    
-}
 .pricing-outline {
     display: flex;
     justify-content: flex-start;
