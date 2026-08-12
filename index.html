@@ -27,9 +27,6 @@
     <meta name="twitter:image" content="https://roadmapsh.farhansegujja.com/top_assets/favicon-F.png">
     <meta name="twitter:image:alt" content="Al-Farhan favicon">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=DM+Serif+Display:ital@0;1&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -156,6 +153,14 @@
                 </a>
             </div>
 
+            <!-- Project 16-->
+            <div class="project-container">
+                <a href="./16-pricing-comparison-table/index.html">
+                    <img class="project-img" src="./top_assets/Pricing-Comparison-Table.png" alt="Pricing Comparison Table screenshot">
+                    <p class="project-name">Pricing Comparison Table</p>
+                </a>
+            </div>
+
             <!-- Project 20-->
             <div class="project-container">
                 <a href="./20-pricing-cards/index.html">
@@ -179,28 +184,37 @@
     <footer>
 
         <!-- REFERENCE BUTTON
-        <a href="https://roadmap.sh/projects/{slug}" class="ref-cta" target="_blank">Go to Project of Reference</a>
+        <a href="https://roadmap.sh/projects/{slug}" 
+            class="ref-cta" 
+            target="_blank" 
+            rel="noopener noreferrer">
+            Go to Project of Reference
+        </a>
 
 
         .ref-cta {
             display: block;
+            width: 230px;
+            margin: 4rem auto;
+            padding: 15px;
+            text-align: center;
             text-decoration: none;
             color: wheat;
-            background: linear-gradient(
-                45deg,
-                rgb(36, 24, 1),
-                rgb(23, 11, 11)
-            );
-            border-radius: var(--border-rad); text-align: center;
-            width: 230px;
-            padding: 15px;
-            margin: 200px auto;
-
-            box-shadow: 5px 5px 10px hsl(0, 0%, 12%),
-                        5px 5px 25px hsl(0, 0%, 12%);
+            font-weight: 600;
+            background: linear-gradient(45deg, rgb(36, 24, 1), rgb(23, 11, 11));
+            border-radius: var(--border-rad);
+            box-shadow: 5px 5px 15px hsl(0, 0%, 12%);
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
         }
+
+        .ref-cta:hover {
+            box-shadow: 3px 3px 10px hsl(0, 0%, 12%);
+            filter: brightness(1.1);
+        }
+
         .ref-cta:active {
             transform: translate(5px, 5px);
+            box-shadow: none;
         }
         -->
     </footer>

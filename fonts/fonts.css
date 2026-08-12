@@ -1,0 +1,232 @@
+@font-face {
+    font-family: 'amoera';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('amoera'), url("./amoera-personal-use-only.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'BR Segma';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('BR Segma'), url("./BRSegma-Regular-BF654d990a3279a.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'BR Segma';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: local('BR Segma'), url("./BRSegma-RegularItalic-BF654d990a11f54.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Consola Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Consola Mono'), url("./ConsolaMono-Book.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Convergence';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Convergence'), url("./Convergence-Regular.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'DynaPuff';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('DynaPuff'), url("./DynaPuff_wdth_wght_.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Edu SA Beginner';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Edu SA Beginner'), url("./EduSABeginner_wght_.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Expletus Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Expletus Sans'), url("./ExpletusSans_wght_.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'FRIENDLY ROBOT-Hollow';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('FRIENDLY ROBOT-Hollow'), url("./FRIENDLY_ROBOT-Hollow.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'FRIENDLY ROBOT-Light';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: local('FRIENDLY ROBOT-Light'), url("./FRIENDLY_ROBOT-Light.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Genos';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: local('Genos'), url("./Genos_wght_.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Hilsfiger';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Hilsfiger'), url("./HilsfigerRegular-nRVMO.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'IowanOldSt BT';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('IowanOldSt BT'), url("./bitstream-iowan-old-style-bt-586c36a8d7712.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'IowanOldSt BT';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('IowanOldSt BT'), url("./bitstream-iowan-old-style-bold-bt-586c371d8d669.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Rangile';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Rangile'), url("./Rangile.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Raqillas';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Raqillas'), url("./Raqillas-GOGdy.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Rogan';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Rogan'), url("./Rogan-Regular-BF654c4a9481d1b.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Rogan';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('Rogan'), url("./Rogan-Bold-BF654c4a94709f5.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Source Sans 3';
+    font-style: normal;
+    font-weight: 200 900;
+    font-display: swap;
+    src: local('Source Sans 3'), url("./SourceSans3_wght_.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'VARUNA';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('VARUNA'), url("./varuna-personal-use-only.woff") format('woff');
+}
+
+@font-face {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+    font-display: swap;
+  src: url("./-nFnOHM81r4j6k0gjAW3mujVU2B2K_c.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+    font-display: swap;
+  src: url("./6xK-dSZaM9iE8KbpRA_LJ3z8mH9BOJvgkP8o18E.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 600;
+    font-display: swap;
+  src: url("./6xK-dSZaM9iE8KbpRA_LJ3z8mH9BOJvgkCEv18E.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+    font-display: swap;
+  src: url("./6xK-dSZaM9iE8KbpRA_LJ3z8mH9BOJvgkBgv18E.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Smooch Sans';
+  font-style: normal;
+  font-weight: 400;
+    font-display: swap;
+  src: url("./c4mz1n5uGsXss2LJh1QH6b129FZvxPj6I4oiwUBodg.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Smooch Sans';
+  font-style: normal;
+  font-weight: 700;
+    font-display: swap;
+  src: url("./c4mz1n5uGsXss2LJh1QH6b129FZvxPj6I4oiJkdodg.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+    font-display: swap;
+  src: url("./6aez4K2oVqwIjtI.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+    font-display: swap;
+  src: url("./6ae84K2oVqwItm4TOpc.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Sour Gummy';
+  font-style: normal;
+  font-weight: 600;
+    font-display: swap;
+  font-stretch: normal;
+  src: url("./8AtGGs2gPYuNDii97MjjBrLbYfdJvDU5AZfP5opPVCC4oC5ANR1NLcRU9w.ttf") format('truetype');
+}

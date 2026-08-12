@@ -1,3 +1,5 @@
+@import url("../fonts/fonts.css");
+
 /* Accordion */
 
 :root {
@@ -19,8 +21,24 @@ body {
     min-height: 100vh;
     background-color: wheat;
     color: black;
+    padding-top: 6rem;
 }
-#proj-name,
+
+.project-title {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0.75rem 1rem;
+    text-align: center;
+    color: wheat;
+    background-color: black;
+    font-family: var(--font-2);
+    border-radius: 0;
+}
+
 #intro {
     text-align: center;
     margin: 5px;
@@ -87,26 +105,6 @@ body {
 .ans-active {
     display: block;
 }
-.ref-cta {
-    display: block;
-    text-decoration: none;
-    color: wheat;
-    background: linear-gradient(
-        45deg,
-        rgb(36, 24, 1),
-        rgb(23, 11, 11)
-    );
-    border-radius: var(--border-rad); text-align: center;
-    width: 230px;
-    padding: 15px;
-    margin: 20px auto;
-
-    box-shadow: 5px 5px 10px hsl(0, 0%, 12%),
-                5px 5px 25px hsl(0, 0%, 12%);
-}
-.ref-cta:active {
-    transform: translate(5px, 5px);
-}
 /*
 .qn-container {
     position: relative;
@@ -123,7 +121,6 @@ body {
 
 /* Tablet screens */
 @media only screen and (min-width: 480px) {
-    #proj-name,
     #intro {
         text-align: center;
         margin: 10px;
@@ -132,7 +129,6 @@ body {
         max-width: 60vw;
     }
 }
-
 
 /* Large screens */
 @media only screen and (min-width: 1050px) {
@@ -146,4 +142,29 @@ body {
     #container {
         max-width: 35vw;
     }
+}
+
+.ref-cta {
+    display: block;
+    width: 230px;
+    margin: 4rem auto;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: wheat;
+    font-weight: 600;
+    background: linear-gradient(45deg, rgb(36, 24, 1), rgb(23, 11, 11));
+    border-radius: var(--border-rad, 15px);
+    box-shadow: 5px 5px 15px hsl(0, 0%, 12%);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.ref-cta:hover {
+    box-shadow: 3px 3px 10px hsl(0, 0%, 12%);
+    filter: brightness(1.1);
+}
+
+.ref-cta:active {
+    transform: translate(5px, 5px);
+    box-shadow: none;
 }

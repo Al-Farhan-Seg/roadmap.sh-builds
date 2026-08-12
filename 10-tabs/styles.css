@@ -1,3 +1,5 @@
+@import url("../fonts/fonts.css");
+
 :root {
     --color-1-soft: #F0A198;
     --color-1: #D0311E;
@@ -30,7 +32,24 @@
 body {
     min-height: 100vh;
     background-color: var(--color-2-soft);
+    padding-top: 6rem;
 }
+
+.project-title {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0.75rem 1rem;
+    text-align: center;
+    color: var(--color-3-bold);
+    background-color: var(--color-2);
+    font-family: var(--font-1-hollow);
+    border-radius: 0;
+}
+
 h1 {
     font-family: var(--font-1-hollow);
     background-color: var(--color-2);
@@ -109,29 +128,6 @@ h2 {
 .inactive-c {
     display: none;
 }
-
-.ref-cta {
-    display: block;
-    font-family: var(--font-3);
-    text-decoration: none;
-    color: black;
-    background: linear-gradient(
-        45deg,
-        var(--color-2-bold),
-        var(--color-2)
-    );
-    border-radius: var(--border-rad); 
-    text-align: center;
-    width: 230px;
-    padding: 15px;
-    margin: 50px auto;
-
-    box-shadow: 5px 5px 10px hsl(0, 0%, 12%),
-                5px 5px 25px hsl(0, 0%, 12%);
-}
-.ref-cta:active {
-    transform: translate(5px, 5px);
-}
     
 
 @media only screen and (min-width: 768px){
@@ -153,4 +149,30 @@ h2 {
 }
 @media only screen and (min-width: 1450px){
 
+}
+
+.ref-cta {
+    display: block;
+    width: 230px;
+    margin: 4rem auto;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-family: var(--font-3);
+    background: linear-gradient(45deg, var(--color-2-bold), var(--color-2));
+    border-radius: var(--border-rad, 15px);
+    box-shadow: 5px 5px 15px hsl(0, 0%, 12%);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.ref-cta:hover {
+    box-shadow: 3px 3px 10px hsl(0, 0%, 12%);
+    filter: brightness(1.1);
+}
+
+.ref-cta:active {
+    transform: translate(5px, 5px);
+    box-shadow: none;
 }
