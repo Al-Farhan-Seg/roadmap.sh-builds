@@ -1,6 +1,11 @@
 @import url("../fonts/fonts.css");
 
 /* Pricing Comparison Table */
+:root {
+    --border-rad: 15px;
+
+    
+}
 
 *,
 *::before,
@@ -23,23 +28,84 @@ body {
     margin: 0 !important;
     padding: 0.75rem 1rem;
     text-align: center;
-    color: CanvasText;
-    background-color: Canvas;
+    background-color: #1f2937;
+    color: #e5e7eb;
     border-radius: 0;
+    font-size: clamp(1rem, 2.5vw, 2rem);
 }
 
-/* Add project styles below. */
+main {
+    margin-top: 6rem;
+    min-width: 0;
+    margin: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse; /* merges double borders into one */
+  font-family: system-ui, sans-serif;
+  font-size: 0.7rem;
+}
+
+caption {
+  caption-side: top; /* or bottom */
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+thead th {
+  background-color: #1f2937;
+  color: white;
+  text-align: left;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+}
+
+tbody th,
+tbody td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+tbody th {
+  text-align: left;
+  font-weight: 500;
+}
+
+/* zebra striping */
+tbody tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+/* hover highlight */
+tbody tr:hover {
+  background-color: #f1f5f9;
+}
+
+tfoot th,
+tfoot td {
+  padding: 0.75rem 1rem;
+  border-top: 2px solid #1f2937;
+  font-weight: 600;
+}
+
+tfoot {
+    text-align: center;
+}
 
 .ref-cta {
     display: block;
+    font-size: 0.8rem;
     width: 230px;
     margin: 4rem auto;
     padding: 15px;
     text-align: center;
     text-decoration: none;
-    color: wheat;
+    color: #e5e7eb;
     font-weight: 600;
-    background: linear-gradient(45deg, rgb(36, 24, 1), rgb(23, 11, 11));
+    background: linear-gradient(45deg, #1f2937, #485d7b);
     border-radius: var(--border-rad, 15px);
     box-shadow: 5px 5px 15px hsl(0, 0%, 12%);
     transition: transform 0.15s ease, box-shadow 0.15s ease;
@@ -53,4 +119,22 @@ body {
 .ref-cta:active {
     transform: translate(5px, 5px);
     box-shadow: none;
+}
+
+@media only screen and (min-width: 480px) {
+    main {
+        width: 65vw;
+        
+    }
+    table {
+        font-size: 1rem;
+    };
+}
+
+@media only screen and (min-width: 1040px) {
+
+}
+
+@media only screen and (min-width: 1240px) {
+
 }
