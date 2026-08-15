@@ -42,13 +42,13 @@ main {
 
 table {
   width: 100%;
-  border-collapse: collapse; /* merges double borders into one */
+  border-collapse: collapse;
   font-family: system-ui, sans-serif;
   font-size: 0.7rem;
 }
 
 caption {
-  caption-side: top; /* or bottom */
+  caption-side: top;
   text-align: left;
   font-weight: 600;
   margin-bottom: 0.5rem;
@@ -74,12 +74,10 @@ tbody th {
   font-weight: 500;
 }
 
-/* zebra striping */
 tbody tr:nth-child(even) {
   background-color: #f9fafb;
 }
 
-/* hover highlight */
 tbody tr:hover {
   background-color: #f1f5f9;
 }
