@@ -1,0 +1,25 @@
+{
+  "name": "roadmap.sh-builds",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A collection of static frontend projects based on roadmap.sh briefs.",
+  "type": "module",
+  "scripts": {
+    "build": "npm run css:build",
+    "css:watch": "tailwindcss -i ./tailwind.input.css -o ./top_assets/tailwind.css --watch",
+    "css:build": "tailwindcss -i ./tailwind.input.css -o ./top_assets/tailwind.css --minify",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Al-Farhan-Seg/roadmap.sh-builds.git"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "prettier": "^3.9.6",
+    "prettier-plugin-tailwindcss": "^0.8.1",
+    "tailwindcss": "^4.3.3"
+  }
+}

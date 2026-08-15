@@ -167,6 +167,34 @@ cd roadmap.sh-builds
 
 Open a project folder and launch its `index.html` file in a browser. A development extension such as **Live Server** can automatically refresh the page while changes are being made.
 
+### Tailwind CSS workflow
+
+Selected projects share a compiled Tailwind stylesheet while remaining static HTML sites. Tailwind support is independent of project completion status: once a project starts using Tailwind, it remains registered after being marked complete.
+
+Install the local build tools after cloning:
+
+```shell
+npm install
+```
+
+Run the Tailwind watcher while developing, alongside Live Server:
+
+```shell
+npm run css:watch
+```
+
+This command stays running, watches the registered HTML and JavaScript files, and rebuilds `top_assets/tailwind.css` whenever their Tailwind classes change.
+
+Before committing changes, run the one-time production build:
+
+```shell
+npm run css:build
+```
+
+The build command scans the registered projects once and writes a fresh, minified `top_assets/tailwind.css`. Run it after changing Tailwind classes whenever the watcher is not running, and always run it before committing or deploying.
+
+Tailwind scans only the project folders explicitly registered in `tailwind.input.css`. When another project adopts Tailwind, add its folder there and link `../top_assets/tailwind.css` from its HTML. Completing a project does not require removing it from the Tailwind source list. The generated stylesheet is committed because production hosting serves the repository as a static site; do not edit it directly.
+
 Projects created with a framework may later replace the basic starter files with the framework's recommended structure and development commands.
 
 ## Project Standards
