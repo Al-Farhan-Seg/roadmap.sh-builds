@@ -1,0 +1,17 @@
+.coming-soon-hero {
+    display: grid;
+    min-height: calc(100vh - 17rem);
+    place-items: center;
+    padding: 2rem;
+    background: #0f172a;
+    color: #ffffff;
+    text-align: center;
+}
+
+.coming-soon-hero h2 {
+    max-width: 18ch;
+    margin: 0;
+    font-size: clamp(3rem, 9vw, 8rem);
+    line-height: 0.95;
+    letter-spacing: -0.06em;
+}
