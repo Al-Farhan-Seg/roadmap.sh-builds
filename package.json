@@ -7,10 +7,11 @@
   "scripts": {
     "build": "npm run css:build",
     "css:watch": "tailwindcss -i ./tailwind.input.css -o ./top_assets/tailwind.css --watch",
-    "css:build": "tailwindcss -i ./tailwind.input.css -o ./top_assets/tailwind.css --minify",
+    "css:build": "tailwindcss -i ./tailwind.input.css -o ./top_assets/tailwind.css",
+    "css:build:prod": "tailwindcss -i ./tailwind.input.css -o ./top_assets/tailwind.css --minify",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
-  },
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Al-Farhan-Seg/roadmap.sh-builds.git"
