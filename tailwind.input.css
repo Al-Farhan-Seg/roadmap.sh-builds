@@ -1,10 +1,5 @@
 @import "tailwindcss" source(none);
 
-@theme {
-  --font-primary: "VARUNA", sans-serif;
-}
-
-/* Projects configured to use Tailwind. Keep entries after project completion. */
 @source "./11-cookie-consent";
 @source "./12-restricted-textarea";
 @source "./14-age-calculator";
@@ -21,3 +16,4 @@
 @source "./28-pomodoro-timer";
 @source "./29-theme-switcher-with-css-variables";
 @source "./30-24hr-story-feature";
+@source "./index.html";

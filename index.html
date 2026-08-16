@@ -1,316 +1,524 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="./top_assets/favicon-F.png">
-    <link rel="stylesheet" href="./styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./top_assets/favicon-F.png" />
+    <link rel="stylesheet" href="./top_assets/tailwind.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Al-Farhan Portfolio</title>
 
     <!-- Primary Meta Tags -->
-    <meta name="title" content="Al-Farhan | roadmap.sh Projects">
-    <meta name="description" content="A collection of my completed roadmap.sh frontend projects, including HTML, CSS, portfolio pages, changelog components, and testimonial cards.">
+    <meta name="title" content="Al-Farhan | roadmap.sh Projects" />
+    <meta
+      name="description"
+      content="A collection of my completed roadmap.sh frontend projects, including HTML, CSS, portfolio pages, changelog components, and testimonial cards."
+    />
 
     <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://roadmapsh.farhansegujja.com/">
-    <meta property="og:title" content="Al-Farhan | roadmap.sh Projects">
-    <meta property="og:description" content="Explore my roadmap.sh project submissions and frontend development practice work.">
-    <meta property="og:image" content="https://roadmapsh.farhansegujja.com/top_assets/favicon-F.png">
-    <meta property="og:image:alt" content="Al-Farhan favicon">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://roadmapsh.farhansegujja.com/" />
+    <meta property="og:title" content="Al-Farhan | roadmap.sh Projects" />
+    <meta
+      property="og:description"
+      content="Explore my roadmap.sh project submissions and frontend development practice work."
+    />
+    <meta
+      property="og:image"
+      content="https://roadmapsh.farhansegujja.com/top_assets/favicon-F.png"
+    />
+    <meta property="og:image:alt" content="Al-Farhan favicon" />
 
     <!-- Twitter / X -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://roadmapsh.farhansegujja.com/">
-    <meta name="twitter:title" content="Al-Farhan | roadmap.sh Projects">
-    <meta name="twitter:description" content="A collection of my completed roadmap.sh frontend projects and web development practice work.">
-    <meta name="twitter:image" content="https://roadmapsh.farhansegujja.com/top_assets/favicon-F.png">
-    <meta name="twitter:image:alt" content="Al-Farhan favicon">
-
-</head>
-<body>
-
-    <div class="splash-screen">
-        <!--Splash Screen is to be placed here-->
-    </div>
-    
-    <header>
-        <!--
-        <h1 id="logo">AL-FARHAN</h1>
-        -->
-        <a href="./" class="logo-link">
-            <img src="./top_assets/passport_pic_cartoon.png" alt="Al-Farhan logo">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://roadmapsh.farhansegujja.com/" />
+    <meta name="twitter:title" content="Al-Farhan | roadmap.sh Projects" />
+    <meta
+      name="twitter:description"
+      content="A collection of my completed roadmap.sh frontend projects and web development practice work."
+    />
+    <meta
+      name="twitter:image"
+      content="https://roadmapsh.farhansegujja.com/top_assets/favicon-F.png"
+    />
+    <meta name="twitter:image:alt" content="Al-Farhan favicon" />
+  </head>
+  <body
+    class="min-h-screen bg-(--primary-color) font-(family-name:--sans-font) text-(--accent-color-bold)"
+  >
+    <header
+      class="sticky top-0 z-50 flex min-h-22 items-center justify-between gap-4 rounded-b-xl border-2 border-(--accent-color-bold) bg-(--primary-color-bold) px-4 py-2"
+    >
+      <a
+        href="./"
+        class="group flex items-center rounded-full transition duration-200 hover:scale-105 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-(--accent-color-bold)"
+      >
+        <img
+          class="size-16 rounded-full object-contain transition duration-200 group-hover:ring-2 group-hover:ring-(--accent-color)"
+          src="./top_assets/passport_pic_cartoon.png"
+          alt="Al-Farhan logo"
+        />
+      </a>
+      <nav>
+        <a
+          class="block rounded-full border-2 border-(--accent-color-bold) bg-(--primary-color-soft) px-4 py-2 text-lg font-bold no-underline transition duration-200 hover:-translate-y-0.5 hover:bg-(--accent-color-soft) hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-(--accent-color-bold) active:translate-y-0 active:shadow-none"
+          href="#projects"
+          >Projects</a
+        >
+      </nav>
+      <div>
+        <a
+          class="group flex items-center rounded-full p-1 transition duration-200 hover:scale-105 hover:bg-(--primary-color-soft) focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-(--accent-color-bold)"
+          href="https://github.com/Al-Farhan-Seg/roadmap.sh-builds"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            class="size-16 rounded-full object-contain transition duration-200 group-hover:brightness-110"
+            src="./top_assets/github_png.png"
+            alt="roadmap.sh-builds repository on GitHub"
+          />
         </a>
-        <nav id="navbar">
-            <div><a href="#proj">Projects</a></div>
-        </nav>
-        <div id="header-end">
-            <a href="https://github.com/Al-Farhan-Seg/roadmap.sh-builds" target="_blank">
-                <img src="./top_assets/github_png.png" alt="">
-            </a>
-        </div> <!-- Check on this later -->
+      </div>
     </header>
-    
-    <main>
-        <!--<h2 id="title">WEB DEVELOPER</h2>-->
-        <article id="intro">
-            <p id="bio">Frontend Projects Inspired by <a href="https://roadmap.sh/frontend/projects" target="_blank">ROADMAP.SH</a></p>
-            <p id="description">Built with only Vanilla HTML, CSS and JS.</p>
-            <p id="cta">Take a look around</p>
-        </article>
-        
 
-        <h3 id="proj">---- LABS ----</h3>
-        <section id="projects">
+    <main class="mx-auto max-w-7xl p-4">
+      <article
+        class="mx-auto mb-8 flex min-h-104 flex-col justify-center gap-6 rounded-2xl border-2 border-(--accent-color-bold) bg-radial-[at_100%_100%] from-(--secondary-colour-soft) via-(--secondary-colour) to-(--secondary-colour-bold) p-6 text-center sm:p-10 lg:p-16"
+      >
+        <h1
+          class="font-(family-name:--serif-font) text-4xl leading-none sm:text-6xl lg:text-7xl"
+        >
+          My roadmap.sh frontend project collection
+        </h1>
+        <p class="mx-auto max-w-3xl text-lg leading-relaxed sm:text-2xl">
+          I am working through the
+          <a
+            class="border-b-2 border-(--accent-color-bold) font-bold no-underline hover:text-(--accent-color) focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-(--accent-color-bold)"
+            href="https://roadmap.sh/frontend/projects"
+            target="_blank"
+            rel="noopener noreferrer"
+            >roadmap.sh Frontend Projects</a
+          >
+          collection, turning each brief into a practical build and a chance to
+          learn something new.
+        </p>
+        <p class="mx-auto max-w-3xl text-lg leading-relaxed italic sm:text-2xl">
+          Everything here is made with plain HTML, CSS, and JavaScript, with
+          Tailwind helping where it makes the layout clearer.
+        </p>
+        <div class="flex flex-col gap-3 sm:flex-row sm:justify-center">
+          <a
+            class="rounded-lg border-2 border-(--accent-color-bold) bg-(--primary-color) px-6 py-3 text-center font-semibold text-(--accent-color-bold) transition hover:bg-(--accent-color) hover:text-(--primary-color-soft)"
+            href="https://roadmap.sh/frontend/projects"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Explore the roadmap.sh projects</a
+          >
+          <a
+            class="rounded-lg border-2 border-(--accent-color-bold) bg-(--primary-color-soft) px-6 py-3 text-center font-semibold text-(--accent-color-bold) transition hover:bg-(--secondary-colour-soft)"
+            href="https://github.com/Al-Farhan-Seg/roadmap.sh-builds"
+            target="_blank"
+            rel="noopener noreferrer"
+            >View this collection on GitHub</a
+          >
+        </div>
+      </article>
 
-            <!-- Project 1-->
-            <div class="project-container">
-                <a href="./1-single-page-cv/index.html">
-                    <img class="project-img" src="./top_assets/Single-Page-CV.png" alt="Single Page CV screenshot">
-                    <p class="project-name">Single Page CV</p>
-                </a>
-            </div>
+      <h3
+        class="my-8 text-center font-(family-name:--display-font) text-4xl text-(--accent-color-bold) sm:text-5xl"
+      >
+        ---- LABS ----
+      </h3>
+      <section
+        id="projects"
+        class="flex flex-wrap justify-center gap-4 [&_.project-container]:w-full sm:[&_.project-container]:w-[calc(50%-0.5rem)] lg:[&_.project-container]:w-[calc(33.333333%-0.666667rem)] 2xl:[&_.project-container]:w-[calc(25%-0.75rem)] [&_.project-container]:rounded-2xl [&_.project-container]:border-2 [&_.project-container]:border-(--accent-color-bold) [&_.project-container]:bg-radial-[at_100%_100%] [&_.project-container]:from-(--secondary-colour-soft) [&_.project-container]:via-(--secondary-colour) [&_.project-container]:to-(--secondary-colour-bold) [&_.project-container]:p-4 [&_.project-container]:transition [&_.project-container:hover]:-translate-x-1 [&_.project-container:hover]:-translate-y-1 [&_.project-container:hover]:shadow-lg [&_.project-container>a]:block [&_.project-container>a]:text-(--accent-color-bold) [&_.project-container>a]:no-underline [&_.project-img]:block [&_.project-img]:h-auto [&_.project-img]:w-full [&_.project-img]:rounded-xl [&_.project-img]:border-2 [&_.project-img]:border-(--accent-color-bold) [&_.project-name]:mt-3 [&_.project-name]:text-left [&_.project-name]:text-lg [&_.project-name]:font-bold lg:[&_.project-name]:text-center"
+      >
+        <!-- Project 1-->
+        <div class="project-container">
+          <a href="./1-single-page-cv/index.html">
+            <img
+              class="project-img"
+              src="./top_assets/Single-Page-CV.png"
+              alt="Single Page CV screenshot"
+            />
+            <p class="project-name">Single Page CV</p>
+          </a>
+        </div>
 
-            <!-- Project 2-->
-            <div class="project-container">
-                <a href="./2-basic-html-website/homepage.html">
-                    <img class="project-img" src="./top_assets/Basic-HTML-Website.png" alt="Basic HTML Website screenshot">
-                    <p class="project-name">Basic HTML Website</p>
-                </a>
-            </div>
+        <!-- Project 2-->
+        <div class="project-container">
+          <a href="./2-basic-html-website/homepage.html">
+            <img
+              class="project-img"
+              src="./top_assets/Basic-HTML-Website.png"
+              alt="Basic HTML Website screenshot"
+            />
+            <p class="project-name">Basic HTML Website</p>
+          </a>
+        </div>
 
-            <!-- Project 3-->
-            <div class="project-container">
-                <a href="./3-personal-portfolio/homepage.html">
-                    <img class="project-img" src="./top_assets/Personal-Portfolio.png" alt="Personal Portfolio screenshot">  
-                    <p class="project-name">Personal Portfolio</p>
-                </a>
-            </div>
+        <!-- Project 3-->
+        <div class="project-container">
+          <a href="./3-personal-portfolio/homepage.html">
+            <img
+              class="project-img"
+              src="./top_assets/Personal-Portfolio.png"
+              alt="Personal Portfolio screenshot"
+            />
+            <p class="project-name">Personal Portfolio</p>
+          </a>
+        </div>
 
+        <!-- Project 4-->
+        <div class="project-container">
+          <a href="./4-changelog-component/index.html">
+            <img
+              class="project-img"
+              src="./top_assets/Changelog-Component.png"
+              alt="Changelog Component screenshot"
+            />
+            <p class="project-name">Changelog Component</p>
+          </a>
+        </div>
 
-            <!-- Project 4-->
-            <div class="project-container">
-                <a href="./4-changelog-component/index.html">
-                    <img class="project-img" src="./top_assets/Changelog-Component.png" alt="Changelog Component screenshot">
-                    <p class="project-name">Changelog Component</p>
-                </a>
-            </div>
-            
-            <!-- Project 5-->
-            <div class="project-container">
-                <a href="./5-testimonial-cards/index.html">
-                    <img class="project-img" src="./top_assets/Testimonial-Cards.png" alt="Testimonial Cards screenshot">   
-                    <p class="project-name">Testimonial Cards</p>
-                </a>
-            </div>
+        <!-- Project 5-->
+        <div class="project-container">
+          <a href="./5-testimonial-cards/index.html">
+            <img
+              class="project-img"
+              src="./top_assets/Testimonial-Cards.png"
+              alt="Testimonial Cards screenshot"
+            />
+            <p class="project-name">Testimonial Cards</p>
+          </a>
+        </div>
 
+        <!-- Project 6-->
+        <div class="project-container">
+          <a href="./6-date-picker-ui/index.html">
+            <img
+              class="project-img"
+              src="./top_assets/Date-Picker-UI.png"
+              alt="Date Picker UI screenshot"
+            />
+            <p class="project-name">Date Picker UI</p>
+          </a>
+        </div>
 
-            <!-- Project 6-->
-            <div class="project-container">
-                <a href="./6-date-picker-ui/index.html">
-                    <img class="project-img" src="./top_assets/Date-Picker-UI.png" alt="Date Picker UI screenshot">
-                    <p class="project-name">Date Picker UI</p>
-                </a>
-            </div>
+        <!-- Project 7-->
+        <div class="project-container">
+          <a href="./7-accessible-form-ui/index.html">
+            <img
+              class="project-img"
+              src="./top_assets/Accessible-Form-UI.png"
+              alt="Accessible Form UI screenshot"
+            />
+            <p class="project-name">Accessible Form UI</p>
+          </a>
+        </div>
 
-            <!-- Project 7-->
-            <div class="project-container">
-                <a href="./7-accessible-form-ui/index.html">
-                    <img class="project-img" src="./top_assets/Accessible-Form-UI.png" alt="Accessible Form UI screenshot">
-                    <p class="project-name">Accessible Form UI</p>
-                </a>
-            </div>
+        <!-- Project 8-->
+        <div class="project-container">
+          <a href="./8-image-grid-layout/index.html">
+            <img
+              class="project-img"
+              src="./top_assets/Image-Grid-Layout.png"
+              alt="Image Grid Layout screenshot"
+            />
+            <p class="project-name">Image Grid Layout</p>
+          </a>
+        </div>
 
-            <!-- Project 8-->
-            <div class="project-container">
-                <a href="./8-image-grid-layout/index.html">
-                    <img class="project-img" src="./top_assets/Image-Grid-Layout.png" alt="Image Grid Layout screenshot">
-                    <p class="project-name">Image Grid Layout</p>
-                </a>
-            </div>
+        <!-- Project 9-->
+        <div class="project-container">
+          <a href="./9-tooltip-ui/index.html">
+            <img
+              class="project-img"
+              src="./top_assets/Tooltip-UI.png"
+              alt="Tooltip UI screenshot"
+            />
+            <p class="project-name">Tooltip UI</p>
+          </a>
+        </div>
 
-            <!-- Project 9-->
-            <div class="project-container">
-                <a href="./9-tooltip-ui/index.html">
-                    <img class="project-img" src="./top_assets/Tooltip-UI.png" alt="Tooltip UI screenshot">
-                    <p class="project-name">Tooltip UI</p>
-                </a>
-            </div>
+        <!-- Project 10-->
+        <div class="project-container">
+          <a href="./10-tabs/index.html">
+            <img
+              class="project-img"
+              src="./top_assets/Tabs.png"
+              alt="Simple Tabs screenshot"
+            />
+            <p class="project-name">Simple Tabs</p>
+          </a>
+        </div>
 
-            <!-- Project 10-->
-            <div class="project-container">
-                <a href="./10-tabs/index.html">
-                    <img class="project-img" src="./top_assets/Tabs.png" alt="Simple Tabs screenshot">
-                    <p class="project-name">Simple Tabs</p>
-                </a>
-            </div>
+        <!-- Project 11-->
+        <div class="project-container">
+          <a href="./11-cookie-consent/index.html">
+            <img
+              class="project-img"
+              src="./top_assets/1-coming-soon.jpg"
+              alt="Cookie Consent coming soon"
+            />
+            <p class="project-name">Cookie Consent</p>
+          </a>
+        </div>
 
-            <!-- Project 11-->
-            <div class="project-container">
-                <a href="./11-cookie-consent/index.html">
-                    <img class="project-img" src="./top_assets/1-coming-soon.jpg" alt="Cookie Consent coming soon">
-                    <p class="project-name">Cookie Consent</p>
-                </a>
-            </div>
+        <!-- Project 12-->
+        <div class="project-container">
+          <a href="./12-restricted-textarea/index.html">
+            <img
+              class="project-img"
+              src="./top_assets/1-coming-soon.jpg"
+              alt="Restricted Textarea coming soon"
+            />
+            <p class="project-name">Restricted Textarea</p>
+          </a>
+        </div>
 
-            <!-- Project 12-->
-            <div class="project-container">
-                <a href="./12-restricted-textarea/index.html">
-                    <img class="project-img" src="./top_assets/1-coming-soon.jpg" alt="Restricted Textarea coming soon">
-                    <p class="project-name">Restricted Textarea</p>
-                </a>
-            </div>
+        <!-- Project 13-->
+        <div class="project-container">
+          <a href="./13-accordion/index.html">
+            <img
+              class="project-img"
+              src="./top_assets/Accordion.png"
+              alt="Accordion screenshot"
+            />
+            <p class="project-name">Accordion</p>
+          </a>
+        </div>
 
-            <!-- Project 13-->
-            <div class="project-container">
-                <a href="./13-accordion/index.html">
-                    <img class="project-img" src="./top_assets/Accordion.png" alt="Accordion screenshot">
-                    <p class="project-name">Accordion</p>
-                </a>
-            </div>
+        <!-- Project 14-->
+        <div class="project-container">
+          <a href="./14-age-calculator/index.html">
+            <img
+              class="project-img"
+              src="./top_assets/1-coming-soon.jpg"
+              alt="Age Calculator coming soon"
+            />
+            <p class="project-name">Age Calculator</p>
+          </a>
+        </div>
 
-            <!-- Project 14-->
-            <div class="project-container">
-                <a href="./14-age-calculator/index.html">
-                    <img class="project-img" src="./top_assets/1-coming-soon.jpg" alt="Age Calculator coming soon">
-                    <p class="project-name">Age Calculator</p>
-                </a>
-            </div>
+        <!-- Project 15-->
+        <div class="project-container">
+          <a href="./15-flash-cards/index.html">
+            <img
+              class="project-img"
+              src="./top_assets/1-coming-soon.jpg"
+              alt="Flash Cards coming soon"
+            />
+            <p class="project-name">Flash Cards</p>
+          </a>
+        </div>
 
-            <!-- Project 15-->
-            <div class="project-container">
-                <a href="./15-flash-cards/index.html">
-                    <img class="project-img" src="./top_assets/1-coming-soon.jpg" alt="Flash Cards coming soon">
-                    <p class="project-name">Flash Cards</p>
-                </a>
-            </div>
+        <!-- Project 16-->
+        <div class="project-container">
+          <a href="./16-pricing-comparison-table/index.html">
+            <img
+              class="project-img"
+              src="./top_assets/Pricing-Comparison-Table.png"
+              alt="Pricing Comparison Table screenshot"
+            />
+            <p class="project-name">Pricing Comparison Table</p>
+          </a>
+        </div>
 
-            <!-- Project 16-->
-            <div class="project-container">
-                <a href="./16-pricing-comparison-table/index.html">
-                    <img class="project-img" src="./top_assets/Pricing-Comparison-Table.png" alt="Pricing Comparison Table screenshot">
-                    <p class="project-name">Pricing Comparison Table</p>
-                </a>
-            </div>
+        <!-- Project 17-->
+        <div class="project-container">
+          <a href="./17-blog-post-page/index.html">
+            <img
+              class="project-img"
+              src="./top_assets/1-coming-soon.jpg"
+              alt="Blog Post Page coming soon"
+            />
+            <p class="project-name">Blog Post Page</p>
+          </a>
+        </div>
 
-            <!-- Project 17-->
-            <div class="project-container">
-                <a href="./17-blog-post-page/index.html">
-                    <img class="project-img" src="./top_assets/1-coming-soon.jpg" alt="Blog Post Page coming soon">
-                    <p class="project-name">Blog Post Page</p>
-                </a>
-            </div>
+        <!-- Project 18-->
+        <div class="project-container">
+          <a href="./18-contact-form/index.html">
+            <img
+              class="project-img"
+              src="./top_assets/1-coming-soon.jpg"
+              alt="Contact Form coming soon"
+            />
+            <p class="project-name">Contact Form</p>
+          </a>
+        </div>
 
-            <!-- Project 18-->
-            <div class="project-container">
-                <a href="./18-contact-form/index.html">
-                    <img class="project-img" src="./top_assets/1-coming-soon.jpg" alt="Contact Form coming soon">
-                    <p class="project-name">Contact Form</p>
-                </a>
-            </div>
+        <!-- Project 19-->
+        <div class="project-container">
+          <a href="./19-photo-showcase/index.html">
+            <img
+              class="project-img"
+              src="./top_assets/1-coming-soon.jpg"
+              alt="Photo Showcase coming soon"
+            />
+            <p class="project-name">Photo Showcase</p>
+          </a>
+        </div>
 
-            <!-- Project 19-->
-            <div class="project-container">
-                <a href="./19-photo-showcase/index.html">
-                    <img class="project-img" src="./top_assets/1-coming-soon.jpg" alt="Photo Showcase coming soon">
-                    <p class="project-name">Photo Showcase</p>
-                </a>
-            </div>
+        <!-- Project 20-->
+        <div class="project-container">
+          <a href="./20-pricing-cards/index.html">
+            <img
+              class="project-img"
+              src="./top_assets/Pricing-Cards.png"
+              alt="Pricing Cards screenshot"
+            />
+            <p class="project-name">Pricing Cards</p>
+          </a>
+        </div>
 
-            <!-- Project 20-->
-            <div class="project-container">
-                <a href="./20-pricing-cards/index.html">
-                    <img class="project-img" src="./top_assets/Pricing-Cards.png" alt="Pricing Cards screenshot">
-                    <p class="project-name">Pricing Cards</p>
-                </a>
-            </div>
+        <!-- Project 21-->
+        <div class="project-container">
+          <a href="./21-quiz-app/index.html">
+            <img
+              class="project-img"
+              src="./top_assets/1-coming-soon.jpg"
+              alt="Quiz App coming soon"
+            />
+            <p class="project-name">Quiz App</p>
+          </a>
+        </div>
 
-            <!-- Project 21-->
-            <div class="project-container">
-                <a href="./21-quiz-app/index.html">
-                    <img class="project-img" src="./top_assets/1-coming-soon.jpg" alt="Quiz App coming soon">
-                    <p class="project-name">Quiz App</p>
-                </a>
-            </div>
+        <!-- Project 22-->
+        <div class="project-container">
+          <a href="./22-weather-web-app/index.html">
+            <img
+              class="project-img"
+              src="./top_assets/1-coming-soon.jpg"
+              alt="Weather Web App coming soon"
+            />
+            <p class="project-name">Weather Web App</p>
+          </a>
+        </div>
 
-            <!-- Project 22-->
-            <div class="project-container">
-                <a href="./22-weather-web-app/index.html">
-                    <img class="project-img" src="./top_assets/1-coming-soon.jpg" alt="Weather Web App coming soon">
-                    <p class="project-name">Weather Web App</p>
-                </a>
-            </div>
+        <!-- Project 23-->
+        <div class="project-container">
+          <a href="./23-github-random-repository/index.html">
+            <img
+              class="project-img"
+              src="./top_assets/1-coming-soon.jpg"
+              alt="GitHub Random Repository coming soon"
+            />
+            <p class="project-name">GitHub Random Repository</p>
+          </a>
+        </div>
 
-            <!-- Project 23-->
-            <div class="project-container">
-                <a href="./23-github-random-repository/index.html">
-                    <img class="project-img" src="./top_assets/1-coming-soon.jpg" alt="GitHub Random Repository coming soon">
-                    <p class="project-name">GitHub Random Repository</p>
-                </a>
-            </div>
+        <!-- Project 24-->
+        <div class="project-container">
+          <a href="./24-custom-dropdown/index.html">
+            <img
+              class="project-img"
+              src="./top_assets/1-coming-soon.jpg"
+              alt="Custom Dropdown coming soon"
+            />
+            <p class="project-name">Custom Dropdown</p>
+          </a>
+        </div>
 
-            <!-- Project 24-->
-            <div class="project-container">
-                <a href="./24-custom-dropdown/index.html">
-                    <img class="project-img" src="./top_assets/1-coming-soon.jpg" alt="Custom Dropdown coming soon">
-                    <p class="project-name">Custom Dropdown</p>
-                </a>
-            </div>
+        <!-- Project 25-->
+        <div class="project-container">
+          <a href="./25-task-tracker/index.html">
+            <img
+              class="project-img"
+              src="./top_assets/Task-Tracker.png"
+              alt="Task Tracker screenshot"
+            />
+            <p class="project-name">Task Tracker</p>
+          </a>
+        </div>
 
-            <!-- Project 25-->
-            <div class="project-container">
-                <a href="./25-task-tracker/index.html">
-                    <img class="project-img" src="./top_assets/Task-Tracker.png" alt="Task Tracker screenshot">
-                    <p class="project-name">Task Tracker</p>
-                </a>
-            </div>
+        <!-- Project 26-->
+        <div class="project-container">
+          <a href="./26-reddit-client/index.html">
+            <img
+              class="project-img"
+              src="./top_assets/1-coming-soon.jpg"
+              alt="Reddit Client coming soon"
+            />
+            <p class="project-name">Reddit Client</p>
+          </a>
+        </div>
 
-            <!-- Project 26-->
-            <div class="project-container">
-                <a href="./26-reddit-client/index.html">
-                    <img class="project-img" src="./top_assets/1-coming-soon.jpg" alt="Reddit Client coming soon">
-                    <p class="project-name">Reddit Client</p>
-                </a>
-            </div>
+        <!-- Project 27-->
+        <div class="project-container">
+          <a href="./27-temperature-converter/index.html">
+            <img
+              class="project-img"
+              src="./top_assets/1-coming-soon.jpg"
+              alt="Temperature Converter coming soon"
+            />
+            <p class="project-name">Temperature Converter</p>
+          </a>
+        </div>
 
-            <!-- Project 27-->
-            <div class="project-container">
-                <a href="./27-temperature-converter/index.html">
-                    <img class="project-img" src="./top_assets/1-coming-soon.jpg" alt="Temperature Converter coming soon">
-                    <p class="project-name">Temperature Converter</p>
-                </a>
-            </div>
+        <!-- Project 28-->
+        <div class="project-container">
+          <a href="./28-pomodoro-timer/index.html">
+            <img
+              class="project-img"
+              src="./top_assets/1-coming-soon.jpg"
+              alt="Pomodoro Timer coming soon"
+            />
+            <p class="project-name">Pomodoro Timer</p>
+          </a>
+        </div>
 
-            <!-- Project 28-->
-            <div class="project-container">
-                <a href="./28-pomodoro-timer/index.html">
-                    <img class="project-img" src="./top_assets/1-coming-soon.jpg" alt="Pomodoro Timer coming soon">
-                    <p class="project-name">Pomodoro Timer</p>
-                </a>
-            </div>
+        <!-- Project 29-->
+        <div class="project-container">
+          <a href="./29-theme-switcher-with-css-variables/index.html">
+            <img
+              class="project-img"
+              src="./top_assets/1-coming-soon.jpg"
+              alt="Theme Switcher with CSS Variables coming soon"
+            />
+            <p class="project-name">Theme Switcher with CSS Variables</p>
+          </a>
+        </div>
 
-            <!-- Project 29-->
-            <div class="project-container">
-                <a href="./29-theme-switcher-with-css-variables/index.html">
-                    <img class="project-img" src="./top_assets/1-coming-soon.jpg" alt="Theme Switcher with CSS Variables coming soon">
-                    <p class="project-name">Theme Switcher with CSS Variables</p>
-                </a>
-            </div>
-
-            <!-- Project 30-->
-            <div class="project-container">
-                <a href="./30-24hr-story-feature/index.html">
-                    <img class="project-img" src="./top_assets/1-coming-soon.jpg" alt="24hr Story Feature coming soon">
-                    <p class="project-name">24hr Story Feature</p>
-                </a>
-            </div>
-            
-  
-        </section>
+        <!-- Project 30-->
+        <div class="project-container">
+          <a href="./30-24hr-story-feature/index.html">
+            <img
+              class="project-img"
+              src="./top_assets/1-coming-soon.jpg"
+              alt="24hr Story Feature coming soon"
+            />
+            <p class="project-name">24hr Story Feature</p>
+          </a>
+        </div>
+      </section>
     </main>
 
-    <footer>
-
+    <footer
+      class="flex flex-wrap justify-center gap-4 border-t-2 border-(--accent-color-bold) bg-(--primary-color-bold) p-6 font-bold"
+    >
+      <a
+        class="group flex items-center gap-2 rounded-full border-2 border-(--accent-color-bold) bg-(--primary-color-soft) px-4 py-2 no-underline transition duration-200 hover:-translate-y-0.5 hover:bg-(--accent-color-soft) hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-(--accent-color-bold) active:translate-y-0 active:shadow-none"
+        href="https://farhansegujja.com/"
+        ><img
+          class="size-7 rounded-full object-contain transition duration-200 group-hover:scale-105 group-hover:ring-2 group-hover:ring-(--accent-color)"
+          src="./top_assets/passport_pic_cartoon.png"
+          alt=""
+        />Main page</a
+      >
+      <a
+        class="group flex items-center gap-2 rounded-full border-2 border-(--accent-color-bold) bg-(--primary-color-soft) px-4 py-2 no-underline transition duration-200 hover:-translate-y-0.5 hover:bg-(--accent-color-soft) hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-(--accent-color-bold) active:translate-y-0 active:shadow-none"
+        href="https://github.com/Al-Farhan-Seg"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><img
+          class="size-7 rounded-full object-contain transition duration-200 group-hover:scale-105 group-hover:brightness-110"
+          src="./top_assets/github_png.png"
+          alt=""
+        />GitHub profile</a
+      >
     </footer>
-</body>
+  </body>
 </html>
