@@ -1,0 +1,798 @@
+/* ============================================================
+   PESTICIDE.CSS — ADVANCED DEVELOPMENT DEBUGGER
+   ------------------------------------------------------------
+   Purpose:
+   - Visualize DOM structure
+   - Debug Flexbox/Grid
+   - Spot positioned elements
+   - Spot overflow-related utilities
+   - Spot fixed dimensions
+   - Highlight interactive elements
+   - Flag common HTML/accessibility mistakes
+
+   DEVELOPMENT ONLY — DO NOT SHIP TO PRODUCTION
+   ============================================================ */
+
+
+/* ============================================================
+   1. CONFIGURATION
+   ============================================================ */
+
+:root {
+  --pesticide-line-width: 1px;
+  --pesticide-strong-width: 2px;
+
+  --pesticide-opacity: 0.75;
+
+  --pesticide-html: #ff0000;
+  --pesticide-body: #ff6600;
+
+  --pesticide-container: #2997ff;
+  --pesticide-section: #00c8c8;
+
+  --pesticide-text: #39d353;
+  --pesticide-heading: #ff4de1;
+
+  --pesticide-flex: #00ffff;
+  --pesticide-grid: #ff00ff;
+
+  --pesticide-absolute: #ff8c00;
+  --pesticide-relative: #ffd700;
+  --pesticide-fixed: #ff1744;
+  --pesticide-sticky: #9c27b0;
+
+  --pesticide-media: #ff6347;
+  --pesticide-svg: #00e5ff;
+
+  --pesticide-control: #ffff00;
+  --pesticide-link: #b8ff00;
+
+  --pesticide-warning: #ff003c;
+  --pesticide-empty: #ff4081;
+
+  --pesticide-size: #7c4dff;
+  --pesticide-overflow: #ff9800;
+}
+
+
+/* ============================================================
+   2. GLOBAL BOX VISUALIZER
+
+   outline does NOT take up layout space.
+   ============================================================ */
+
+* {
+  outline:
+    var(--pesticide-line-width)
+    solid
+    rgb(255 80 80 / 0.28);
+}
+
+
+/* ============================================================
+   3. DOCUMENT STRUCTURE
+   ============================================================ */
+
+html {
+  outline:
+    var(--pesticide-strong-width)
+    solid
+    var(--pesticide-html);
+}
+
+body {
+  outline:
+    var(--pesticide-strong-width)
+    solid
+    var(--pesticide-body);
+}
+
+header {
+  outline:
+    var(--pesticide-strong-width)
+    solid
+    #ff1493;
+}
+
+main {
+  outline:
+    var(--pesticide-strong-width)
+    solid
+    #00bfff;
+}
+
+footer {
+  outline:
+    var(--pesticide-strong-width)
+    solid
+    #9400d3;
+}
+
+nav {
+  outline-color: #ba55d3;
+}
+
+section {
+  outline-color: var(--pesticide-section);
+}
+
+article {
+  outline-color: #20b2aa;
+}
+
+aside {
+  outline-color: #9966ff;
+}
+
+
+/* ============================================================
+   4. GENERIC CONTAINERS
+   ============================================================ */
+
+div {
+  outline-color: rgb(30 144 255 / var(--pesticide-opacity));
+}
+
+figure {
+  outline-color: #ff7f50;
+}
+
+figcaption {
+  outline-color: #ffb347;
+}
+
+
+/* ============================================================
+   5. TEXT ELEMENTS
+   ============================================================ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  outline-color: var(--pesticide-heading);
+}
+
+p {
+  outline-color: var(--pesticide-text);
+}
+
+span {
+  outline-color: #00ff99;
+}
+
+strong,
+b {
+  outline-color: #adff2f;
+}
+
+em,
+i {
+  outline-color: #7fff00;
+}
+
+blockquote {
+  outline-color: #c6ff00;
+}
+
+pre {
+  outline-color: #00c853;
+}
+
+code {
+  outline-color: #69f0ae;
+}
+
+
+/* ============================================================
+   6. LINKS + INTERACTIVE ELEMENTS
+   ============================================================ */
+
+a {
+  outline:
+    var(--pesticide-strong-width)
+    solid
+    var(--pesticide-link);
+}
+
+button {
+  outline:
+    var(--pesticide-strong-width)
+    solid
+    var(--pesticide-control);
+}
+
+input,
+textarea,
+select {
+  outline:
+    var(--pesticide-strong-width)
+    solid
+    #ff69b4;
+}
+
+label {
+  outline-color: #00fa9a;
+}
+
+
+/* ============================================================
+   7. IMAGES / SVG / MEDIA
+   ============================================================ */
+
+img,
+picture {
+  outline:
+    var(--pesticide-strong-width)
+    solid
+    var(--pesticide-media);
+}
+
+svg {
+  outline:
+    var(--pesticide-strong-width)
+    solid
+    var(--pesticide-svg);
+}
+
+video {
+  outline:
+    var(--pesticide-strong-width)
+    solid
+    #ff1744;
+}
+
+audio {
+  outline-color: #ff5252;
+}
+
+canvas {
+  outline:
+    var(--pesticide-strong-width)
+    solid
+    #e040fb;
+}
+
+
+/* ============================================================
+   8. LISTS
+   ============================================================ */
+
+ul {
+  outline-color: #ff9800;
+}
+
+ol {
+  outline-color: #ff6d00;
+}
+
+li {
+  outline-color: #ffc107;
+}
+
+
+/* ============================================================
+   9. TABLES
+   ============================================================ */
+
+table {
+  outline:
+    var(--pesticide-strong-width)
+    solid
+    #7c4dff;
+}
+
+thead {
+  outline-color: #b388ff;
+}
+
+tbody {
+  outline-color: #7c4dff;
+}
+
+tfoot {
+  outline-color: #651fff;
+}
+
+tr {
+  outline-color: #536dfe;
+}
+
+th {
+  outline-color: #40c4ff;
+}
+
+td {
+  outline-color: #18ffff;
+}
+
+
+/* ============================================================
+   10. FLEXBOX DEBUGGING
+   ------------------------------------------------------------
+   Detects common Tailwind flex utilities.
+   ============================================================ */
+
+:where(
+  [class~="flex"],
+  [class~="inline-flex"]
+) {
+  outline:
+    var(--pesticide-strong-width)
+    dashed
+    var(--pesticide-flex);
+
+  box-shadow:
+    inset 0 0 0 1px rgb(0 255 255 / 0.2);
+}
+
+
+/* Flex direction */
+
+:where(
+  [class~="flex-col"],
+  [class~="flex-col-reverse"]
+) {
+  box-shadow:
+    inset 4px 0 0 rgb(0 255 255 / 0.65);
+}
+
+:where(
+  [class~="flex-row"],
+  [class~="flex-row-reverse"]
+) {
+  box-shadow:
+    inset 0 4px 0 rgb(0 255 255 / 0.65);
+}
+
+
+/* Flex growing/shrinking */
+
+:where(
+  [class~="grow"],
+  [class~="flex-1"],
+  [class~="flex-auto"]
+) {
+  outline-style: double;
+}
+
+:where(
+  [class~="shrink-0"]
+) {
+  box-shadow:
+    inset 0 0 0 2px rgb(0 255 170 / 0.5);
+}
+
+
+/* ============================================================
+   11. GRID DEBUGGING
+   ============================================================ */
+
+:where(
+  [class~="grid"],
+  [class~="inline-grid"]
+) {
+  outline:
+    var(--pesticide-strong-width)
+    dashed
+    var(--pesticide-grid);
+
+  box-shadow:
+    inset 0 0 0 1px rgb(255 0 255 / 0.2);
+}
+
+
+/* ============================================================
+   12. POSITIONING DEBUGGING
+   ============================================================ */
+
+[class~="relative"] {
+  outline:
+    var(--pesticide-strong-width)
+    dotted
+    var(--pesticide-relative);
+}
+
+[class~="absolute"] {
+  outline:
+    3px dotted
+    var(--pesticide-absolute);
+}
+
+[class~="fixed"] {
+  outline:
+    3px double
+    var(--pesticide-fixed);
+}
+
+[class~="sticky"] {
+  outline:
+    3px dashed
+    var(--pesticide-sticky);
+}
+
+
+/* Also catch some inline styles */
+
+[style*="position: absolute"],
+[style*="position:absolute"] {
+  outline:
+    3px dotted
+    var(--pesticide-absolute);
+}
+
+[style*="position: fixed"],
+[style*="position:fixed"] {
+  outline:
+    3px double
+    var(--pesticide-fixed);
+}
+
+
+/* ============================================================
+   13. WIDTH / HEIGHT UTILITIES
+   ------------------------------------------------------------
+   Highlights elements whose dimensions are being constrained.
+   Useful when debugging Tailwind h-* / w-* problems.
+   ============================================================ */
+
+[class*="w-"],
+[class*="max-w-"],
+[class*="min-w-"] {
+  box-shadow:
+    inset 0 0 0 1px rgb(124 77 255 / 0.5);
+}
+
+[class*="h-"],
+[class*="max-h-"],
+[class*="min-h-"] {
+  outline-color: var(--pesticide-size);
+}
+
+
+/* Explicit inline sizing */
+
+[style*="width"],
+[style*="height"] {
+  outline-color: var(--pesticide-size);
+}
+
+
+/* ============================================================
+   14. OVERFLOW DEBUGGING
+   ============================================================ */
+
+:where(
+  [class~="overflow-hidden"],
+  [class~="overflow-auto"],
+  [class~="overflow-scroll"],
+  [class~="overflow-x-hidden"],
+  [class~="overflow-y-hidden"],
+  [class~="overflow-x-auto"],
+  [class~="overflow-y-auto"],
+  [class~="overflow-x-scroll"],
+  [class~="overflow-y-scroll"]
+) {
+  outline:
+    var(--pesticide-strong-width)
+    dashed
+    var(--pesticide-overflow);
+
+  box-shadow:
+    inset 0 0 0 2px rgb(255 152 0 / 0.2);
+}
+
+
+/* ============================================================
+   15. Z-INDEX DEBUGGING
+   ============================================================ */
+
+[class*="z-"] {
+  outline:
+    var(--pesticide-strong-width)
+    double
+    #ff4081;
+}
+
+
+/* ============================================================
+   16. EMPTY ELEMENT DETECTION
+   ------------------------------------------------------------
+   Empty structural elements are given a striped background.
+   Background does not change their dimensions.
+   ============================================================ */
+
+:where(
+  div:empty,
+  section:empty,
+  article:empty,
+  aside:empty,
+  main:empty,
+  header:empty,
+  footer:empty,
+  nav:empty,
+  p:empty,
+  span:empty
+) {
+  outline:
+    2px dashed
+    var(--pesticide-empty);
+
+  background-image:
+    repeating-linear-gradient(
+      45deg,
+      rgb(255 64 129 / 0.12),
+      rgb(255 64 129 / 0.12) 5px,
+      transparent 5px,
+      transparent 10px
+    );
+}
+
+
+/* ============================================================
+   17. COMMON HTML / ACCESSIBILITY WARNINGS
+   ============================================================ */
+
+
+/* Image missing alt entirely */
+
+img:not([alt]) {
+  outline:
+    4px solid
+    var(--pesticide-warning) !important;
+}
+
+
+/* Links without a usable href */
+
+a:not([href]),
+a[href=""] {
+  outline:
+    4px dashed
+    var(--pesticide-warning) !important;
+}
+
+
+/* Inputs without a type */
+
+input:not([type]) {
+  outline:
+    3px dashed
+    var(--pesticide-warning) !important;
+}
+
+
+/* Buttons without explicit type.
+   Useful inside forms where the default is submit. */
+
+button:not([type]) {
+  box-shadow:
+    inset 0 0 0 3px rgb(255 153 0 / 0.7);
+}
+
+
+/* iframe without title */
+
+iframe:not([title]) {
+  outline:
+    4px solid
+    var(--pesticide-warning) !important;
+}
+
+
+/* ============================================================
+   18. HIDDEN ELEMENT DEBUGGING
+   ------------------------------------------------------------
+   display:none cannot be outlined because it has no rendered box.
+   Other hiding techniques can still be marked.
+   ============================================================ */
+
+[hidden] {
+  outline:
+    3px dashed
+    var(--pesticide-warning);
+}
+
+[aria-hidden="true"] {
+  outline:
+    2px dashed
+    #ff4081;
+}
+
+[class~="invisible"] {
+  outline:
+    3px dotted
+    #ff1744;
+}
+
+
+/* ============================================================
+   19. OPACITY DEBUGGING
+   ============================================================ */
+
+[class*="opacity-"] {
+  box-shadow:
+    inset 0 0 0 2px rgb(255 255 0 / 0.4);
+}
+
+
+/* ============================================================
+   20. TRANSFORM DEBUGGING
+   ============================================================ */
+
+:where(
+  [class*="translate-"],
+  [class*="scale-"],
+  [class*="rotate-"],
+  [class*="skew-"]
+) {
+  outline:
+    2px dashed
+    #00e676;
+}
+
+
+/* ============================================================
+   21. GAP / SPACE DEBUGGING
+   ------------------------------------------------------------
+   Highlights containers that use Tailwind gap utilities.
+   ============================================================ */
+
+[class*="gap-"] {
+  box-shadow:
+    inset 0 0 0 2px rgb(0 230 118 / 0.28);
+}
+
+
+/* ============================================================
+   22. PADDING / MARGIN DEBUGGING
+   ------------------------------------------------------------
+   These selectors don't visualize the exact spacing,
+   but identify elements using spacing utilities.
+   ============================================================ */
+
+:where(
+  [class*=" p-"],
+  [class^="p-"],
+  [class*=" px-"],
+  [class^="px-"],
+  [class*=" py-"],
+  [class^="py-"]
+) {
+  outline-style: dashed;
+}
+
+
+/* ============================================================
+   23. FOCUS DEBUGGING
+   ============================================================ */
+
+:focus-visible {
+  outline:
+    4px solid
+    #00ff80 !important;
+
+  outline-offset: 3px;
+}
+
+
+/* ============================================================
+   24. CLICKABLE / POINTER ELEMENTS
+   ============================================================ */
+
+[class~="cursor-pointer"] {
+  box-shadow:
+    inset 0 0 0 2px rgb(184 255 0 / 0.35);
+}
+
+
+/* ============================================================
+   25. DEBUG HELPER CLASSES
+   ------------------------------------------------------------
+   Optional classes you can temporarily use if needed.
+   ============================================================ */
+
+.debug-red {
+  outline: 3px solid red !important;
+}
+
+.debug-blue {
+  outline: 3px solid blue !important;
+}
+
+.debug-green {
+  outline: 3px solid lime !important;
+}
+
+.debug-yellow {
+  outline: 3px solid yellow !important;
+}
+
+.debug-cyan {
+  outline: 3px solid cyan !important;
+}
+
+.debug-magenta {
+  outline: 3px solid magenta !important;
+}
+
+
+/* ============================================================
+   26. DEBUG CHILDREN OF ONE SPECIFIC ELEMENT
+   ------------------------------------------------------------
+   Add class="debug-children" to one container if you want
+   especially strong visualization of its direct children.
+   ============================================================ */
+
+.debug-children > * {
+  outline:
+    3px solid
+    #00ffff !important;
+}
+
+
+/* ============================================================
+   27. DEEP DEBUGGING
+   ------------------------------------------------------------
+   Add class="debug-deep" to a parent to strongly outline
+   everything inside it.
+   ============================================================ */
+
+.debug-deep * {
+  outline:
+    2px solid
+    rgb(255 0 0 / 0.8) !important;
+}
+
+
+/* ============================================================
+   28. DEBUG FLEX CHILDREN
+   ------------------------------------------------------------
+   Add debug-flex to a flex container to make each direct
+   child extremely visible.
+   ============================================================ */
+
+.debug-flex {
+  outline:
+    4px dashed
+    cyan !important;
+}
+
+.debug-flex > * {
+  outline:
+    2px solid
+    #00ff80 !important;
+}
+
+
+/* ============================================================
+   29. DEBUG GRID CHILDREN
+   ============================================================ */
+
+.debug-grid {
+  outline:
+    4px dashed
+    magenta !important;
+}
+
+.debug-grid > * {
+  outline:
+    2px solid
+    #ff80ff !important;
+}
+
+
+/* ============================================================
+   30. PRINT SAFETY
+   ------------------------------------------------------------
+   Never print the debugging visuals.
+   ============================================================ */
+
+@media print {
+  * {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
