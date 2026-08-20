@@ -6,7 +6,8 @@
     <title>Contact Form</title>
     <link rel="stylesheet" href="../top_assets/tailwind.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="../top_assets/coming-soon.css">
+    <link rel="stylesheet" href="../pesticide-adv.cs">
+    <link rel="stylesheet" href="../pesticide-ord.css">
     <link rel="icon" type="image/png" href="../top_assets/favicon-F.png">
 
     <!-- Primary Meta Tags -->
@@ -30,17 +31,62 @@
     <meta name="twitter:image:alt" content="Al-Farhan favicon">
 </head>
 <body class="m-0 min-h-screen pt-24 font-sans">
-    <main>
+    <main class="hidden">
         <h1 class="fixed top-0 left-0 z-50 m-0 w-full rounded-none bg-white px-4 py-3 text-center text-black">Contact Form</h1>
-        <section class="coming-soon-hero" aria-labelledby="coming-soon-heading">
-            <h2 id="coming-soon-heading">Coming soon. Please check back anytime</h2>
+        <section>
+            <h2>Acme Support</h2>
+            <div>
+                <p>Home</p>
+                <p>Help</p>
+                <p>Contact</p>
+            </div>
+            <hr>
+            <form action="" method="post">
+                <legend>Contact Us</legend>
+                
+                <label for="full-name-input">Full Name</label>
+                <input type="text" id="full-name-input">
+
+                <label for="email-input">Email</label>
+                <input type="email" id="email-input">
+
+                <label for="subject-choice">Subject</label>
+                <select name="subject-choice" id="subject-choice">
+                    <option value="complaint">Complaint</option>
+                    <option value="appreciation">Appreciation</option>
+                    <option value="inquiry">Inquiry</option>
+                </select>
+
+                <label for="detailed-message">Message</label>
+                <textarea name="detailed-message" id="detailed-message"></textarea>
+
+                <p>Where did you hear about us</p>
+
+                <input type="radio" name="referrer" id="search">
+                <label for="search">Search</label>
+
+                <input type="radio" name="referrer" id="friend">
+                <label for="friend">Friend</label>
+
+                <input type="radio" name="referrer" id="social-media">
+                <label for="social-media">Social Media</label>
+
+                <input type="checkbox" name="updates" id="updates">
+                <label for="updates">Send me product updates</label>
+
+                <button type="submit">Send Message</button>
+
+            </form>
         </section>
     </main>
-    <a href="https://roadmap.sh/projects/contact-form"
+    <footer>
+        <a href="https://roadmap.sh/projects/contact-form"
         class="mx-auto my-16 block w-57.5 rounded-2xl bg-linear-to-br from-amber-950 to-stone-950 p-4 text-center font-semibold text-amber-100 no-underline shadow-xl transition duration-150 ease-in-out hover:brightness-110 hover:shadow-lg active:translate-x-1 active:translate-y-1 active:shadow-none"
         target="_blank"
         rel="noopener noreferrer">
         Go to Project of Reference
     </a>
+    </footer>
+    
 </body>
 </html>

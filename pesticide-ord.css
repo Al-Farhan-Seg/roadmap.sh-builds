@@ -1,0 +1,102 @@
+/* Simple Pesticide CSS
+   Development/debugging only
+*/
+
+* {
+  outline: 1px solid red;
+}
+
+/* Main structure */
+html {
+  outline: 3px solid red;
+}
+
+body {
+  outline: 3px solid orange;
+}
+
+header {
+  outline: 2px solid purple;
+}
+
+nav {
+  outline: 2px solid violet;
+}
+
+main {
+  outline: 2px solid blue;
+}
+
+section {
+  outline: 2px solid cyan;
+}
+
+footer {
+  outline: 2px solid darkviolet;
+}
+
+/* Containers */
+div {
+  outline: 1px solid dodgerblue;
+}
+
+/* Text */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  outline: 1px solid magenta;
+}
+
+p {
+  outline: 1px solid limegreen;
+}
+
+span {
+  outline: 1px solid green;
+}
+
+/* Links and controls */
+a {
+  outline: 2px solid yellowgreen;
+}
+
+button {
+  outline: 2px solid yellow;
+}
+
+input,
+textarea,
+select {
+  outline: 2px solid hotpink;
+}
+
+/* Media */
+img {
+  outline: 2px solid tomato;
+}
+
+/* Lists */
+ul,
+ol {
+  outline: 1px solid orange;
+}
+
+li {
+  outline: 1px solid gold;
+}
+
+/* Tables */
+table {
+  outline: 2px solid purple;
+}
+
+th {
+  outline: 1px solid deepskyblue;
+}
+
+td {
+  outline: 1px solid aqua;
+}
