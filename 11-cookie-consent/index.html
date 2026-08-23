@@ -70,11 +70,15 @@
         Cookie Consent
       </h1>
     </header>
+    
+    <h2 id="display-message" class="text-xl md:text-5xl text-center">Waiting for user action.....</h2>
     <main
       class="fixed bottom-4 left-1/2 w-[calc(100%-2rem)] max-w-sm -translate-x-1/2 md:right-4 md:left-auto md:w-[40%] md:max-w-md md:translate-x-0 lg:w-90"
     >
+
+      
       <div
-        class="flex w-full flex-col gap-4 rounded-2xl border border-white bg-linear-to-r from-stone-900 to-slate-500 p-5 text-olive-200"
+        class="cookie-modal flex w-full flex-col gap-4 rounded-2xl border border-white bg-linear-to-r from-stone-900 to-slate-500 p-5 text-olive-200"
       >
         <div class="flex min-h-15 items-center justify-between px-2">
           <svg width="40" height="40">
@@ -85,9 +89,9 @@
             <svg
               width="20"
               height="20"
-              class="rounded-full transition-all duration-200 ease-out hover:scale-150 hover:border hover:border-olive-200 active:scale-90"
+              class="close-modal-btn rounded-full transition-all duration-200 ease-out hover:scale-150 hover:border hover:border-olive-200 active:scale-90"
             >
-              <use href="#close-modal"></use>
+              <use href="#close-modal-svg"></use>
             </svg>
           </button>
         </div>
@@ -100,7 +104,7 @@
 
         <div class="flex justify-center">
           <button
-            class="w-7/10 rounded-2xl border border-black bg-olive-200 p-4 text-lg text-black transition-all duration-150 ease-out hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[4px_4px] hover:shadow-olive-100 active:translate-x-1 active:translate-y-1 active:shadow-none"
+            class="accept-cookies-btn w-7/10 rounded-2xl border border-black bg-olive-200 p-4 text-lg text-black transition-all duration-150 ease-out hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[4px_4px] hover:shadow-olive-100 active:translate-x-1 active:translate-y-1 active:shadow-none"
           >
             I like cookies
           </button>
@@ -133,7 +137,7 @@
         </g>
       </symbol>
       <symbol
-        id="close-modal"
+        id="close-modal-svg"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"

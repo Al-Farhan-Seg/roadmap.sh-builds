@@ -42,7 +42,7 @@ A folder by itself is **not** treated as a completed project. Completion is coun
 
 <!-- PROJECTS:START -->
 
-![Progress](https://img.shields.io/badge/Progress-15%2F30-0ea5e9?style=flat-square) **15/30 complete (50%)** · **15 in progress** · **0 not started**
+![Progress](https://img.shields.io/badge/Progress-16%2F30-0ea5e9?style=flat-square) **16/30 complete (53%)** · **14 in progress** · **0 not started**
 
 | # | Status | Level | Focus | Official Project | Local Solution |
 |---:|:------:|---|---|---|---|
@@ -56,7 +56,7 @@ A folder by itself is **not** treated as a completed project. Completion is coun
 | 8 | ✅ | Beginner | CSS | [Image Grid Layout](https://roadmap.sh/projects/image-grid) | [View project](./8-image-grid-layout/) |
 | 9 | ✅ | Beginner | CSS | [Tooltip UI](https://roadmap.sh/projects/tooltip-ui) | [View project](./9-tooltip-ui/) |
 | 10 | ✅ | Beginner | JavaScript | [Tabs](https://roadmap.sh/projects/simple-tabs) | [View project](./10-tabs/) |
-| 11 | 🚧 | Beginner | JavaScript | [Cookie Consent](https://roadmap.sh/projects/cookie-consent) | [Open folder](./11-cookie-consent/) |
+| 11 | ✅ | Beginner | JavaScript | [Cookie Consent](https://roadmap.sh/projects/cookie-consent) | [View project](./11-cookie-consent/) |
 | 12 | 🚧 | Beginner | JavaScript | [Restricted Textarea](https://roadmap.sh/projects/restricted-textarea) | [Open folder](./12-restricted-textarea/) |
 | 13 | ✅ | Beginner | JavaScript | [Accordion](https://roadmap.sh/projects/accordion) | [View project](./13-accordion/) |
 | 14 | 🚧 | Beginner | Frontend | [Age Calculator](https://roadmap.sh/projects/age-calculator) | [Open folder](./14-age-calculator/) |
