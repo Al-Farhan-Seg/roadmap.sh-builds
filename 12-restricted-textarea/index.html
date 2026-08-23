@@ -1,48 +1,101 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restricted Textarea</title>
-    <link rel="stylesheet" href="../top_assets/tailwind.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="../pesticide-adv.cs">
-    <link rel="stylesheet" href="../pesticide-ord.cs">
+    <link rel="stylesheet" href="../top_assets/tailwind.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../pesticide-adv.cs" />
+    <link rel="stylesheet" href="../pesticide-ord.cs" />
     <script src="script.js" defer></script>
-    <link rel="icon" type="image/png" href="../top_assets/favicon-F.png">
+    <link rel="icon" type="image/png" href="../top_assets/favicon-F.png" />
 
     <!-- Primary Meta Tags -->
-    <meta name="title" content="Restricted Textarea | Al-Farhan Frontend Projects">
-    <meta name="description" content="A textarea with a live character counter and maximum character limit, built with HTML, CSS, and JavaScript to give real-time input feedback.">
+    <meta
+      name="title"
+      content="Restricted Textarea | Al-Farhan Frontend Projects"
+    />
+    <meta
+      name="description"
+      content="A textarea with a live character counter and maximum character limit, built with HTML, CSS, and JavaScript to give real-time input feedback."
+    />
 
     <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://roadmapsh.farhansegujja.com/12-restricted-textarea/index.html">
-    <meta property="og:title" content="Restricted Textarea | Al-Farhan Frontend Projects">
-    <meta property="og:description" content="A textarea with a live character counter and maximum character limit, built with HTML, CSS, and JavaScript to give real-time input feedback.">
-    <meta property="og:image" content="https://roadmapsh.farhansegujja.com/top_assets/favicon-F.png">
-    <meta property="og:image:alt" content="Al-Farhan favicon">
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://roadmapsh.farhansegujja.com/12-restricted-textarea/index.html"
+    />
+    <meta
+      property="og:title"
+      content="Restricted Textarea | Al-Farhan Frontend Projects"
+    />
+    <meta
+      property="og:description"
+      content="A textarea with a live character counter and maximum character limit, built with HTML, CSS, and JavaScript to give real-time input feedback."
+    />
+    <meta
+      property="og:image"
+      content="https://roadmapsh.farhansegujja.com/top_assets/favicon-F.png"
+    />
+    <meta property="og:image:alt" content="Al-Farhan favicon" />
 
     <!-- Twitter / X -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://roadmapsh.farhansegujja.com/12-restricted-textarea/index.html">
-    <meta name="twitter:title" content="Restricted Textarea | Al-Farhan Frontend Projects">
-    <meta name="twitter:description" content="A textarea with a live character counter and maximum character limit, built with HTML, CSS, and JavaScript to give real-time input feedback.">
-    <meta name="twitter:image" content="https://roadmapsh.farhansegujja.com/top_assets/favicon-F.png">
-    <meta name="twitter:image:alt" content="Al-Farhan favicon">
-</head>
-<body class="m-0 min-h-screen pt-24 font-sans">
-    <main>
-        <h1 class="fixed top-0 left-0 z-50 m-0 w-full rounded-none bg-white px-4 py-3 text-center text-black">Restricted Textarea</h1>
-        <section class="coming-soon-hero" aria-labelledby="coming-soon-heading">
-            <h2 id="coming-soon-heading">Coming soon. Please check back anytime</h2>
-        </section>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:url"
+      content="https://roadmapsh.farhansegujja.com/12-restricted-textarea/index.html"
+    />
+    <meta
+      name="twitter:title"
+      content="Restricted Textarea | Al-Farhan Frontend Projects"
+    />
+    <meta
+      name="twitter:description"
+      content="A textarea with a live character counter and maximum character limit, built with HTML, CSS, and JavaScript to give real-time input feedback."
+    />
+    <meta
+      name="twitter:image"
+      content="https://roadmapsh.farhansegujja.com/top_assets/favicon-F.png"
+    />
+    <meta name="twitter:image:alt" content="Al-Farhan favicon" />
+  </head>
+  <body class="m-0 min-h-screen pt-24 font-sans">
+    <h1
+      class="fixed top-0 left-0 z-50 m-0 w-full rounded-none bg-linear-to-br from-slate-500 to-stone-950 px-4 py-3 text-center text-amber-100 text-xl newfont-1"
+    >
+      Restricted Textarea
+    </h1>
+    <main class="min-w-0 sm:w-[50vw] sm:w-max-[55vw] m-auto lg:w-[35vw]">
+        <label 
+            for="restricted-textarea"
+            class="text-center block newfont-1 text-base m-2"
+        >
+            Write Your Message</label>
+        <div class="mx-2 border-3 border-slate-800 rounded-2xl p-2 newfont-3">
+            <textarea
+                name="restricted-textarea"
+                id="restricted-textarea"
+                maxlength="250"
+                class="resize-none w-full h-40 outline-1 focus:outline-2 rounded-lg p-2"
+                placeholder="Try typing more than 250 characters here ................"
+            ></textarea>
+            <div class="flex justify-end px-2">
+                <p id="char-count">
+                    <span id="current-char-count">0</span>/250
+                </p>
+            </div>
+            
+      </div>
     </main>
-    <a href="https://roadmap.sh/projects/restricted-textarea"
-        class="mx-auto my-16 block w-57.5 rounded-2xl bg-linear-to-br from-amber-950 to-stone-950 p-4 text-center font-semibold text-amber-100 no-underline shadow-xl transition duration-150 ease-in-out hover:brightness-110 hover:shadow-lg active:translate-x-1 active:translate-y-1 active:shadow-none"
-        target="_blank"
-        rel="noopener noreferrer">
-        Go to Project of Reference
+    <a
+      href="https://roadmap.sh/projects/restricted-textarea"
+      class="0 mx-auto my-16 block w-57.5 rounded-2xl bg-linear-to-br from-slate-500 to-stone-950 p-4 text-center font-semibold text-amber-100 no-underline shadow-xl transition duration-150 ease-in-out hover:shadow-lg hover:brightness-110 active:translate-x-1 active:translate-y-1 active:shadow-none newfont-1 text-sm"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Go to Project of Reference
     </a>
-</body>
+  </body>
 </html>
