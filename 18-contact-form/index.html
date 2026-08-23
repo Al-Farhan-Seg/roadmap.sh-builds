@@ -1,92 +1,154 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Form</title>
-    <link rel="stylesheet" href="../top_assets/tailwind.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="../pesticide-adv.cs">
-    <link rel="stylesheet" href="../pesticide-ord.css">
-    <link rel="icon" type="image/png" href="../top_assets/favicon-F.png">
+    <link rel="stylesheet" href="../top_assets/tailwind.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../pesticide-adv.cs" />
+    <link rel="stylesheet" href="../pesticide-ord.cs" />
+    <link rel="icon" type="image/png" href="../top_assets/favicon-F.png" />
 
     <!-- Primary Meta Tags -->
-    <meta name="title" content="Contact Form | Al-Farhan Frontend Projects">
-    <meta name="description" content="An accessible contact form built with semantic HTML and CSS, using labels, fieldsets, and native browser validation for a user-friendly experience.">
+    <meta name="title" content="Contact Form | Al-Farhan Frontend Projects" />
+    <meta
+      name="description"
+      content="An accessible contact form built with semantic HTML and CSS, using labels, fieldsets, and native browser validation for a user-friendly experience."
+    />
 
     <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://roadmapsh.farhansegujja.com/18-contact-form/index.html">
-    <meta property="og:title" content="Contact Form | Al-Farhan Frontend Projects">
-    <meta property="og:description" content="An accessible contact form built with semantic HTML and CSS, using labels, fieldsets, and native browser validation for a user-friendly experience.">
-    <meta property="og:image" content="https://roadmapsh.farhansegujja.com/top_assets/favicon-F.png">
-    <meta property="og:image:alt" content="Al-Farhan favicon">
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://roadmapsh.farhansegujja.com/18-contact-form/index.html"
+    />
+    <meta
+      property="og:title"
+      content="Contact Form | Al-Farhan Frontend Projects"
+    />
+    <meta
+      property="og:description"
+      content="An accessible contact form built with semantic HTML and CSS, using labels, fieldsets, and native browser validation for a user-friendly experience."
+    />
+    <meta
+      property="og:image"
+      content="https://roadmapsh.farhansegujja.com/top_assets/favicon-F.png"
+    />
+    <meta property="og:image:alt" content="Al-Farhan favicon" />
 
     <!-- Twitter / X -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://roadmapsh.farhansegujja.com/18-contact-form/index.html">
-    <meta name="twitter:title" content="Contact Form | Al-Farhan Frontend Projects">
-    <meta name="twitter:description" content="An accessible contact form built with semantic HTML and CSS, using labels, fieldsets, and native browser validation for a user-friendly experience.">
-    <meta name="twitter:image" content="https://roadmapsh.farhansegujja.com/top_assets/favicon-F.png">
-    <meta name="twitter:image:alt" content="Al-Farhan favicon">
-</head>
-<body class="m-0 min-h-screen pt-24 font-sans">
-    <main class="hidden">
-        <h1 class="fixed top-0 left-0 z-50 m-0 w-full rounded-none bg-white px-4 py-3 text-center text-black">Contact Form</h1>
-        <section>
-            <h2>Acme Support</h2>
-            <div>
-                <p>Home</p>
-                <p>Help</p>
-                <p>Contact</p>
-            </div>
-            <hr>
-            <form action="" method="post">
-                <legend>Contact Us</legend>
-                
-                <label for="full-name-input">Full Name</label>
-                <input type="text" id="full-name-input">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:url"
+      content="https://roadmapsh.farhansegujja.com/18-contact-form/index.html"
+    />
+    <meta
+      name="twitter:title"
+      content="Contact Form | Al-Farhan Frontend Projects"
+    />
+    <meta
+      name="twitter:description"
+      content="An accessible contact form built with semantic HTML and CSS, using labels, fieldsets, and native browser validation for a user-friendly experience."
+    />
+    <meta
+      name="twitter:image"
+      content="https://roadmapsh.farhansegujja.com/top_assets/favicon-F.png"
+    />
+    <meta name="twitter:image:alt" content="Al-Farhan favicon" />
+  </head>
+  <body class="m-0 min-h-screen pt-24 font-sans">
+    <main
+      class="w-min-[45vw] sm:w-max-[55vw] mx-3 rounded-2xl border p-2 sm:m-auto sm:w-[45vw]"
+    >
+      <h1
+        class="fixed top-0 left-0 z-50 m-0 w-full rounded-none bg-black px-4 py-3 text-center text-pink-100"
+      >
+        Contact Form
+      </h1>
+      <section>
+        <h2 class="text-center font-extrabold">Acme Support</h2>
+        <div class="flex justify-around font-semibold">
+          <p>Home</p>
+          <p>Help</p>
+          <p>Contact</p>
+        </div>
+        <hr />
+        <h2 class="text-2xl font-medium">Contact Us</h2>
+        <form action="" method="post" class="px-1">
+          <legend class="mb-2 text-[16px]">
+            Send us a message and we will get back to you.
+          </legend>
 
-                <label for="email-input">Email</label>
-                <input type="email" id="email-input">
+          <div class="my-2 flex items-center gap-3">
+            <label for="full-name-input" class="w-35">Full Name</label>
+            <input
+              type="text"
+              id="full-name-input"
+              class="border border-gray-700 w-full md:w-7/10"
+            />
+          </div>
 
-                <label for="subject-choice">Subject</label>
-                <select name="subject-choice" id="subject-choice">
-                    <option value="complaint">Complaint</option>
-                    <option value="appreciation">Appreciation</option>
-                    <option value="inquiry">Inquiry</option>
-                </select>
+          <div class="my-2 flex items-center gap-3">
+            <label for="email-input" class="w-35">Email</label>
+            <input
+              type="email"
+              id="email-input"
+              class="border border-gray-700 w-full md:w-7/10"
+            />
+          </div>
 
-                <label for="detailed-message">Message</label>
-                <textarea name="detailed-message" id="detailed-message"></textarea>
+          <div class="my-2 flex items-center gap-3">
+            <label for="subject-choice" class="w-35">Subject</label>
+            <select
+              name="subject-choice"
+              id="subject-choice"
+              class="border border-gray-700 w-full md:w-7/10"
+            >
+              <option value="complaint">Complaint</option>
+              <option value="appreciation">Appreciation</option>
+              <option value="inquiry">Inquiry</option>
+            </select>
+          </div>
 
-                <p>Where did you hear about us</p>
+          <div class="my-2 flex items-start gap-3">
+            <label for="detailed-message" class="w-35">Message</label>
+            <textarea
+              name="detailed-message"
+              id="detailed-message"
+              class="border border-gray-700 w-full md:w-7/10"
+              rows="5"
+            ></textarea>
+          </div>
 
-                <input type="radio" name="referrer" id="search">
-                <label for="search">Search</label>
+          <fieldset>
+            <legend>Where did you hear about us?</legend>
 
-                <input type="radio" name="referrer" id="friend">
-                <label for="friend">Friend</label>
+            <input type="radio" name="referrer" id="search" />
+            <label for="search">Search</label><br />
 
-                <input type="radio" name="referrer" id="social-media">
-                <label for="social-media">Social Media</label>
+            <input type="radio" name="referrer" id="friend" />
+            <label for="friend">Friend</label><br />
 
-                <input type="checkbox" name="updates" id="updates">
-                <label for="updates">Send me product updates</label>
+            <input type="radio" name="referrer" id="social-media" />
+            <label for="social-media">Social Media</label>
+          </fieldset>
 
-                <button type="submit">Send Message</button>
-
-            </form>
-        </section>
+          <button type="button" class="m-auto block rounded-sm border p-2 hover:bg-pink-100">
+            Send Message
+          </button>
+        </form>
+      </section>
     </main>
     <footer>
-        <a href="https://roadmap.sh/projects/contact-form"
-        class="mx-auto my-16 block w-57.5 rounded-2xl bg-linear-to-br from-amber-950 to-stone-950 p-4 text-center font-semibold text-amber-100 no-underline shadow-xl transition duration-150 ease-in-out hover:brightness-110 hover:shadow-lg active:translate-x-1 active:translate-y-1 active:shadow-none"
+      <a
+        href="https://roadmap.sh/projects/contact-form"
+        class="mx-auto my-16 block w-57.5 rounded-2xl bg-linear-to-br from-stone-950 to-stone-600 p-4 text-center font-semibold text-pink-100 no-underline shadow-xl transition duration-150 ease-in-out hover:shadow-lg hover:brightness-110 active:translate-x-1 active:translate-y-1 active:shadow-none"
         target="_blank"
-        rel="noopener noreferrer">
+        rel="noopener noreferrer"
+      >
         Go to Project of Reference
-    </a>
+      </a>
     </footer>
-    
-</body>
+  </body>
 </html>
