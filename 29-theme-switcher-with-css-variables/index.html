@@ -31,12 +31,26 @@
     <meta name="twitter:image:alt" content="Al-Farhan favicon">
 </head>
 <body class="m-0 min-h-screen pt-24 font-sans">
+    <h1 class="fixed top-0 left-0 z-50 m-0 w-full rounded-none bg-white px-4 py-3 text-center text-black">Theme Switcher with CSS Variables</h1>
+
     <main>
-        <h1 class="fixed top-0 left-0 z-50 m-0 w-full rounded-none bg-white px-4 py-3 text-center text-black">Theme Switcher with CSS Variables</h1>
-        <section class="coming-soon-hero" aria-labelledby="coming-soon-heading">
-            <h2 id="coming-soon-heading">Coming soon. Please check back anytime</h2>
-        </section>
+        <span id="light"></span>
+        <span id="dark"></span>
+        <span id="emerald"></span>
+        <span id="gold"></span>
+        <span id="sky"></span>
+
+        <div>
+            <a class="theme-btn" href="#light">Light</a>
+            <a class="theme-btn" href="#dark">Dark</a>
+            <a class="theme-btn" href="#emerald">Emerald</a>
+            <a class="theme-btn" href="#gold">Gold</a>
+            <a class="theme-btn" href="#sky">Sky</a>
+        </div>
+        
     </main>
+
+
     <a href="https://roadmap.sh/projects/theme-switcher"
         class="mx-auto my-16 block w-57.5 rounded-2xl bg-linear-to-br from-amber-950 to-stone-950 p-4 text-center font-semibold text-amber-100 no-underline shadow-xl transition duration-150 ease-in-out hover:brightness-110 hover:shadow-lg active:translate-x-1 active:translate-y-1 active:shadow-none"
         target="_blank"

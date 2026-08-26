@@ -9,3 +9,63 @@
 }
 
 /* Add project styles below. */
+:root {
+  --bg: #FFF5F5;
+  --text: #4A4A4A;
+  --borders: #0B1849;
+  --accent: #E2B4BD;
+}
+* { 
+  border-color: var(--borders);
+  border-radius: 5px;
+}
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+body:has(#light:target) {
+  --bg: ;
+  --text: ;
+  --borders: ;
+  --accent: ;
+}
+body:has(#emerald:target) {
+  --bg: #092328;
+  --text: #8BBB92;
+  --borders: #12544F;
+  --accent: #EA9D9D;
+}
+body:has(#dark:target) {
+  --bg: #2C2C2C;
+  --text: #F3F4F4;
+  --borders: #612D53;
+  --accent: #D99B7F;
+}
+body:has(#gold:target) {
+  --bg: #C62828;
+  --text: #FFDD9C;
+  --borders: #FF8F00;
+  --accent: #FAE251;
+}
+body:has(#sky:target) {
+  --bg: #C4E2F5;
+  --text: #003285;
+  --borders: #41C9E2;
+  --accent: #97E7E1;
+}
+.theme-btn {
+  text-decoration: none;
+  color: var(--text);
+  border: 1px solid var(--borders);
+  padding: 5px;
+  background-color: var(--accent);
+
+  &:focus, &:visited {
+    color: var(--text);
+  }
+  &:hover {
+    background-color: var(--borders);
+    color: var(--accent)
+  }
+}
