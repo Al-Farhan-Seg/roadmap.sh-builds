@@ -10,12 +10,12 @@
 
 /* Add project styles below. */
 :root {
-  --bg: #FFF5F5;
-  --text: #4A4A4A;
-  --borders: #0B1849;
-  --accent: #E2B4BD;
+  --bg: #F3F0EC;
+  --text: #5D5956;
+  --borders: #524F4C;
+  --accent: #D3D1CF;
 }
-* { 
+* {
   border-color: var(--borders);
   border-radius: 5px;
 }
@@ -24,48 +24,645 @@ body {
   color: var(--text);
 }
 
-body:has(#light:target) {
-  --bg: ;
-  --text: ;
-  --borders: ;
-  --accent: ;
+/* 100 themes, organised into 10 families of 10 (5 light-mode + 5 dark-mode each).
+   Every theme's --text/--bg, --text/--accent, and --accent/--borders pair is
+   generated to meet WCAG 2.1 AA contrast (>= 4.5:1). */
+
+/* Neutral & Monochrome */
+body:has(#porcelain:checked) {
+  --bg: #F3F0EC;
+  --text: #5D5956;
+  --borders: #524F4C;
+  --accent: #D3D1CF;
 }
-body:has(#emerald:target) {
-  --bg: #092328;
-  --text: #8BBB92;
-  --borders: #12544F;
-  --accent: #EA9D9D;
+body:has(#alabaster:checked) {
+  --bg: #F3F1EC;
+  --text: #5D5B56;
+  --borders: #52514C;
+  --accent: #D5D5D2;
 }
-body:has(#dark:target) {
-  --bg: #2C2C2C;
-  --text: #F3F4F4;
-  --borders: #612D53;
-  --accent: #D99B7F;
+body:has(#chalk:checked) {
+  --bg: #ECF1F3;
+  --text: #565A5D;
+  --borders: #4C5052;
+  --accent: #CFD2D3;
 }
-body:has(#gold:target) {
-  --bg: #C62828;
-  --text: #FFDD9C;
-  --borders: #FF8F00;
-  --accent: #FAE251;
+body:has(#linen:checked) {
+  --bg: #F3F0EC;
+  --text: #5D5A56;
+  --borders: #52504C;
+  --accent: #D3D1CF;
 }
-body:has(#sky:target) {
-  --bg: #C4E2F5;
-  --text: #003285;
-  --borders: #41C9E2;
-  --accent: #97E7E1;
+body:has(#pearl:checked) {
+  --bg: #ECF0F3;
+  --text: #56595D;
+  --borders: #4C4F52;
+  --accent: #CDCFD0;
 }
+body:has(#graphite:checked) {
+  --bg: #101623;
+  --text: #A2A5A9;
+  --borders: #ADAFB3;
+  --accent: #383A3D;
+}
+body:has(#charcoal:checked) {
+  --bg: #231A10;
+  --text: #A9A6A2;
+  --borders: #B3B0AD;
+  --accent: #3D3B38;
+}
+body:has(#onyx:checked) {
+  --bg: #161023;
+  --text: #A5A2A9;
+  --borders: #AFADB3;
+  --accent: #3A383D;
+}
+body:has(#obsidian:checked) {
+  --bg: #101023;
+  --text: #A2A2A9;
+  --borders: #ADADB3;
+  --accent: #38383D;
+}
+body:has(#slate:checked) {
+  --bg: #101B23;
+  --text: #A2A6A9;
+  --borders: #ADB0B3;
+  --accent: #383B3D;
+}
+
+/* Ocean & Aquatic */
+body:has(#seafoam:checked) {
+  --bg: #ECF3F3;
+  --text: #476B68;
+  --borders: #175E58;
+  --accent: #B6EDE8;
+}
+body:has(#lagoon:checked) {
+  --bg: #ECF2F3;
+  --text: #47656B;
+  --borders: #195966;
+  --accent: #B6E3ED;
+}
+body:has(#tide-pool:checked) {
+  --bg: #ECF3F3;
+  --text: #47686B;
+  --borders: #185C62;
+  --accent: #B6E8ED;
+}
+body:has(#aqua-mist:checked) {
+  --bg: #ECF1F3;
+  --text: #47626B;
+  --borders: #1B566A;
+  --accent: #B6DFED;
+}
+body:has(#glacier:checked) {
+  --bg: #ECF1F3;
+  --text: #475F6B;
+  --borders: #1D5672;
+  --accent: #B6DAED;
+}
+body:has(#abyss:checked) {
+  --bg: #101923;
+  --text: #94A6B8;
+  --borders: #85B2E0;
+  --accent: #173B5E;
+}
+body:has(#deep-current:checked) {
+  --bg: #101B23;
+  --text: #94A9B8;
+  --borders: #7CB6DE;
+  --accent: #163E5A;
+}
+body:has(#midnight-tide:checked) {
+  --bg: #101823;
+  --text: #94A3B8;
+  --borders: #8DB0E2;
+  --accent: #193966;
+}
+body:has(#kelp-forest:checked) {
+  --bg: #102323;
+  --text: #94B8B8;
+  --borders: #37CDCD;
+  --accent: #124949;
+}
+body:has(#mariana:checked) {
+  --bg: #101623;
+  --text: #94A0B8;
+  --borders: #91ACE3;
+  --accent: #1B356A;
+}
+
+/* Forest & Botanical */
+body:has(#sage:checked) {
+  --bg: #EFF3EC;
+  --text: #536B47;
+  --borders: #386024;
+  --accent: #D0E9C4;
+}
+body:has(#meadow:checked) {
+  --bg: #EDF3EC;
+  --text: #4D6B47;
+  --borders: #2E6024;
+  --accent: #CAE9C4;
+}
+body:has(#mint-leaf:checked) {
+  --bg: #ECF3F0;
+  --text: #476B59;
+  --borders: #246042;
+  --accent: #C4E9D6;
+}
+body:has(#willow:checked) {
+  --bg: #EFF3EC;
+  --text: #566B47;
+  --borders: #3D6024;
+  --accent: #D3E9C4;
+}
+body:has(#fern:checked) {
+  --bg: #ECF3EC;
+  --text: #476B47;
+  --borders: #246024;
+  --accent: #C4E9C4;
+}
+body:has(#pine:checked) {
+  --bg: #102316;
+  --text: #94B8A0;
+  --borders: #6BC78A;
+  --accent: #1C4A2B;
+}
+body:has(#evergreen:checked) {
+  --bg: #102313;
+  --text: #94B89A;
+  --borders: #6BC77A;
+  --accent: #1C4A24;
+}
+body:has(#moss-shadow:checked) {
+  --bg: #1A2310;
+  --text: #A6B894;
+  --borders: #96C567;
+  --accent: #334A1C;
+}
+body:has(#juniper:checked) {
+  --bg: #102318;
+  --text: #94B8A3;
+  --borders: #6BC791;
+  --accent: #1C4A2F;
+}
+body:has(#rainforest:checked) {
+  --bg: #102311;
+  --text: #94B897;
+  --borders: #6BC773;
+  --accent: #1C4A20;
+}
+
+/* Sunset & Warm */
+body:has(#peach:checked) {
+  --bg: #F3EFEC;
+  --text: #6B5647;
+  --borders: #7D3E12;
+  --accent: #F4CBAF;
+}
+body:has(#apricot:checked) {
+  --bg: #F3F0EC;
+  --text: #6B5947;
+  --borders: #744211;
+  --accent: #F3CFAA;
+}
+body:has(#coral:checked) {
+  --bg: #F3EDEC;
+  --text: #6B4D47;
+  --borders: #8A2814;
+  --accent: #F4BEB3;
+}
+body:has(#blush:checked) {
+  --bg: #F3ECED;
+  --text: #6B474D;
+  --borders: #8A1428;
+  --accent: #F4B3BE;
+}
+body:has(#papaya:checked) {
+  --bg: #F3EFEC;
+  --text: #6B5347;
+  --borders: #813712;
+  --accent: #F4C6AF;
+}
+body:has(#ember:checked) {
+  --bg: #231510;
+  --text: #B89D94;
+  --borders: #EC9679;
+  --accent: #62230E;
+}
+body:has(#wildfire:checked) {
+  --bg: #231110;
+  --text: #B89794;
+  --borders: #EE8F87;
+  --accent: #67160F;
+}
+body:has(#crimson-dusk:checked) {
+  --bg: #231011;
+  --text: #B89497;
+  --borders: #EF8F97;
+  --accent: #6B0F17;
+}
+body:has(#molten:checked) {
+  --bg: #231710;
+  --text: #B8A194;
+  --borders: #EB9D70;
+  --accent: #622D0E;
+}
+body:has(#cayenne:checked) {
+  --bg: #231010;
+  --text: #B89494;
+  --borders: #EF8F8F;
+  --accent: #6B0F0F;
+}
+
+/* Autumn & Earth */
+body:has(#wheat:checked) {
+  --bg: #F3F1EC;
+  --text: #6B6247;
+  --borders: #625328;
+  --accent: #E7DFC5;
+}
+body:has(#sandstone:checked) {
+  --bg: #F3F0EC;
+  --text: #6B5C47;
+  --borders: #694F2B;
+  --accent: #E6D7C1;
+}
+body:has(#straw:checked) {
+  --bg: #F3F2EC;
+  --text: #6B6547;
+  --borders: #625828;
+  --accent: #E9E3C9;
+}
+body:has(#camel:checked) {
+  --bg: #F3F0EC;
+  --text: #6B5947;
+  --borders: #694A2B;
+  --accent: #E4D1BE;
+}
+body:has(#honeycomb:checked) {
+  --bg: #F3F1EC;
+  --text: #6B5F47;
+  --borders: #655129;
+  --accent: #E6DAC1;
+}
+body:has(#umber:checked) {
+  --bg: #231910;
+  --text: #B8A594;
+  --borders: #CEA888;
+  --accent: #503721;
+}
+body:has(#mahogany:checked) {
+  --bg: #231510;
+  --text: #B89D94;
+  --borders: #D19F8F;
+  --accent: #532E22;
+}
+body:has(#rust:checked) {
+  --bg: #231610;
+  --text: #B89F94;
+  --borders: #D1A38F;
+  --accent: #533122;
+}
+body:has(#clay-ember:checked) {
+  --bg: #231710;
+  --text: #B8A194;
+  --borders: #D1A78F;
+  --accent: #533422;
+}
+body:has(#terracotta-night:checked) {
+  --bg: #231410;
+  --text: #B89B94;
+  --borders: #D39F92;
+  --accent: #532C22;
+}
+
+/* Cosmic & Space */
+body:has(#dawn-sky:checked) {
+  --bg: #EFECF3;
+  --text: #53476B;
+  --borders: #532E9E;
+  --accent: #C9B8EA;
+}
+body:has(#nebula-mist:checked) {
+  --bg: #F0ECF3;
+  --text: #59476B;
+  --borders: #612C96;
+  --accent: #D1B8EA;
+}
+body:has(#stardust:checked) {
+  --bg: #EDECF3;
+  --text: #4D476B;
+  --borders: #4430A6;
+  --accent: #C0B8EA;
+}
+body:has(#lavender-haze:checked) {
+  --bg: #F0ECF3;
+  --text: #5C476B;
+  --borders: #64298E;
+  --accent: #D5B8EA;
+}
+body:has(#aurora:checked) {
+  --bg: #EEECF3;
+  --text: #50476B;
+  --borders: #4C2FA2;
+  --accent: #C4B8EA;
+}
+body:has(#midnight:checked) {
+  --bg: #111023;
+  --text: #9794B8;
+  --borders: #A6A0E3;
+  --accent: #292277;
+}
+body:has(#deep-space:checked) {
+  --bg: #151023;
+  --text: #9D94B8;
+  --borders: #AE9CE2;
+  --accent: #362173;
+}
+body:has(#event-horizon:checked) {
+  --bg: #181023;
+  --text: #A394B8;
+  --borders: #B99CE2;
+  --accent: #41206F;
+}
+body:has(#void:checked) {
+  --bg: #101023;
+  --text: #9494B8;
+  --borders: #A0A0E3;
+  --accent: #222277;
+}
+body:has(#cosmic-ink:checked) {
+  --bg: #1D1023;
+  --text: #AC94B8;
+  --borders: #C998E1;
+  --accent: #4E1E67;
+}
+
+/* Pastel & Soft */
+body:has(#cotton-candy:checked) {
+  --bg: #F3ECF0;
+  --text: #6B4759;
+  --borders: #6A3952;
+  --accent: #DBBDCC;
+}
+body:has(#buttercream:checked) {
+  --bg: #F3F2EC;
+  --text: #6B6547;
+  --borders: #605934;
+  --accent: #E6E2D1;
+}
+body:has(#baby-blue:checked) {
+  --bg: #ECF0F3;
+  --text: #475C6B;
+  --borders: #365063;
+  --accent: #C3D3DF;
+}
+body:has(#lilac:checked) {
+  --bg: #F1ECF3;
+  --text: #5F476B;
+  --borders: #5D3B6D;
+  --accent: #D1BDDB;
+}
+body:has(#mint-cream:checked) {
+  --bg: #ECF3F0;
+  --text: #476B5C;
+  --borders: #34604E;
+  --accent: #D1E6DD;
+}
+body:has(#dusty-rose:checked) {
+  --bg: #231015;
+  --text: #B8949D;
+  --borders: #C99CA7;
+  --accent: #4C2932;
+}
+body:has(#muted-plum:checked) {
+  --bg: #1E1023;
+  --text: #AF94B8;
+  --borders: #C09FCB;
+  --accent: #462B50;
+}
+body:has(#faded-denim:checked) {
+  --bg: #101823;
+  --text: #94A3B8;
+  --borders: #98ACC8;
+  --accent: #29384C;
+}
+body:has(#sage-smoke:checked) {
+  --bg: #132310;
+  --text: #9AB894;
+  --borders: #97C28E;
+  --accent: #2D4927;
+}
+body:has(#soft-charcoal:checked) {
+  --bg: #231A10;
+  --text: #B8A694;
+  --borders: #C8B098;
+  --accent: #4C3B29;
+}
+
+/* Vivid & Neon */
+body:has(#electric-lime:checked) {
+  --bg: #F0F3EC;
+  --text: #596B47;
+  --borders: #305D04;
+  --accent: #ABF85D;
+}
+body:has(#hot-pink:checked) {
+  --bg: #F3ECF0;
+  --text: #6B4759;
+  --borders: #8E064A;
+  --accent: #FCB1D6;
+}
+body:has(#citrus-pop:checked) {
+  --bg: #F3F2EC;
+  --text: #6B6547;
+  --borders: #625204;
+  --accent: #F9E271;
+}
+body:has(#turbo-blue:checked) {
+  --bg: #ECEFF3;
+  --text: #47566B;
+  --borders: #0747A2;
+  --accent: #ACCDFC;
+}
+body:has(#neon-coral:checked) {
+  --bg: #F3EDEC;
+  --text: #6B4D47;
+  --borders: #8E1D06;
+  --accent: #FCB9AC;
+}
+body:has(#cyberpunk:checked) {
+  --bg: #231023;
+  --text: #B894B8;
+  --borders: #F96CF9;
+  --accent: #620462;
+}
+body:has(#neon-grid:checked) {
+  --bg: #10231A;
+  --text: #94B8A6;
+  --borders: #09DC73;
+  --accent: #034E29;
+}
+body:has(#laser-violet:checked) {
+  --bg: #191023;
+  --text: #A694B8;
+  --borders: #C793FB;
+  --accent: #470689;
+}
+body:has(#volt:checked) {
+  --bg: #202310;
+  --text: #B2B894;
+  --borders: #B1D309;
+  --accent: #3E4903;
+}
+body:has(#neon-abyss:checked) {
+  --bg: #102023;
+  --text: #94B2B8;
+  --borders: #0ACEF5;
+  --accent: #034653;
+}
+
+/* Jewel & Gem */
+body:has(#rose-quartz:checked) {
+  --bg: #F3ECEF;
+  --text: #6B4753;
+  --borders: #841F41;
+  --accent: #EEB5C8;
+}
+body:has(#aquamarine:checked) {
+  --bg: #ECF3F1;
+  --text: #476B62;
+  --borders: #165F4D;
+  --accent: #B1EDDE;
+}
+body:has(#citrine:checked) {
+  --bg: #F3F1EC;
+  --text: #6B6247;
+  --borders: #635017;
+  --accent: #EDDEB1;
+}
+body:has(#amethyst-mist:checked) {
+  --bg: #F1ECF3;
+  --text: #5F476B;
+  --borders: #6C2291;
+  --accent: #DBB5EE;
+}
+body:has(#opal:checked) {
+  --bg: #ECF2F3;
+  --text: #47656B;
+  --borders: #185A67;
+  --accent: #B1E3ED;
+}
+body:has(#emerald:checked) {
+  --bg: #10231B;
+  --text: #94B8A9;
+  --borders: #39D091;
+  --accent: #114A33;
+}
+body:has(#sapphire:checked) {
+  --bg: #101823;
+  --text: #94A3B8;
+  --borders: #8BB0E4;
+  --accent: #183967;
+}
+body:has(#ruby:checked) {
+  --bg: #231013;
+  --text: #B8949A;
+  --borders: #E58F9E;
+  --accent: #631724;
+}
+body:has(#amethyst:checked) {
+  --bg: #1B1023;
+  --text: #A994B8;
+  --borders: #C698E7;
+  --accent: #4C1A70;
+}
+body:has(#garnet:checked) {
+  --bg: #231015;
+  --text: #B8949D;
+  --borders: #E58FA5;
+  --accent: #63172A;
+}
+
+/* Corporate & Professional */
+body:has(#cloud:checked) {
+  --bg: #ECF0F3;
+  --text: #47596B;
+  --borders: #3F4F5F;
+  --accent: #C5CFD8;
+}
+body:has(#steel-mist:checked) {
+  --bg: #ECF1F3;
+  --text: #475F6B;
+  --borders: #3F545F;
+  --accent: #CBD7DC;
+}
+body:has(#boardroom:checked) {
+  --bg: #ECEFF3;
+  --text: #47536B;
+  --borders: #3F4A5F;
+  --accent: #BFC6D4;
+}
+body:has(#ledger:checked) {
+  --bg: #ECF2F3;
+  --text: #47656B;
+  --borders: #3F5A5F;
+  --accent: #D1DEE0;
+}
+body:has(#harbor:checked) {
+  --bg: #ECF0F3;
+  --text: #475C6B;
+  --borders: #3F525F;
+  --accent: #C8D3DA;
+}
+body:has(#navy:checked) {
+  --bg: #101623;
+  --text: #94A0B8;
+  --borders: #A0ABC0;
+  --accent: #2F3746;
+}
+body:has(#executive:checked) {
+  --bg: #101823;
+  --text: #94A3B8;
+  --borders: #A0ADC0;
+  --accent: #2F3946;
+}
+body:has(#ink-blue:checked) {
+  --bg: #101523;
+  --text: #949DB8;
+  --borders: #A0A8C0;
+  --accent: #2F3546;
+}
+body:has(#pinstripe:checked) {
+  --bg: #101923;
+  --text: #94A6B8;
+  --borders: #A0B0C0;
+  --accent: #2F3B46;
+}
+body:has(#corporate-night:checked) {
+  --bg: #101323;
+  --text: #949AB8;
+  --borders: #A0A5C0;
+  --accent: #2F3346;
+}
+
 .theme-btn {
+  display: inline-block;
+  cursor: pointer;
   text-decoration: none;
   color: var(--text);
   border: 1px solid var(--borders);
   padding: 5px;
   background-color: var(--accent);
 
-  &:focus, &:visited {
-    color: var(--text);
-  }
   &:hover {
     background-color: var(--borders);
     color: var(--accent)
+  }
+  &:has(input:focus-visible) {
+    outline: 2px solid var(--text);
+    outline-offset: 2px;
   }
 }

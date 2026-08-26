@@ -31,28 +31,116 @@
     <meta name="twitter:image:alt" content="Al-Farhan favicon">
 </head>
 <body class="m-0 min-h-screen pt-24 font-sans">
-    <h1 class="fixed top-0 left-0 z-50 m-0 w-full rounded-none bg-white px-4 py-3 text-center text-black">Theme Switcher with CSS Variables</h1>
+    <a class="fixed top-0 left-0 z-50 m-0 w-full rounded-none border-b bg-(--accent) px-4 py-3 text-center text-(--text)" href="../29-theme-switcher-with-css-variables/index.html">Theme Switcher with CSS Variables</a>
 
     <main>
-        <span id="light"></span>
-        <span id="dark"></span>
-        <span id="emerald"></span>
-        <span id="gold"></span>
-        <span id="sky"></span>
-
-        <div>
-            <a class="theme-btn" href="#light">Light</a>
-            <a class="theme-btn" href="#dark">Dark</a>
-            <a class="theme-btn" href="#emerald">Emerald</a>
-            <a class="theme-btn" href="#gold">Gold</a>
-            <a class="theme-btn" href="#sky">Sky</a>
+        <div class="mx-auto flex max-w-4xl flex-wrap justify-center gap-2 px-4">
+            <label class="theme-btn"><input type="radio" name="theme" id="porcelain" value="porcelain" class="sr-only" checked>Porcelain</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="alabaster" value="alabaster" class="sr-only">Alabaster</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="chalk" value="chalk" class="sr-only">Chalk</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="linen" value="linen" class="sr-only">Linen</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="pearl" value="pearl" class="sr-only">Pearl</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="graphite" value="graphite" class="sr-only">Graphite</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="charcoal" value="charcoal" class="sr-only">Charcoal</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="onyx" value="onyx" class="sr-only">Onyx</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="obsidian" value="obsidian" class="sr-only">Obsidian</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="slate" value="slate" class="sr-only">Slate</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="seafoam" value="seafoam" class="sr-only">Seafoam</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="lagoon" value="lagoon" class="sr-only">Lagoon</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="tide-pool" value="tide-pool" class="sr-only">Tide Pool</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="aqua-mist" value="aqua-mist" class="sr-only">Aqua Mist</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="glacier" value="glacier" class="sr-only">Glacier</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="abyss" value="abyss" class="sr-only">Abyss</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="deep-current" value="deep-current" class="sr-only">Deep Current</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="midnight-tide" value="midnight-tide" class="sr-only">Midnight Tide</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="kelp-forest" value="kelp-forest" class="sr-only">Kelp Forest</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="mariana" value="mariana" class="sr-only">Mariana</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="sage" value="sage" class="sr-only">Sage</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="meadow" value="meadow" class="sr-only">Meadow</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="mint-leaf" value="mint-leaf" class="sr-only">Mint Leaf</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="willow" value="willow" class="sr-only">Willow</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="fern" value="fern" class="sr-only">Fern</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="pine" value="pine" class="sr-only">Pine</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="evergreen" value="evergreen" class="sr-only">Evergreen</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="moss-shadow" value="moss-shadow" class="sr-only">Moss Shadow</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="juniper" value="juniper" class="sr-only">Juniper</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="rainforest" value="rainforest" class="sr-only">Rainforest</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="peach" value="peach" class="sr-only">Peach</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="apricot" value="apricot" class="sr-only">Apricot</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="coral" value="coral" class="sr-only">Coral</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="blush" value="blush" class="sr-only">Blush</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="papaya" value="papaya" class="sr-only">Papaya</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="ember" value="ember" class="sr-only">Ember</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="wildfire" value="wildfire" class="sr-only">Wildfire</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="crimson-dusk" value="crimson-dusk" class="sr-only">Crimson Dusk</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="molten" value="molten" class="sr-only">Molten</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="cayenne" value="cayenne" class="sr-only">Cayenne</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="wheat" value="wheat" class="sr-only">Wheat</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="sandstone" value="sandstone" class="sr-only">Sandstone</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="straw" value="straw" class="sr-only">Straw</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="camel" value="camel" class="sr-only">Camel</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="honeycomb" value="honeycomb" class="sr-only">Honeycomb</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="umber" value="umber" class="sr-only">Umber</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="mahogany" value="mahogany" class="sr-only">Mahogany</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="rust" value="rust" class="sr-only">Rust</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="clay-ember" value="clay-ember" class="sr-only">Clay Ember</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="terracotta-night" value="terracotta-night" class="sr-only">Terracotta Night</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="dawn-sky" value="dawn-sky" class="sr-only">Dawn Sky</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="nebula-mist" value="nebula-mist" class="sr-only">Nebula Mist</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="stardust" value="stardust" class="sr-only">Stardust</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="lavender-haze" value="lavender-haze" class="sr-only">Lavender Haze</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="aurora" value="aurora" class="sr-only">Aurora</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="midnight" value="midnight" class="sr-only">Midnight</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="deep-space" value="deep-space" class="sr-only">Deep Space</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="event-horizon" value="event-horizon" class="sr-only">Event Horizon</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="void" value="void" class="sr-only">Void</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="cosmic-ink" value="cosmic-ink" class="sr-only">Cosmic Ink</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="cotton-candy" value="cotton-candy" class="sr-only">Cotton Candy</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="buttercream" value="buttercream" class="sr-only">Buttercream</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="baby-blue" value="baby-blue" class="sr-only">Baby Blue</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="lilac" value="lilac" class="sr-only">Lilac</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="mint-cream" value="mint-cream" class="sr-only">Mint Cream</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="dusty-rose" value="dusty-rose" class="sr-only">Dusty Rose</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="muted-plum" value="muted-plum" class="sr-only">Muted Plum</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="faded-denim" value="faded-denim" class="sr-only">Faded Denim</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="sage-smoke" value="sage-smoke" class="sr-only">Sage Smoke</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="soft-charcoal" value="soft-charcoal" class="sr-only">Soft Charcoal</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="electric-lime" value="electric-lime" class="sr-only">Electric Lime</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="hot-pink" value="hot-pink" class="sr-only">Hot Pink</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="citrus-pop" value="citrus-pop" class="sr-only">Citrus Pop</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="turbo-blue" value="turbo-blue" class="sr-only">Turbo Blue</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="neon-coral" value="neon-coral" class="sr-only">Neon Coral</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="cyberpunk" value="cyberpunk" class="sr-only">Cyberpunk</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="neon-grid" value="neon-grid" class="sr-only">Neon Grid</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="laser-violet" value="laser-violet" class="sr-only">Laser Violet</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="volt" value="volt" class="sr-only">Volt</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="neon-abyss" value="neon-abyss" class="sr-only">Neon Abyss</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="rose-quartz" value="rose-quartz" class="sr-only">Rose Quartz</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="aquamarine" value="aquamarine" class="sr-only">Aquamarine</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="citrine" value="citrine" class="sr-only">Citrine</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="amethyst-mist" value="amethyst-mist" class="sr-only">Amethyst Mist</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="opal" value="opal" class="sr-only">Opal</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="emerald" value="emerald" class="sr-only">Emerald</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="sapphire" value="sapphire" class="sr-only">Sapphire</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="ruby" value="ruby" class="sr-only">Ruby</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="amethyst" value="amethyst" class="sr-only">Amethyst</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="garnet" value="garnet" class="sr-only">Garnet</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="cloud" value="cloud" class="sr-only">Cloud</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="steel-mist" value="steel-mist" class="sr-only">Steel Mist</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="boardroom" value="boardroom" class="sr-only">Boardroom</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="ledger" value="ledger" class="sr-only">Ledger</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="harbor" value="harbor" class="sr-only">Harbor</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="navy" value="navy" class="sr-only">Navy</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="executive" value="executive" class="sr-only">Executive</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="ink-blue" value="ink-blue" class="sr-only">Ink Blue</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="pinstripe" value="pinstripe" class="sr-only">Pinstripe</label>
+            <label class="theme-btn"><input type="radio" name="theme" id="corporate-night" value="corporate-night" class="sr-only">Corporate Night</label>
         </div>
-        
     </main>
 
 
     <a href="https://roadmap.sh/projects/theme-switcher"
-        class="mx-auto my-16 block w-57.5 rounded-2xl bg-linear-to-br from-amber-950 to-stone-950 p-4 text-center font-semibold text-amber-100 no-underline shadow-xl transition duration-150 ease-in-out hover:brightness-110 hover:shadow-lg active:translate-x-1 active:translate-y-1 active:shadow-none"
+        class="mx-auto my-16 block w-57.5 rounded-2xl bg-(--borders) p-4 text-center font-semibold text-(--accent) no-underline shadow-xl transition duration-150 ease-in-out hover:brightness-110 hover:shadow-lg active:translate-x-1 active:translate-y-1 active:shadow-none"
         target="_blank"
         rel="noopener noreferrer">
         Go to Project of Reference
