@@ -7,5 +7,8 @@
 *::after {
     box-sizing: border-box;
 }
-
+.showcase-font {
+    font-family: 'amoera';
+    font-weight: 900;
+}
 /* Add project styles below. */

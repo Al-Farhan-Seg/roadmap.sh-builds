@@ -42,7 +42,7 @@ A folder by itself is **not** treated as a completed project. Completion is coun
 
 <!-- PROJECTS:START -->
 
-![Progress](https://img.shields.io/badge/Progress-18%2F30-0ea5e9?style=flat-square) **18/30 complete (60%)** · **12 in progress** · **0 not started**
+![Progress](https://img.shields.io/badge/Progress-19%2F30-0ea5e9?style=flat-square) **19/30 complete (63%)** · **11 in progress** · **0 not started**
 
 | # | Status | Level | Focus | Official Project | Local Solution |
 |---:|:------:|---|---|---|---|
@@ -64,7 +64,7 @@ A folder by itself is **not** treated as a completed project. Completion is coun
 | 16 | ✅ | Beginner | HTML | [Pricing Comparison Table](https://roadmap.sh/projects/pricing-comparison-table) | [View project](./16-pricing-comparison-table/) |
 | 17 | ✅ | Beginner | HTML | [Blog Post Page](https://roadmap.sh/projects/blog-post-page) | [View project](./17-blog-post-page/) |
 | 18 | ✅ | Beginner | HTML | [Contact Form](https://roadmap.sh/projects/contact-form) | [View project](./18-contact-form/) |
-| 19 | 🚧 | Beginner | HTML | [Photo Showcase](https://roadmap.sh/projects/photo-showcase) | [Open folder](./19-photo-showcase/) |
+| 19 | ✅ | Beginner | HTML | [Photo Showcase](https://roadmap.sh/projects/photo-showcase) | [View project](./19-photo-showcase/) |
 | 20 | ✅ | Beginner | CSS | [Pricing Cards](https://roadmap.sh/projects/pricing-cards) | [View project](./20-pricing-cards/) |
 | 21 | 🚧 | Intermediate | Frameworks | [Quiz App](https://roadmap.sh/projects/quiz-app) | [Open folder](./21-quiz-app/) |
 | 22 | 🚧 | Intermediate | API | [Weather Web App](https://roadmap.sh/projects/weather-app) | [Open folder](./22-weather-web-app/) |
