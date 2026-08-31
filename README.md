@@ -42,7 +42,7 @@ A folder by itself is **not** treated as a completed project. Completion is coun
 
 <!-- PROJECTS:START -->
 
-![Progress](https://img.shields.io/badge/Progress-17%2F30-0ea5e9?style=flat-square) **17/30 complete (57%)** · **13 in progress** · **0 not started**
+![Progress](https://img.shields.io/badge/Progress-18%2F30-0ea5e9?style=flat-square) **18/30 complete (60%)** · **12 in progress** · **0 not started**
 
 | # | Status | Level | Focus | Official Project | Local Solution |
 |---:|:------:|---|---|---|---|
@@ -62,7 +62,7 @@ A folder by itself is **not** treated as a completed project. Completion is coun
 | 14 | 🚧 | Beginner | Frontend | [Age Calculator](https://roadmap.sh/projects/age-calculator) | [Open folder](./14-age-calculator/) |
 | 15 | 🚧 | Beginner | Frontend | [Flash Cards](https://roadmap.sh/projects/flash-cards) | [Open folder](./15-flash-cards/) |
 | 16 | ✅ | Beginner | HTML | [Pricing Comparison Table](https://roadmap.sh/projects/pricing-comparison-table) | [View project](./16-pricing-comparison-table/) |
-| 17 | 🚧 | Beginner | HTML | [Blog Post Page](https://roadmap.sh/projects/blog-post-page) | [Open folder](./17-blog-post-page/) |
+| 17 | ✅ | Beginner | HTML | [Blog Post Page](https://roadmap.sh/projects/blog-post-page) | [View project](./17-blog-post-page/) |
 | 18 | ✅ | Beginner | HTML | [Contact Form](https://roadmap.sh/projects/contact-form) | [View project](./18-contact-form/) |
 | 19 | 🚧 | Beginner | HTML | [Photo Showcase](https://roadmap.sh/projects/photo-showcase) | [Open folder](./19-photo-showcase/) |
 | 20 | ✅ | Beginner | CSS | [Pricing Cards](https://roadmap.sh/projects/pricing-cards) | [View project](./20-pricing-cards/) |

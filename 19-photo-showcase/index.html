@@ -31,12 +31,113 @@
     <meta name="twitter:image:alt" content="Al-Farhan favicon">
 </head>
 <body class="m-0 min-h-screen pt-24 font-sans">
-    <main>
-        <h1 class="fixed top-0 left-0 z-50 m-0 w-full rounded-none bg-white px-4 py-3 text-center text-black">Photo Showcase</h1>
-        <section class="coming-soon-hero" aria-labelledby="coming-soon-heading">
-            <h2 id="coming-soon-heading">Coming soon. Please check back anytime</h2>
+    
+    <h1 class="fixed top-0 left-0 z-50 m-0 w-full rounded-none bg-white px-4 py-3 text-center text-black">Photo Showcase</h1>
+    <main class="mx-auto w-full max-w-6xl px-4 pb-12 sm:px-6 lg:px-8">
+        
+
+        <section class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <figure class="min-w-0">
+                <img
+                    class="h-auto w-full max-w-full"
+                    src="images/mountain-lake.jpg"
+                    alt="Mountain peaks reflected in a calm lake"
+                    width="800"
+                    height="600"
+                >
+                <figcaption class="mt-2">
+                    A peaceful mountain lake surrounded by high peaks.
+                </figcaption>
+            </figure>
+
+            <figure class="min-w-0">
+                <img
+                    class="h-auto w-full max-w-full"
+                    src="images/forest-path.jpg"
+                    alt="Walking path passing through a dense green forest"
+                    width="800"
+                    height="600"
+                >
+                <figcaption class="mt-2">
+                    A quiet path through a green forest.
+                </figcaption>
+            </figure>
+
+            <figure class="min-w-0">
+                <img
+                    class="h-auto w-full max-w-full"
+                    src="images/coastline.jpg"
+                    alt="Rocky coastline beside blue ocean water"
+                    width="800"
+                    height="600"
+                >
+                <figcaption class="mt-2">
+                    Ocean waves meeting a rocky coastline.
+                </figcaption>
+            </figure>
+
+            <img
+                class="h-auto w-full max-w-full"
+                src="images/city-street.jpg"
+                alt="Busy city street lined with tall buildings"
+                width="800"
+                height="600"
+            >
+
+            <img
+                class="h-auto w-full max-w-full"
+                src="images/desert.jpg"
+                alt="Sand dunes stretching across a desert landscape"
+                width="800"
+                height="600"
+            >
+
+            <img
+                class="h-auto w-full max-w-full"
+                src="images/wildflowers.jpg"
+                alt="Field of colorful wildflowers beneath an open sky"
+                width="800"
+                height="600"
+            >
+        </section>
+
+        <section class="mt-12">
+            <h2 class="text-2xl font-semibold">Decorative image</h2>
+
+            <img
+                class="mt-4 h-auto w-full max-w-full"
+                src="images/decorative.jpg"
+                alt=""
+                width="1200"
+                height="400"
+            >
+        </section>
+
+        <section class="mt-12">
+            <h2 class="text-2xl font-semibold">Featured video</h2>
+
+            <video
+                class="mt-4 h-auto w-full max-w-3xl"
+                controls
+                poster="images/video-poster.jpg"
+            >
+                <source
+                    class=""
+                    src="videos/showcase.mp4"
+                    type="video/mp4"
+                >
+
+                Your browser does not support HTML video.
+            </video>
         </section>
     </main>
+
+    <footer class="mx-auto w-full max-w-6xl px-4 py-8 sm:px-6 lg:px-8">
+        <p class="">
+            &copy; 2026 Photo Showcase
+        </p>
+    </footer>
+
     <a href="https://roadmap.sh/projects/photo-showcase"
         class="mx-auto my-16 block w-57.5 rounded-2xl bg-linear-to-br from-amber-950 to-stone-950 p-4 text-center font-semibold text-amber-100 no-underline shadow-xl transition duration-150 ease-in-out hover:brightness-110 hover:shadow-lg active:translate-x-1 active:translate-y-1 active:shadow-none"
         target="_blank"
