@@ -42,7 +42,7 @@ A folder by itself is **not** treated as a completed project. Completion is coun
 
 <!-- PROJECTS:START -->
 
-![Progress](https://img.shields.io/badge/Progress-19%2F30-0ea5e9?style=flat-square) **19/30 complete (63%)** · **11 in progress** · **0 not started**
+![Progress](https://img.shields.io/badge/Progress-20%2F30-0ea5e9?style=flat-square) **20/30 complete (67%)** · **10 in progress** · **0 not started**
 
 | # | Status | Level | Focus | Official Project | Local Solution |
 |---:|:------:|---|---|---|---|
@@ -69,7 +69,7 @@ A folder by itself is **not** treated as a completed project. Completion is coun
 | 21 | 🚧 | Intermediate | Frameworks | [Quiz App](https://roadmap.sh/projects/quiz-app) | [Open folder](./21-quiz-app/) |
 | 22 | 🚧 | Intermediate | API | [Weather Web App](https://roadmap.sh/projects/weather-app) | [Open folder](./22-weather-web-app/) |
 | 23 | 🚧 | Intermediate | API Integration | [GitHub Random Repository](https://roadmap.sh/projects/github-random-repo) | [Open folder](./23-github-random-repository/) |
-| 24 | 🚧 | Intermediate | JavaScript | [Custom Dropdown](https://roadmap.sh/projects/custom-dropdown) | [Open folder](./24-custom-dropdown/) |
+| 24 | ✅ | Intermediate | JavaScript | [Custom Dropdown](https://roadmap.sh/projects/custom-dropdown) | [View project](./24-custom-dropdown/) |
 | 25 | ✅ | Intermediate | JavaScript | [Task Tracker](https://roadmap.sh/projects/task-tracker-js) | [View project](./25-task-tracker/) |
 | 26 | 🚧 | Intermediate | API Integration | [Reddit Client](https://roadmap.sh/projects/reddit-client) | [Open folder](./26-reddit-client/) |
 | 27 | 🚧 | Intermediate | JavaScript | [Temperature Converter](https://roadmap.sh/projects/temperature-converter) | [Open folder](./27-temperature-converter/) |

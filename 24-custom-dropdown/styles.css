@@ -7,5 +7,15 @@
 *::after {
     box-sizing: border-box;
 }
+.dropdown-arrow {
+    transition: transform 0.2s ease;
+}
 
-/* Add project styles below. */
+.dropdown.open .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.dropdown-option.selected {
+    background-color: #c7d2fe;
+    font-weight: 600;
+}

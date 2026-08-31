@@ -8,41 +8,114 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="../pesticide-adv.cs">
     <link rel="stylesheet" href="../pesticide-ord.cs">
-    <script src="script.js" defer></script>
     <link rel="icon" type="image/png" href="../top_assets/favicon-F.png">
 
-    <!-- Primary Meta Tags -->
     <meta name="title" content="Custom Dropdown | Al-Farhan Frontend Projects">
-    <meta name="description" content="A custom dropdown component built with HTML, CSS, and JavaScript, featuring keyboard-friendly interaction and clear open and closed states.">
-
-    <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://roadmapsh.farhansegujja.com/24-custom-dropdown/index.html">
-    <meta property="og:title" content="Custom Dropdown | Al-Farhan Frontend Projects">
-    <meta property="og:description" content="A custom dropdown component built with HTML, CSS, and JavaScript, featuring keyboard-friendly interaction and clear open and closed states.">
-    <meta property="og:image" content="https://roadmapsh.farhansegujja.com/top_assets/favicon-F.png">
-    <meta property="og:image:alt" content="Al-Farhan favicon">
-
-    <!-- Twitter / X -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://roadmapsh.farhansegujja.com/24-custom-dropdown/index.html">
-    <meta name="twitter:title" content="Custom Dropdown | Al-Farhan Frontend Projects">
-    <meta name="twitter:description" content="A custom dropdown component built with HTML, CSS, and JavaScript, featuring keyboard-friendly interaction and clear open and closed states.">
-    <meta name="twitter:image" content="https://roadmapsh.farhansegujja.com/top_assets/favicon-F.png">
-    <meta name="twitter:image:alt" content="Al-Farhan favicon">
+    <meta
+        name="description"
+        content="An interactive custom dropdown built with HTML, CSS, and JavaScript using DOM manipulation and event handling."
+    >
 </head>
-<body class="m-0 min-h-screen pt-24 font-sans">
-    <main>
-        <h1 class="fixed top-0 left-0 z-50 m-0 w-full rounded-none bg-white px-4 py-3 text-center text-black">Custom Dropdown</h1>
-        <section class="coming-soon-hero" aria-labelledby="coming-soon-heading">
-            <h2 id="coming-soon-heading">Coming soon. Please check back anytime</h2>
+
+<body class="m-0 min-h-screen bg-amber-100 pt-24 font-['Hilsfiger'] text-slate-900">
+
+    <h1 class="fixed top-0 left-0 z-50 m-0 w-full bg-linear-to-br from-indigo-950 to-stone-950 px-4 py-4 text-center text-2xl font-bold text-amber-100 shadow-md">
+        Custom Dropdown
+    </h1>
+
+    <main class="mx-auto flex min-h-[60vh] w-full max-w-xl items-center justify-center px-4">
+
+        <section class="w-full">
+            <h2 class="mb-6 text-center text-xl font-semibold">
+                Choose an option
+            </h2>
+
+            <div class="dropdown relative w-full">
+
+                <button
+                    class="dropdown-toggle flex w-full items-center justify-between rounded-xl border-2 border-slate-800 bg-white px-5 py-4 text-left"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="dropdown-options"
+                >
+                    <span class="dropdown-label">
+                        Select an Item
+                    </span>
+
+                    <span class="dropdown-arrow" aria-hidden="true">
+                        ▼
+                    </span>
+                </button>
+
+                <ul
+                    id="dropdown-options"
+                    class="dropdown-menu absolute left-0 top-full z-10 mt-2 hidden w-full overflow-hidden rounded-xl border-2 border-slate-800 bg-white"
+                >
+                    <li class="dropdown-item">
+                        <button
+                            class="dropdown-option w-full px-5 py-4 text-left hover:bg-indigo-100"
+                            type="button"
+                            data-value="First Item"
+                        >
+                            First Item
+                        </button>
+                    </li>
+
+                    <li class="dropdown-item">
+                        <button
+                            class="dropdown-option w-full px-5 py-4 text-left hover:bg-indigo-100"
+                            type="button"
+                            data-value="Second Item"
+                        >
+                            Second Item
+                        </button>
+                    </li>
+
+                    <li class="dropdown-item">
+                        <button
+                            class="dropdown-option w-full px-5 py-4 text-left hover:bg-indigo-100"
+                            type="button"
+                            data-value="Third Item"
+                        >
+                            Third Item
+                        </button>
+                    </li>
+
+                    <li class="dropdown-item">
+                        <button
+                            class="dropdown-option w-full px-5 py-4 text-left hover:bg-indigo-100"
+                            type="button"
+                            data-value="Fourth Item"
+                        >
+                            Fourth Item
+                        </button>
+                    </li>
+
+                    <li class="dropdown-item">
+                        <button
+                            class="dropdown-option w-full px-5 py-4 text-left hover:bg-indigo-100"
+                            type="button"
+                            data-value="Fifth Item"
+                        >
+                            Fifth Item
+                        </button>
+                    </li>
+                </ul>
+
+            </div>
         </section>
+
     </main>
-    <a href="https://roadmap.sh/projects/custom-dropdown"
-        class="mx-auto my-16 block w-57.5 rounded-2xl bg-linear-to-br from-amber-950 to-stone-950 p-4 text-center font-semibold text-amber-100 no-underline shadow-xl transition duration-150 ease-in-out hover:brightness-110 hover:shadow-lg active:translate-x-1 active:translate-y-1 active:shadow-none"
+
+    <a
+        href="https://roadmap.sh/projects/custom-dropdown"
+        class="mx-auto my-7 block w-57.5 rounded-2xl bg-linear-to-br from-indigo-950 to-stone-950 p-4 text-center font-semibold text-amber-100 no-underline shadow-xl transition duration-150 ease-in-out hover:brightness-110 hover:shadow-lg active:translate-x-1 active:translate-y-1 active:shadow-none"
         target="_blank"
-        rel="noopener noreferrer">
+        rel="noopener noreferrer"
+    >
         Go to Project of Reference
     </a>
+
+    <script src="script.js"></script>
 </body>
 </html>
