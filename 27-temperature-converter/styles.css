@@ -8,4 +8,31 @@
     box-sizing: border-box;
 }
 
-/* Add project styles below. */
+body {
+    background:
+        radial-gradient(circle at 15% 20%, rgba(139, 187, 146, 0.18), transparent 30%),
+        radial-gradient(circle at 85% 75%, rgba(42, 131, 95, 0.14), transparent 30%),
+        #f4f8f5;
+}
+
+.converter-field {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid rgba(18, 84, 79, 0.22);
+    border-radius: 0.75rem;
+    background-color: #ffffff;
+    color: #091413;
+    outline: none;
+    transition:
+        border-color 150ms ease,
+        box-shadow 150ms ease;
+}
+
+.converter-field:focus {
+    border-color: #2A835F;
+    box-shadow: 0 0 0 3px rgba(42, 131, 95, 0.14);
+}
+
+.converter-field::placeholder {
+    color: rgba(9, 20, 19, 0.4);
+}

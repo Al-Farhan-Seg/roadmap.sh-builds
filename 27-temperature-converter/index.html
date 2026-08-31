@@ -1,48 +1,177 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Temperature Converter</title>
-    <link rel="stylesheet" href="../top_assets/tailwind.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="../pesticide-adv.cs">
-    <link rel="stylesheet" href="../pesticide-ord.cs">
+    <link rel="stylesheet" href="../top_assets/tailwind.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../pesticide-adv.cs" />
+    <link rel="stylesheet" href="../pesticide-ord.cs" />
     <script src="script.js" defer></script>
-    <link rel="icon" type="image/png" href="../top_assets/favicon-F.png">
+    <link rel="icon" type="image/png" href="../top_assets/favicon-F.png" />
 
     <!-- Primary Meta Tags -->
-    <meta name="title" content="Temperature Converter | Al-Farhan Frontend Projects">
-    <meta name="description" content="A temperature converter built with HTML, CSS, and JavaScript, converting values between Celsius, Fahrenheit, and Kelvin.">
+    <meta
+      name="title"
+      content="Temperature Converter | Al-Farhan Frontend Projects"
+    />
+    <meta
+      name="description"
+      content="A temperature converter built with HTML, CSS, and JavaScript, converting values between Celsius, Fahrenheit, and Kelvin."
+    />
 
     <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://roadmapsh.farhansegujja.com/27-temperature-converter/index.html">
-    <meta property="og:title" content="Temperature Converter | Al-Farhan Frontend Projects">
-    <meta property="og:description" content="A temperature converter built with HTML, CSS, and JavaScript, converting values between Celsius, Fahrenheit, and Kelvin.">
-    <meta property="og:image" content="https://roadmapsh.farhansegujja.com/top_assets/favicon-F.png">
-    <meta property="og:image:alt" content="Al-Farhan favicon">
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://roadmapsh.farhansegujja.com/27-temperature-converter/index.html"
+    />
+    <meta
+      property="og:title"
+      content="Temperature Converter | Al-Farhan Frontend Projects"
+    />
+    <meta
+      property="og:description"
+      content="A temperature converter built with HTML, CSS, and JavaScript, converting values between Celsius, Fahrenheit, and Kelvin."
+    />
+    <meta
+      property="og:image"
+      content="https://roadmapsh.farhansegujja.com/top_assets/favicon-F.png"
+    />
+    <meta property="og:image:alt" content="Al-Farhan favicon" />
 
     <!-- Twitter / X -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://roadmapsh.farhansegujja.com/27-temperature-converter/index.html">
-    <meta name="twitter:title" content="Temperature Converter | Al-Farhan Frontend Projects">
-    <meta name="twitter:description" content="A temperature converter built with HTML, CSS, and JavaScript, converting values between Celsius, Fahrenheit, and Kelvin.">
-    <meta name="twitter:image" content="https://roadmapsh.farhansegujja.com/top_assets/favicon-F.png">
-    <meta name="twitter:image:alt" content="Al-Farhan favicon">
-</head>
-<body class="m-0 min-h-screen pt-24 font-sans">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:url"
+      content="https://roadmapsh.farhansegujja.com/27-temperature-converter/index.html"
+    />
+    <meta
+      name="twitter:title"
+      content="Temperature Converter | Al-Farhan Frontend Projects"
+    />
+    <meta
+      name="twitter:description"
+      content="A temperature converter built with HTML, CSS, and JavaScript, converting values between Celsius, Fahrenheit, and Kelvin."
+    />
+    <meta
+      name="twitter:image"
+      content="https://roadmapsh.farhansegujja.com/top_assets/favicon-F.png"
+    />
+    <meta name="twitter:image:alt" content="Al-Farhan favicon" />
+  </head>
+
+  <body class="m-0 min-h-screen bg-slate-50 pt-24 text-slate-800 font-['DynaPuff']">
     <main>
-        <h1 class="fixed top-0 left-0 z-50 m-0 w-full rounded-none bg-white px-4 py-3 text-center text-black">Temperature Converter</h1>
-        <section class="coming-soon-hero" aria-labelledby="coming-soon-heading">
-            <h2 id="coming-soon-heading">Coming soon. Please check back anytime</h2>
-        </section>
+      <h1
+        class="fixed top-0 left-0 z-50 m-0 w-full text-2xl rounded-none bg-[#091413] px-4 py-3 text-center text-[#8BBB92] shadow-sm"
+      >
+        Temperature Converter
+      </h1>
+
+      <section
+        class="mx-auto mt-12 w-[90%] max-w-4xl rounded-3xl border border-[#8BBB92]/30 bg-white p-6 shadow-xl shadow-[#12544F]/10 md:p-10"
+        aria-labelledby="converter-heading"
+      >
+        <div class="mb-8">
+
+          <h2
+            id="converter-heading"
+            class="mt-4 text-3xl font-bold tracking-tight text-[#091413]"
+          >
+            Convert temperatures
+          </h2>
+
+          <p class="mt-2 text-[#12544F]/70">
+            Enter a value and choose the units you want to convert between.
+          </p>
+        </div>
+
+        <form id="converter-form">
+          <div class="grid gap-5 md:grid-cols-3">
+            <div>
+              <label
+                for="temperature"
+                class="mb-2 block text-sm font-semibold text-[#12544F]"
+              >
+                Temperature
+              </label>
+
+              <input
+                type="number"
+                id="temperature"
+                step="any"
+                placeholder="e.g. 25"
+                class="converter-field"
+              />
+            </div>
+
+            <div>
+              <label
+                for="from-unit"
+                class="mb-2 block text-sm font-semibold text-[#12544F]"
+              >
+                From
+              </label>
+
+              <select id="from-unit" class="converter-field">
+                <option value="">Select unit</option>
+                <option value="celsius">Celsius °C</option>
+                <option value="fahrenheit">Fahrenheit °F</option>
+                <option value="kelvin">Kelvin K</option>
+              </select>
+            </div>
+
+            <div>
+              <label
+                for="to-unit"
+                class="mb-2 block text-sm font-semibold text-[#12544F]"
+              >
+                To
+              </label>
+
+              <select id="to-unit" class="converter-field">
+                <option value="">Select unit</option>
+                <option value="celsius">Celsius °C</option>
+                <option value="fahrenheit">Fahrenheit °F</option>
+                <option value="kelvin">Kelvin K</option>
+              </select>
+            </div>
+          </div>
+
+          <button
+            type="submit"
+            id="convert-btn"
+            disabled
+            class="mt-6 w-full rounded-xl bg-[#2A835F] px-5 py-3 font-semibold text-white shadow-md shadow-[#12544F]/20 transition duration-150 hover:bg-[#12544F] disabled:cursor-not-allowed disabled:bg-[#8BBB92]/35 disabled:text-[#12544F]/50 disabled:shadow-none md:w-auto"
+          >
+            Convert
+          </button>
+        </form>
+
+        <div
+          id="result-container"
+          class="mt-7 hidden rounded-2xl border border-[#8BBB92]/40 bg-[#8BBB92]/15 p-5"
+          aria-live="polite"
+        >
+          <p class="m-0 text-sm font-semibold text-[#2A835F]">Result</p>
+
+          <p
+            id="result"
+            class="mt-1 mb-0 text-2xl font-bold text-[#091413]"
+          ></p>
+        </div>
+      </section>
     </main>
-    <a href="https://roadmap.sh/projects/temperature-converter"
-        class="mx-auto my-16 block w-57.5 rounded-2xl bg-linear-to-br from-amber-950 to-stone-950 p-4 text-center font-semibold text-amber-100 no-underline shadow-xl transition duration-150 ease-in-out hover:brightness-110 hover:shadow-lg active:translate-x-1 active:translate-y-1 active:shadow-none"
-        target="_blank"
-        rel="noopener noreferrer">
-        Go to Project of Reference
+
+    <a
+      href="https://roadmap.sh/projects/temperature-converter"
+      class="mx-auto my-16 block w-57.5 rounded-2xl bg-linear-to-br from-[#12544F] to-[#091413] p-4 text-center font-semibold text-[#8BBB92] no-underline shadow-xl shadow-[#091413]/20 transition duration-150 ease-in-out hover:from-[#2A835F] hover:to-[#12544F] hover:text-white hover:shadow-lg active:translate-x-1 active:translate-y-1 active:shadow-none"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Go to Project of Reference
     </a>
-</body>
+  </body>
 </html>

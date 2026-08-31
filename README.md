@@ -42,7 +42,7 @@ A folder by itself is **not** treated as a completed project. Completion is coun
 
 <!-- PROJECTS:START -->
 
-![Progress](https://img.shields.io/badge/Progress-20%2F30-0ea5e9?style=flat-square) **20/30 complete (67%)** · **10 in progress** · **0 not started**
+![Progress](https://img.shields.io/badge/Progress-21%2F30-0ea5e9?style=flat-square) **21/30 complete (70%)** · **9 in progress** · **0 not started**
 
 | # | Status | Level | Focus | Official Project | Local Solution |
 |---:|:------:|---|---|---|---|
@@ -72,7 +72,7 @@ A folder by itself is **not** treated as a completed project. Completion is coun
 | 24 | ✅ | Intermediate | JavaScript | [Custom Dropdown](https://roadmap.sh/projects/custom-dropdown) | [View project](./24-custom-dropdown/) |
 | 25 | ✅ | Intermediate | JavaScript | [Task Tracker](https://roadmap.sh/projects/task-tracker-js) | [View project](./25-task-tracker/) |
 | 26 | 🚧 | Intermediate | API Integration | [Reddit Client](https://roadmap.sh/projects/reddit-client) | [Open folder](./26-reddit-client/) |
-| 27 | 🚧 | Intermediate | JavaScript | [Temperature Converter](https://roadmap.sh/projects/temperature-converter) | [Open folder](./27-temperature-converter/) |
+| 27 | ✅ | Intermediate | JavaScript | [Temperature Converter](https://roadmap.sh/projects/temperature-converter) | [View project](./27-temperature-converter/) |
 | 28 | 🚧 | Intermediate | Frameworks | [Pomodoro Timer](https://roadmap.sh/projects/pomodoro-timer) | [Open folder](./28-pomodoro-timer/) |
 | 29 | 🚧 | Intermediate | CSS | [Theme Switcher with CSS Variables](https://roadmap.sh/projects/theme-switcher) | [Open folder](./29-theme-switcher-with-css-variables/) |
 | 30 | 🚧 | Advanced | Frameworks | [24hr Story Feature](https://roadmap.sh/projects/stories-feature) | [Open folder](./30-24hr-story-feature/) |
