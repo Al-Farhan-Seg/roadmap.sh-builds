@@ -2,7 +2,7 @@
 
 [View the project requirements](https://roadmap.sh/projects/weather-app)
 
-In this project, we build a weather application that fetches and displays weather information for a selected location.
+In this project, we build a React weather application that fetches and displays weather information for a selected location.
 
 The application includes:
 
@@ -15,20 +15,33 @@ The application includes:
 * Clear feedback for invalid or unavailable locations
 * A responsive and accessible interface
 
-JavaScript handles location searches, sends requests to a weather API, processes the returned data, and dynamically updates the page with the latest available weather information.
+React handles location searches, sends requests to a weather API, processes the returned data, and dynamically updates the page with the latest available weather information.
 
-The goal of this project is to practise working with APIs, asynchronous JavaScript, `fetch`, promises, error handling, JSON data, user input, and dynamic DOM updates.
+The goal of this project is to practise React fundamentals combined with API integration: `fetch`, effects, asynchronous state, error handling, and controlled inputs.
 
-## Instructions
+## Status
 
-Choose one of the following options:
+🚧 In progress. This folder currently contains only the React + Vite scaffold — no weather functionality has been implemented yet.
 
-1. Visit the [main webpage](https://roadmapsh.farhansegujja.com/).
+## Tech Stack
 
-2. Run the project locally:
+* React + React DOM
+* Vite
+* Tailwind CSS (via the repository's shared stylesheet)
 
-   * Clone the parent repository.
-   * Open the `index.html` file in your browser.
-   * Search for a city or location.
-   * Review the displayed weather information and application behaviour.
-   * Send constructive feedback, including both criticism and praise, to [farhan.segujja@gmail.com](mailto:farhan.segujja@gmail.com).
+## Running Locally
+
+From the repository root, after `npm install`:
+
+```bash
+npm run dev:22
+```
+
+Or from within this folder:
+
+```bash
+cd 22-weather-web-app
+npm run dev
+```
+
+Send constructive feedback, including both criticism and praise, to [farhan.segujja@gmail.com](mailto:farhan.segujja@gmail.com).

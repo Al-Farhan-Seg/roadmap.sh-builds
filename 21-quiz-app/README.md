@@ -2,7 +2,7 @@
 
 [View the project requirements](https://roadmap.sh/projects/quiz-app)
 
-In this project, we build a browser-based quiz application using HTML, CSS, and JavaScript.
+In this project, we build a browser-based quiz application using React.
 
 The application includes:
 
@@ -16,20 +16,33 @@ The application includes:
 * A restart option for attempting the quiz again
 * A responsive and accessible interface
 
-JavaScript manages the quiz data, tracks the current question, records selected answers, calculates the final score, and dynamically updates the interface as the user progresses.
+React manages the quiz data, tracks the current question, records selected answers, calculates the final score, and dynamically updates the interface as the user progresses.
 
-The goal of this project is to practise application state management, event handling, conditional rendering, arrays and objects, dynamic DOM updates, reusable logic, and the development of a complete interactive frontend application.
+The goal of this project is to practise React fundamentals: component state, event handling, conditional rendering, lists and keys, and the development of a complete interactive frontend application.
 
-## Instructions
+## Status
 
-Choose one of the following options:
+🚧 In progress. This folder currently contains only the React + Vite scaffold — no quiz functionality has been implemented yet.
 
-1. Visit the [main webpage](https://roadmapsh.farhansegujja.com/).
+## Tech Stack
 
-2. Run the project locally:
+* React + React DOM
+* Vite
+* Tailwind CSS (via the repository's shared stylesheet)
 
-   * Clone the parent repository.
-   * Open the `index.html` file in your browser.
-   * Answer the quiz questions and submit your responses.
-   * Review the final score and application behaviour.
-   * Send constructive feedback, including both criticism and praise, to [farhan.segujja@gmail.com](mailto:farhan.segujja@gmail.com).
+## Running Locally
+
+From the repository root, after `npm install`:
+
+```bash
+npm run dev:21
+```
+
+Or from within this folder:
+
+```bash
+cd 21-quiz-app
+npm run dev
+```
+
+Send constructive feedback, including both criticism and praise, to [farhan.segujja@gmail.com](mailto:farhan.segujja@gmail.com).

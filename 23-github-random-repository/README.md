@@ -2,7 +2,7 @@
 
 [View the project requirements](https://roadmap.sh/projects/github-random-repo)
 
-In this project, we create a random GitHub repository finder using HTML, CSS, JavaScript, and the GitHub API.
+In this project, we create a random GitHub repository finder using React and the GitHub API.
 
 The application includes:
 
@@ -16,21 +16,33 @@ The application includes:
 * Clear feedback when no matching repository is available
 * A responsive and accessible interface
 
-JavaScript sends requests to the GitHub API, processes the returned repository data, selects a repository, and dynamically updates the interface with its details.
+React sends requests to the GitHub API, processes the returned repository data, selects a repository, and dynamically updates the interface with its details.
 
-The goal of this project is to practise API integration, asynchronous JavaScript, `fetch`, JSON data processing, error handling, conditional rendering, user interaction, and dynamic DOM updates.
+The goal of this project is to practise React fundamentals combined with API integration: `fetch`, effects, asynchronous state, error handling, and conditional rendering.
 
-## Instructions
+## Status
 
-Choose one of the following options:
+🚧 In progress. This folder currently contains only the React + Vite scaffold — no repository-finder functionality has been implemented yet.
 
-1. Visit the [main webpage](https://roadmapsh.farhansegujja.com/).
+## Tech Stack
 
-2. Run the project locally:
+* React + React DOM
+* Vite
+* Tailwind CSS (via the repository's shared stylesheet)
 
-   * Clone the parent repository.
-   * Open the `index.html` file in your browser.
-   * Select a programming language.
-   * Generate and explore random GitHub repositories.
-   * Review the completed work.
-   * Send constructive feedback, including both criticism and praise, to [farhan.segujja@gmail.com](mailto:farhan.segujja@gmail.com).
+## Running Locally
+
+From the repository root, after `npm install`:
+
+```bash
+npm run dev:23
+```
+
+Or from within this folder:
+
+```bash
+cd 23-github-random-repository
+npm run dev
+```
+
+Send constructive feedback, including both criticism and praise, to [farhan.segujja@gmail.com](mailto:farhan.segujja@gmail.com).

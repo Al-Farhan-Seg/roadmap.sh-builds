@@ -10,6 +10,13 @@ Thumbs.db
 # Node dependencies
 node_modules/
 
+# Build output
+dist/
+
+# Vite
+.vite/
+*.local
+
 # Environment files
 .env
 .env.*

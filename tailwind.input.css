@@ -2,18 +2,19 @@
 
 @source "./11-cookie-consent";
 @source "./12-restricted-textarea";
-@source "./14-age-calculator";
-@source "./15-flash-cards";
+@source "./14-age-calculator/index.html";
+@source "./14-age-calculator/src/**/*.js";
+@source "./15-flash-cards/src/**/*.{js,jsx}";
 @source "./17-blog-post-page";
 @source "./18-contact-form";
 @source "./19-photo-showcase";
-@source "./21-quiz-app";
-@source "./22-weather-web-app";
-@source "./23-github-random-repository";
+@source "./21-quiz-app/src/**/*.{js,jsx}";
+@source "./22-weather-web-app/src/**/*.{js,jsx}";
+@source "./23-github-random-repository/src/**/*.{js,jsx}";
 @source "./24-custom-dropdown";
-@source "./26-reddit-client";
+@source "./26-reddit-client/src/**/*.{js,jsx}";
 @source "./27-temperature-converter";
-@source "./28-pomodoro-timer";
+@source "./28-pomodoro-timer/src/**/*.{js,jsx}";
 @source "./29-theme-switcher-with-css-variables";
-@source "./30-24hr-story-feature";
+@source "./30-24hr-story-feature/src/**/*.{js,jsx}";
 @source "./index.html";

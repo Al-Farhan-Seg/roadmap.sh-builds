@@ -42,7 +42,7 @@ A folder by itself is **not** treated as a completed project. Completion is coun
 
 <!-- PROJECTS:START -->
 
-![Progress](https://img.shields.io/badge/Progress-21%2F30-0ea5e9?style=flat-square) **21/30 complete (70%)** · **9 in progress** · **0 not started**
+![Progress](https://img.shields.io/badge/Progress-22%2F30-0ea5e9?style=flat-square) **22/30 complete (73%)** · **8 in progress** · **0 not started**
 
 | # | Status | Level | Focus | Official Project | Local Solution |
 |---:|:------:|---|---|---|---|
@@ -74,7 +74,7 @@ A folder by itself is **not** treated as a completed project. Completion is coun
 | 26 | 🚧 | Intermediate | API Integration | [Reddit Client](https://roadmap.sh/projects/reddit-client) | [Open folder](./26-reddit-client/) |
 | 27 | ✅ | Intermediate | JavaScript | [Temperature Converter](https://roadmap.sh/projects/temperature-converter) | [View project](./27-temperature-converter/) |
 | 28 | 🚧 | Intermediate | Frameworks | [Pomodoro Timer](https://roadmap.sh/projects/pomodoro-timer) | [Open folder](./28-pomodoro-timer/) |
-| 29 | 🚧 | Intermediate | CSS | [Theme Switcher with CSS Variables](https://roadmap.sh/projects/theme-switcher) | [Open folder](./29-theme-switcher-with-css-variables/) |
+| 29 | ✅ | Intermediate | CSS | [Theme Switcher with CSS Variables](https://roadmap.sh/projects/theme-switcher) | [View project](./29-theme-switcher-with-css-variables/) |
 | 30 | 🚧 | Advanced | Frameworks | [24hr Story Feature](https://roadmap.sh/projects/stories-feature) | [Open folder](./30-24hr-story-feature/) |
 
 _Legend: ✅ complete (`.project-complete` present) · 🚧 scaffolded/in progress · ⬜ not added_
@@ -97,11 +97,22 @@ The repository includes the following automation files:
 
 ```text
 scripts/
+├── build-site.mjs
 ├── project-status.mjs
 ├── projects-fallback.json
 ├── scaffold-projects.mjs
 └── update-readme.mjs
 ```
+
+### `build-site.mjs`
+
+Builds the entire site — the static portfolio, the static roadmap.sh projects, and the React + Vite projects — into a single root `dist/` directory ready for Cloudflare Pages.
+
+```bash
+npm run build
+```
+
+See [Deployment](#deployment) below for what it does and how the output is structured.
 
 ### `scaffold-projects.mjs`
 
@@ -193,9 +204,54 @@ npm run css:build
 
 The build command scans the registered projects once and writes a fresh, minified `top_assets/tailwind.css`. Run it after changing Tailwind classes whenever the watcher is not running, and always run it before committing or deploying.
 
-Tailwind scans only the project folders explicitly registered in `tailwind.input.css`. When another project adopts Tailwind, add its folder there and link `../top_assets/tailwind.css` from its HTML. Completing a project does not require removing it from the Tailwind source list. The generated stylesheet is committed because production hosting serves the repository as a static site; do not edit it directly.
+Tailwind scans only the project folders explicitly registered in `tailwind.input.css`. When another project adopts Tailwind, add its folder there and link `../top_assets/tailwind.css` from its HTML (or the equivalent import, as used by the React projects below). Completing a project does not require removing it from the Tailwind source list. The generated stylesheet is committed because production hosting serves the repository as a static site; do not edit it directly.
 
-Projects created with a framework may later replace the basic starter files with the framework's recommended structure and development commands.
+### React + Vite projects
+
+Seven projects are React + Vite applications instead of static HTML/CSS/JS, managed as [npm workspaces](https://docs.npmjs.com/cloud-hosted-git-repos-with-workspaces):
+
+* `15-flash-cards`
+* `21-quiz-app`
+* `22-weather-web-app`
+* `23-github-random-repository`
+* `26-reddit-client`
+* `28-pomodoro-timer`
+* `30-24hr-story-feature`
+
+Each one keeps the standard Vite structure (`index.html`, `src/main.jsx`, `src/App.jsx`, `src/index.css`, `vite.config.js`) instead of the static `index.html`/`styles.css`/`script.js` files, and imports the same shared, repository-wide `top_assets/tailwind.css` stylesheet that the static projects use — there is no per-project Tailwind installation. Run `npm run css:build` (or `css:watch`) at least once so that stylesheet exists before starting a React dev server.
+
+Start any one of them from the repository root:
+
+```shell
+npm run dev:15   # Flash Cards
+npm run dev:21   # Quiz App
+npm run dev:22   # Weather Web App
+npm run dev:23   # GitHub Random Repository
+npm run dev:26   # Reddit Client
+npm run dev:28   # Pomodoro Timer
+npm run dev:30   # 24hr Story Feature
+```
+
+Each app is configured with a `base` matching its deployed path (e.g. `/15-flash-cards/`) and builds directly into `dist/<project-folder>/`, so it stays reachable at the same numbered URL once the whole site is built. `npm run build` (see [Deployment](#deployment)) builds all seven automatically as part of the full site build — there's no need to build them individually.
+
+## Deployment
+
+The repository deploys as a single Cloudflare Pages site. `npm run build` runs `scripts/build-site.mjs`, which:
+
+1. cleans the root `dist/` directory;
+2. builds the production Tailwind stylesheet (`top_assets/tailwind.css`);
+3. copies the root static portfolio (`index.html`, `styles.css`, `top_assets/`, `fonts/`, etc.) into `dist/`;
+4. copies every non-React numbered project folder into `dist/<project-folder>/`;
+5. builds each React + Vite project, which writes directly to `dist/<project-folder>/`.
+
+Cloudflare Pages project settings:
+
+| Setting | Value |
+|---|---|
+| Build command | `npm run build` |
+| Build output directory | `dist` |
+| Root directory | `/` |
+| Framework preset | `None` |
 
 ## Project Standards
 

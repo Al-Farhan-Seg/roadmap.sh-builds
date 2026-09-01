@@ -2,7 +2,7 @@
 
 [View the project requirements](https://roadmap.sh/projects/flash-cards)
 
-In this project, we create an interactive flash card application using HTML, CSS, and JavaScript.
+In this project, we create an interactive flash card application using React.
 
 The application includes:
 
@@ -13,20 +13,33 @@ The application includes:
 * Clear visual feedback during interaction
 * A responsive and accessible interface
 
-JavaScript manages the flash card data, tracks the currently displayed card, reveals answers, and updates the interface as the user moves through the collection.
+React manages the flash card data, tracks the currently displayed card, reveals answers, and updates the interface as the user moves through the collection.
 
-The goal of this project is to practise working with arrays, objects, DOM manipulation, event handling, application state, conditional rendering, and reusable interface logic.
+The goal of this project is to practise React fundamentals: components, props, state, event handling, conditional rendering, and reusable interface logic.
 
-## Instructions
+## Status
 
-Choose one of the following options:
+🚧 In progress. This folder currently contains only the React + Vite scaffold — no flash card functionality has been implemented yet.
 
-1. Visit the [main webpage](https://roadmapsh.farhansegujja.com/).
+## Tech Stack
 
-2. Run the project locally:
+* React + React DOM
+* Vite
+* Tailwind CSS (via the repository's shared stylesheet)
 
-   * Clone the parent repository.
-   * Open the `index.html` file in your browser.
-   * Navigate through the flash cards and reveal their answers.
-   * Review the completed work.
-   * Send constructive feedback, including both criticism and praise, to [farhan.segujja@gmail.com](mailto:farhan.segujja@gmail.com).
+## Running Locally
+
+From the repository root, after `npm install`:
+
+```bash
+npm run dev:15
+```
+
+Or from within this folder:
+
+```bash
+cd 15-flash-cards
+npm run dev
+```
+
+Send constructive feedback, including both criticism and praise, to [farhan.segujja@gmail.com](mailto:farhan.segujja@gmail.com).
