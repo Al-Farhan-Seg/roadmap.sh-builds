@@ -42,7 +42,7 @@ A folder by itself is **not** treated as a completed project. Completion is coun
 
 <!-- PROJECTS:START -->
 
-![Progress](https://img.shields.io/badge/Progress-22%2F30-0ea5e9?style=flat-square) **22/30 complete (73%)** · **8 in progress** · **0 not started**
+![Progress](https://img.shields.io/badge/Progress-23%2F30-0ea5e9?style=flat-square) **23/30 complete (77%)** · **7 in progress** · **0 not started**
 
 | # | Status | Level | Focus | Official Project | Local Solution |
 |---:|:------:|---|---|---|---|
@@ -59,7 +59,7 @@ A folder by itself is **not** treated as a completed project. Completion is coun
 | 11 | ✅ | Beginner | JavaScript | [Cookie Consent](https://roadmap.sh/projects/cookie-consent) | [View project](./11-cookie-consent/) |
 | 12 | ✅ | Beginner | JavaScript | [Restricted Textarea](https://roadmap.sh/projects/restricted-textarea) | [View project](./12-restricted-textarea/) |
 | 13 | ✅ | Beginner | JavaScript | [Accordion](https://roadmap.sh/projects/accordion) | [View project](./13-accordion/) |
-| 14 | 🚧 | Beginner | Frontend | [Age Calculator](https://roadmap.sh/projects/age-calculator) | [Open folder](./14-age-calculator/) |
+| 14 | ✅ | Beginner | Frontend | [Age Calculator](https://roadmap.sh/projects/age-calculator) | [View project](./14-age-calculator/) |
 | 15 | 🚧 | Beginner | Frontend | [Flash Cards](https://roadmap.sh/projects/flash-cards) | [Open folder](./15-flash-cards/) |
 | 16 | ✅ | Beginner | HTML | [Pricing Comparison Table](https://roadmap.sh/projects/pricing-comparison-table) | [View project](./16-pricing-comparison-table/) |
 | 17 | ✅ | Beginner | HTML | [Blog Post Page](https://roadmap.sh/projects/blog-post-page) | [View project](./17-blog-post-page/) |
