@@ -17,6 +17,9 @@ dist/
 .vite/
 *.local
 
+# Personal learning aids (per-project, not meant to be committed)
+user-stories.md
+
 # Environment files
 .env
 .env.*
