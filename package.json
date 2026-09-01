@@ -29,7 +29,7 @@
     "dev:30": "npm run dev --workspace=30-24hr-story-feature --",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
-},
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Al-Farhan-Seg/roadmap.sh-builds.git"
